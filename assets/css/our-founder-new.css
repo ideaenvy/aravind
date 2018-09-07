@@ -1,0 +1,54 @@
+.our-founder-new {
+  padding: 30px 30px; }
+  .our-founder-new .our-founder-sec {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 30px; }
+    .our-founder-new .our-founder-sec aside ul {
+      background-color: transparent;
+      padding-left: 0px !important; }
+      .our-founder-new .our-founder-sec aside ul .active {
+        font-weight: bold;
+        color: white;
+        background-color: #364d75;
+        padding-left: 20px;
+        margin-right: -20px; }
+      .our-founder-new .our-founder-sec aside ul li {
+        list-style: none;
+        padding: 8px 5px;
+        background-color: #72afdb;
+        opacity: .8;
+        margin: 2px 30px 2px 5px;
+        cursor: pointer; }
+        .our-founder-new .our-founder-sec aside ul li:hover {
+          background-color: #364d75;
+          color: white;
+          font-weight: bold;
+          margin-right: -20px;
+          padding-left: 20px;
+          -webkit-transition: all 0.40s ease-in-out;
+          -moz-transition: all 0.40s ease-in-out;
+          -ms-transition: all 0.40s ease-in-out;
+          -o-transition: all 0.40s ease-in-out;
+          transition: all 0.40s ease-in-out; }
+    .our-founder-new .our-founder-sec aside .banner {
+      margin: 10px 0px;
+      padding: 0; }
+      .our-founder-new .our-founder-sec aside .banner img {
+        margin: 10px 0px;
+        padding-left: 0;
+        padding-right: 25px; }
+    .our-founder-new .our-founder-sec img {
+      float: right;
+      padding-left: 40px; }
+    .our-founder-new .our-founder-sec p {
+      line-height: 30px; }
+    .our-founder-new .our-founder-sec .aravind-sec {
+      display: none;
+      -webkit-transition: all 0.40s ease-in-out;
+      -moz-transition: all 0.40s ease-in-out;
+      -ms-transition: all 0.40s ease-in-out;
+      -o-transition: all 0.40s ease-in-out;
+      transition: all 0.40s ease-in-out; }
+    .our-founder-new .our-founder-sec .aravind-sec:first-child {
+      display: block; }
