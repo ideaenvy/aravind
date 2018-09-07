@@ -1,0 +1,12 @@
+.activelink{
+  background-color: ($active-blue);
+  
+  a{
+    color: ($color-white);
+    font-weight: 600;
+  }
+}
+
+.banner{
+  padding: 10px 0px;
+}

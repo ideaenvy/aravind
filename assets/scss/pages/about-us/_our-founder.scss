@@ -1,0 +1,14 @@
+.our-founder{
+  background-image: url(../img/DrVWalk.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100% !important;
+
+  #our-founder-section{
+    p{
+      color: $color-white;
+      line-height: 30px;
+      font-size: 15px;
+    }
+  }
+}

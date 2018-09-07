@@ -36757,9 +36757,7 @@ ul li.page-item {
 .sub-widgets li {
     padding: 8px 30px;
     cursor: pointer;
-    background: transparent;
     transition: 0.3s;
-    color: #000;
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
 }
@@ -37471,10 +37469,10 @@ address.address-move-left {
     background-repeat: no-repeat;
     display: block;
 }
-.activelink a {
+/* .activelink a {
     font-weight: bold;
     color: #ffffff !important;
-}
+} */
 
 
 .post-previewed:hover .post-body::after {
