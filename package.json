@@ -1,0 +1,30 @@
+{
+  "name": "aravind",
+  "version": "1.0.0",
+  "description": "Aravind Web Development Project",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ideaenvy/aravind.git"
+  },
+  "author": "ideaenvy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ideaenvy/aravind/issues"
+  },
+  "homepage": "https://github.com/ideaenvy/aravind#readme"
+}
