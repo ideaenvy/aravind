@@ -8,6 +8,23 @@
     p{
       font-size: 15px;
       line-height: 30px;
+      
+      span{
+        float: right;
+        display: block;
+       &::after{
+          clear: both;
+        }
+      }
+    }
+    .video-block{
+      margin-top: 30px;
+      h2{
+        span{
+          color: $color-black;
+          margin-left: 5px;
+        }
+      }
     }
   }
 }

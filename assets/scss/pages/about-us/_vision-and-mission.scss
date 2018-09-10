@@ -1,8 +1,41 @@
 .main-about-us{
   #vision-mission{
+
+    .vision-and-mission{
+      .vm-head{
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .text-block{
+          position: absolute;
+          bottom: 2%;
+          left: 4%;
+          h2{
+            margin-bottom: 5px;
+            color: $color-white;
+          }
+          p{
+            margin-top: 0px;
+            color: $color-white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
     padding: 30px;
     h3{
       margin: 30px 0px;
+    }
+    ul{
+      margin-top: 40px;
+      li{
+        list-style: none;
+        p{
+          font-size: 15px;
+          line-height: 30px;
+        }
+      }
     }
   }
 }
