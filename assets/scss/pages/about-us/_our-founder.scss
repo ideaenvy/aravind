@@ -10,5 +10,45 @@
       line-height: 30px;
       font-size: 15px;
     }
+
+    .our-founder-photos{
+      position: relative;
+      padding: 15px;
+
+      .owl-carousel-thumb{
+        .slide-item{
+          background-color: #e1e1e1;
+          opacity: 0.9;
+          padding: 20px;
+          img{
+            width: 30%;
+            float: left;
+            margin: 20px 20px 60px 20px;
+          }
+          .text-block{
+            margin: 20px 0px;
+            h3{
+              color: yellow;
+            }
+          }
+        }
+
+        .owl-controls{
+          display: none !important;
+        }
+      }
+      .owl-thumbs{
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        text-align: center;
+        button{
+          border: 0px;
+          padding: 0;
+          width: 5%;
+          margin: 5px;
+        }
+      }
+    }
   }
 }

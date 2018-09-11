@@ -5,9 +5,22 @@
     .govel-trust{
       color: $color-red;
     }
-    .board-of-mem{
-      div{
-        margin: 10px;
+    .board-of-trustees-sub{
+      margin-top: 50px;
+      &:first-child{
+        margin-top: 0px;
+      }
+      .board-of-mem{
+        .box-shadow{
+          padding: 20px 10px;
+          margin: 10px auto;
+          vertical-align: middle;
+  
+          p{
+            padding: 0;
+            margin: 0;
+          }
+        }
       }
     }
   }

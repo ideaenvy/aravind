@@ -94,7 +94,8 @@
     var doctors = $(".doctor-carousel");
     var hospitals = $(".hospital-carousel");
     var other_hospitals = $(".ohospital-carousel");
-    var ourfounder = $('.owl-carousel-aravind-founder');
+    var ourfounder = $('.owl-carousel-thumb');
+    
     owl.owlCarousel({
         items: 3, //10 items above 1000px browser width
         itemsDesktop: [1000, 3], //5 items between 1000px and 901px
@@ -150,7 +151,11 @@
         itemsTablet: [600, 1], //2 items between 600 and 0
         itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
     });
- ourfounder.owlCarousel({
+   ourfounder.owlCarousel({
+        thumbs: true,
+        thumbsPrerendered: true,
+        thumbContainerClass: 'owl-thumbs',
+        thumbItemClass: 'owl-thumb-item',
         items: 1, //10 items above 1000px browser width
         itemsDesktop: [1000, 1], //5 items between 1000px and 901px
         itemsDesktopSmall: [900, 2], // betweem 900px and 601px
@@ -220,6 +225,23 @@ function ourFounderMenu(e){
     }
 }
 }
+
+
+
+const getAwardBox = document.querySelectorAll('.award-item');
+
+let heightOfBox = 0;
+getAwardBox.forEach(function(element, index, array){
+
+    if(element.offsetHeight > heightOfBox ){
+        heightOfBox = element.offsetHeight;
+    }
+});
+getAwardBox.forEach(function(element, index, array){
+
+    element.style.height = heightOfBox + "px";
+
+});
 }
 
 
