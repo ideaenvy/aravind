@@ -393,6 +393,42 @@ showit(showItemid);}
 //     }
 // }
 
+document.getElementById("amtSelect").addEventListener("change", delele, false);
+
+function delele(e){
+    e.preventDefault();
+    const outele = this.value;
+    const tar = this.getAttribute('data-target');
+    if (outele === 'Other-Amt'? showit(tar) : hideit(tar));
+  }
+
+document.getElementById("enq-dropdown").addEventListener("change", deleles, false);
+
+function deleles(e){
+    e.preventDefault();
+    const outeles = this.value;
+    const tars = this.getAttribute('data-target');
+    if (outeles === 'others'? showit(tars) : hideit(tars));
+}
+
+const tkbtn = document.querySelectorAll('.tik-btn');
+  for(i = 0; i < tkbtn.length; i++){
+    tkbtn[i].addEventListener("change", checkbtn);
+  }
+
+function checkbtn(e){
+    const cbtn = this.getAttribute('data-target');
+    if(this.value === 'on'?showit(cbtn):hideit(cbtn));
+}
+
+const dform = document.querySelector('#dform');
+    dform.addEventListener("click",formshide);
+    var count = 0;
+function formshide(e){
+    count++;
+    var targ = this.getAttribute('data-target');
+    if(count%2 !== 0?showit(targ):hideit(targ));
+}
 
 const specSelector = document.querySelector('.speciality-clinic-sub1');
 
@@ -406,3 +442,4 @@ const specSelector = document.querySelector('.speciality-clinic-sub1');
             e.target.classList.add('activelink');
         }
     }
+
