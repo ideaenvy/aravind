@@ -5,6 +5,57 @@
       font-size: 15px;
       line-height: 30px;
     }
+    .in-the-media{
+
+      ul{
+        padding: 0;
+        li{
+            list-style: none;
+          h4{
+            margin: 10px;
+            padding-top: 20px;
+            font-weight: 400;
+
+            &:hover{
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+          span{
+            margin: 10px;
+            display: block;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .blog-archive{
+      h4{
+        text-align: right;
+        display: block;
+        border: 1px solid;
+        padding: 5px;
+      }
+      h6{
+        text-align: right;
+        text-decoration: underline;
+        color: red;
+        cursor: pointer;
+      }
+      ul{
+        margin: 10px 0px;
+        li{
+          text-align: right;
+          margin: 5px 5px;
+          cursor: pointer;
+
+          &:hover{
+            font-weight: bold;
+            @include transition(font-weight .3s .2s);
+          }
+        }
+      }
+    }
   }
 }
   
