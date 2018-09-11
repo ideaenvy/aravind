@@ -1,0 +1,25 @@
+.form-check-input{
+    margin-left: 0;
+}
+.alert-primary, .oamt{
+    margin-top: 1rem;
+}
+.oamt p{
+    margin: 0;
+}
+#donate-drop{
+    margin-left: 2rem;
+}
+.down {
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    bottom: 0px;
+    background-color: white;
+    left: 0;
+    z-index: 999;
+    -webkit-box-shadow: 0px -6px 9px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -6px 9px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -6px 9px -5px rgba(0, 0, 0, 0.55);
+    padding-top: 10px;
+}
