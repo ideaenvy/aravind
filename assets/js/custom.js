@@ -415,6 +415,18 @@ showit(showItemid);}
 //     }
 // }
 
+const d = new Date();
+var day = d.getDate().toString();
+var month = d.getMonth()+1;
+var year = d.getFullYear().toString();
+var hour = d.getHours().toString();
+var min = d.getMinutes().toString();
+var sec = d.getSeconds().toString();
+const curr_date = day.concat("-").concat(month).concat("-").concat(year);
+const curr_time = hour.concat(":").concat(min).concat(":").concat(sec);
+const app_date = curr_date.concat(" ").concat(curr_time);
+document.getElementById('app_date').innerHTML= app_date;
+
 document.getElementById("amtSelect").addEventListener("change", delele, false);
 
 function delele(e){
@@ -464,4 +476,3 @@ const specSelector = document.querySelector('.speciality-clinic-sub1');
             e.target.classList.add('activelink');
         }
     }
-
