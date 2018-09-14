@@ -1,12 +1,19 @@
 .main-about-us{
   #awards-sections{
+    background-color: $color-white;
     padding: 30px;
-    p{
-      font-size: 15px;
-      line-height: 30px;
-    }
-    .award-item{
-      padding: 10px;
+
+    .awards-and-recognition{
+      .col-md-4{
+        display: flex;
+      }
+      p{
+        font-size: 15px;
+        line-height: 30px;
+      }
+      .award-item{
+        padding: 10px;
+      }
     }
   }
 }

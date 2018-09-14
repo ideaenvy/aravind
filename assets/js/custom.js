@@ -225,23 +225,6 @@ function ourFounderMenu(e){
     }
 }
 }
-
-
-
-const getAwardBox = document.querySelectorAll('.award-item');
-
-let heightOfBox = 0;
-getAwardBox.forEach(function(element, index, array){
-
-    if(element.offsetHeight > heightOfBox ){
-        heightOfBox = element.offsetHeight;
-    }
-});
-getAwardBox.forEach(function(element, index, array){
-
-    element.style.height = heightOfBox + "px";
-
-});
 }
 
 
