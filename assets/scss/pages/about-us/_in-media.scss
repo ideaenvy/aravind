@@ -2,30 +2,55 @@
   #in-media{
     padding: 30px;
     background-color: $color-white;
+
+    select{
+      padding: 10px 40px;
+      background-color: #8da4a4;
+      color: $color-white;
+      font-weight: bold;
+
+      option{
+        font-weight: 100;
+      }
+    }
+   
     p{
       font-size: 15px;
       line-height: 30px;
     }
     .in-the-media{
 
+      .col-md-12{
+        margin-top: 20px;
+      }
+
+      h5{
+        color: #b87777;
+       }
       ul{
         padding: 0;
         li{
             list-style: none;
           h4{
             margin: 10px;
-            padding-top: 20px;
-            font-weight: 400;
+            padding-top: 10px;
+            font-weight: 500;
+            color: #507291;
 
             &:hover{
               text-decoration: underline;
               cursor: pointer;
             }
           }
+          .date{
+            color: $color-grey;
+          }
+          .published-by{
+            color: $color-red;
+          }
           span{
             margin: 10px;
-            display: block;
-            text-align: right;
+            text-align: left;
           }
         }
       }
@@ -57,6 +82,23 @@
         }
       }
     }
+    .pagination-list{
+      margin-top: 40px;
+      ul{
+        padding: 0px;
+        display: inline;
+        li{
+          list-style: none;
+          display: inline;
+          border: 1px solid #507291;
+          padding: 8px 15px;
+        }
+        .activelink{
+          color: $color-white;
+        }
+      }
+    }
+
   }
 }
   
