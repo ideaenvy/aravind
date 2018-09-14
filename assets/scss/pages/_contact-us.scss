@@ -1,0 +1,90 @@
+#contact-us{
+  .contact-clinic{
+    .popup-btn {
+      position: relative;
+      cursor: pointer;
+
+      .action {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        z-index: 5;
+        top: 40%;
+        left: 15%;
+        border-radius: 50%;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #fff;
+          animation: dot-ripple 5s linear infinite;
+          font-family: "fontawesome";
+          content: "\f128";
+          font-size: 15px;
+      }
+    }
+    .box-action{
+        background-color: #ffca00;
+        border-radius: 20px;
+        margin: 0 10px;
+
+        .action-head {
+          transform: translate(65%,120%);
+          font-size: 1.1rem;
+          position: absolute;
+        }
+        
+        .bold-head {
+          transform: translate(35%, 225%);
+          font-weight: 600;
+          font-size: 25px;
+          position: absolute; 
+          text-transform: uppercase;
+          }
+      }
+    }
+
+    .con-sub-head {
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+      padding: 10px 15px;
+      cursor: pointer;
+  }
+    .sub-widgets{
+      display: block;
+
+      li{
+        border-right: none;
+        border-left: none;
+        background: transparent;
+
+        &:nth-child(1){
+          border-bottom: 1px solid rgba(0,0,0,.1);
+        }
+      }
+
+      .item-list{
+        padding: 5px 30px;
+      }
+
+      .activated-listcon {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff !important;
+        background-color: #364d75 !important;
+    }
+    }
+
+    .address-sections{
+      margin-bottom: 15px;
+      padding: 30px;
+
+      .col-lg-4{
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
