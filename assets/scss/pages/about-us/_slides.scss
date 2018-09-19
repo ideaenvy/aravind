@@ -123,7 +123,7 @@
 .st-wrapper .st-title h2 {
 	padding: 0 20px;
 	font-size: 28px;
-	color: #dc4e2a;
+	color: #374d75;
 	font-weight: 400;
 	letter-spacing: 3px;
 	font-family: 'Englebert', Arial, sans-serif;
@@ -171,7 +171,7 @@
 	height: 100%;
 	left: 0;
 	color: #fff;
-	background: #dc4e2a;
+	background: #374d75;
 	border-radius: 50%;
 	cursor: pointer;
 	text-shadow: 0 1px 1px rgba(255,255,255,0.5);
@@ -332,3 +332,15 @@
 	}
 }
 
+.st-title ul {
+    padding: 0;
+    margin: 0;
+	list-style: none;
+	li{
+		p{
+			margin: 0;
+			font-weight: 500;
+			font-size: 1.2rem;
+		}
+	}
+}
