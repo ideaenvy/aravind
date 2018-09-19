@@ -1,0 +1,93 @@
+.aravind-sliders{
+
+  .aravind-slider-one{
+    background-image: url(/assets/img/DrVWalk.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-color: #0c8388;
+    margin: 10px;
+    padding: 20px 100px;
+    position: relative;
+
+    .slide-intro-text{
+      h2{
+        font-weight: 600;
+        position: relative;
+        padding: 5px 0px;
+        display: inline-block;
+        color: $color-white;
+        &::before{
+          content: "";
+          bottom: 0%;
+          position: absolute;
+          width: 100%;
+          border-bottom: 1.5px solid $color-white;
+        }
+      }
+      p{
+        font-weight: 600;
+        font-size: 20px;
+        color: $color-white;
+      }
+    }
+
+    .side-item-list{
+      position: relative;
+
+      .slide-item{
+        position: absolute;
+
+        img{
+          animation: slideOut 3s 0s forwards;
+          border-top: .5px solid $color-white;
+          border-left: .5px solid $color-white;
+          
+        }
+        .text-block{
+          background-color: #5c6b6d;
+          color: $color-white;
+          border-right: .5px solid $color-white;
+          border-bottom: .5px solid $color-white;
+          opacity: .8;
+          padding: 10px 20px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          animation: slideOut-text 3s 0s forwards;
+        }
+      }
+    }
+
+    .slide-move-links{
+      .prev-link{
+        img{
+          width:8%;
+          position: absolute;
+          top: 30%;
+          left: 1%;
+          cursor: pointer;
+        }
+      }
+      .next-link{
+        width: 8%;
+        position: absolute;
+        top: 30%;
+        right: 1%;
+        cursor: pointer;
+      }
+    }
+
+    .slide-count{
+      position: absolute;
+      top: 12%;
+      right: 2%;
+      color: #0c8388cc;
+      font-size: 120px;
+      animation: slideIn 1s 0s forwards;
+    }
+  }
+}
+
