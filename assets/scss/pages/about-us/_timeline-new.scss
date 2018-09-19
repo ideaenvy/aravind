@@ -1,0 +1,91 @@
+.timeline {
+    width: 100%;
+    height: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;      
+    justify-content: center;
+    .events {
+        position: relative;
+        background-color: #606060;
+        height: 3px;
+        width: 100%;
+        border-radius: 4px;
+        margin: 5em 0;
+        ol {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            ul{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    width: 24.65%;
+                    margin: 0;
+                    padding: 0;
+                    a{
+                        font-family: 'Arapey', sans-serif;
+                        font-style: italic;
+                        font-size: 1.25em;
+                        color: #606060;
+                        text-decoration: none;
+                        position: relative;
+                        top: -32px;
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            bottom: -25px;
+                            left: 50%;
+                            right: auto;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                            border: 3px solid #606060;
+                            background-color: #fff;
+                            transition: 0.3s ease;
+                            transform: translateX(-50%);
+                        }
+                        &:hover{
+                            &:after{
+                                background-color: #194693;
+                                border-color: #194693;
+                            }
+                        }
+                    }
+                    .selected{
+                        &:after{
+                            background-color: #194693;
+                            border-color: #194693;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+              
+  .events-content {
+    width: 100%;
+    height: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;      
+    justify-content: left;
+  }
+  
+  .events-content li {
+    display: none;
+    list-style: none;
+  }
+  
+  .events-content li.selected {
+    display: initial;
+  }
+  
+  .events-content li h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+    color: #919191;
+    font-size: 2.5em;
+  }

@@ -26,6 +26,7 @@
         mobile: false,
         live: true
     });
+    
 
 
 
@@ -356,47 +357,6 @@ this.classList.add('activated-listcon');
 if (showItemid != null){
 showit(showItemid);}
 }
-
-
-//contact us
-
-// const getSidebar = document.querySelector('.contact-clinic');
-// getSidebar.addEventListener('click', colapsefun);
-// function colapsefun(e){
-// alert();
-//     if(e.target.classList == 'con-sub-head'){
-//     const itemTarget = '.'+e.target.parentElement.classList.toString()+' .sub-widgets';
-//     console.log(itemTarget);
-//     const itemIconTarget = '.'+e.target.parentElement.classList.toString()+' .fa-angle-right';
-//     const iconRotateSingle = document.querySelector(itemIconTarget);
-//     const iconRotate = document.querySelectorAll(' .fa-angle-right');
-//     let content = document.querySelector(itemTarget);
-    
-//     const hideAll = document.querySelectorAll('.sub-widgets');
-//        iconRotate.forEach(function(data, index, arr){
-//         data.classList.remove('down');
-//        });
-//        hideAll.forEach(function(data, index, arr){
-//         data.style.display = 'none';
-//        });
-//       content.style.display = 'block';
-//       iconRotateSingle.classList.add('down'); 
-//     } else if(e.target.classList == 'item-list'){
-//         const itemActive = '.'+e.target.parentElement.parentElement.classList.toString()+' .activated-listcon';
-//         const itemRemoveActive = document.querySelector(itemActive);
-//         if(itemRemoveActive != null){
-//             itemRemoveActive.classList.remove('activated-listcon');
-//         }
-//         e.target.classList.add('activated-listcon');
-
-//         const getAddrSections = document.querySelectorAll('.address-sections');
-//         getAddrSections.forEach(function(data, index, arr){
-//             data.style.display = 'none';
-//         });
-//         const targetId = e.target.getAttribute('data-target');
-//         document.querySelector(targetId).style.display = 'block';
-//     }
-// }
 
 const d = new Date();
 var day = d.getDate().toString();

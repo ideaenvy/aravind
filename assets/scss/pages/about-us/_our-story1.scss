@@ -1,0 +1,105 @@
+#about-section{
+    .jumbotron{
+        margin-bottom: 0;
+        background: $theme-blue;
+        text-align: center;
+        padding: 4rem 0;
+        color: $color-white;
+        h1{
+            margin-bottom: 1rem;
+        }
+    }
+    .page-section{
+        padding: 3rem 0;
+        position: relative;
+        &:before{
+            content: "";
+            z-index: 2;
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            transform: rotate(45deg);
+            background-color: inherit;
+            margin-top: -15px;
+            margin-left: -15px;
+            top: 100%;
+            left: 50%;
+            border-left-width: 0;
+            border-top-width: 0;
+        }
+    }
+    .page-section:last-child{
+        &:before{
+            content: none;
+        }
+    }
+    .milestone-odd{
+        background-color: $color-grey-1;
+        .container{
+            .row{
+                .col-lg-6{
+                    h2{
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+    .milestone-even{
+        background-color: $color-white;
+        .container{
+            .row{
+                .col-lg-6{
+                    h2{
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+    .page-sections, .other-page-section{
+        padding: 3rem 0;
+    }
+    .milestones{
+        padding: 3rem 0;
+        .wrapper{
+            .sample-header{
+                position: relative;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                text-align: initial;
+                overflow: initial;
+                &:before{
+                    content: none;
+                }
+                .container{
+                    .slide{
+                        &:before{
+                            font-family: "fontawesome";
+                            content: "\f060";
+                            position: absolute;
+                            top: 45%;
+                            left: 2%;
+                            font-size: 1.5rem;
+                            color: yellow;
+                        }
+                        &:after{
+                            font-family: "fontawesome";
+                            content: "\f061";
+                            position: absolute;
+                            top: 45%;
+                            right: 2%;
+                            font-size: 1.5rem;
+                            color: yellow;
+                        }
+                        .img-show{
+                            align-self: center;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
