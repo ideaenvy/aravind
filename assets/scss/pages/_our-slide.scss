@@ -1,5 +1,5 @@
 .aravind-sliders{
-
+  padding: 30px 0px;
   .aravind-slider-one{
     background-image: url(../img/DrVWalk.jpg);
     background-position: right;
@@ -7,9 +7,11 @@
     background-repeat: no-repeat;
     margin: 0 auto;
     background-color: #0c8388;
-    margin: 10px;
+    margin: 10px 0px;
     padding: 20px 100px;
-    position: relative;
+    position: sticky;
+    top: 5%;
+    
 
     .slide-intro-text{
       h2{
@@ -87,6 +89,12 @@
       color: #0c8388cc;
       font-size: 120px;
       animation: slideIn 1s 0s forwards;
+    }
+  }
+  .brief-our-founder{
+    p{
+      font-size: 15px;
+      line-height: 30px;
     }
   }
 }
