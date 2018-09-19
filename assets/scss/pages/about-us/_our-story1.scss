@@ -61,44 +61,51 @@
         padding: 3rem 0;
     }
     .milestones{
-        padding: 3rem 0;
+        padding: 10rem 0;
         .wrapper{
-            .sample-header{
+            .sample-headers{
                 position: relative;
                 overflow: hidden;
                 padding: 0;
                 margin: 0;
                 text-align: initial;
                 overflow: initial;
+                min-height: initial;
                 &:before{
                     content: none;
                 }
                 .container{
                     .slide{
+                        min-height: 300px;
                         &:before{
                             font-family: "fontawesome";
                             content: "\f060";
                             position: absolute;
                             top: 45%;
-                            left: 2%;
+                            left: 10%;
                             font-size: 1.5rem;
-                            color: yellow;
+                            color: $color-white;
                         }
                         &:after{
                             font-family: "fontawesome";
                             content: "\f061";
                             position: absolute;
                             top: 45%;
-                            right: 2%;
+                            right: 10%;
                             font-size: 1.5rem;
-                            color: yellow;
+                            color: $color-white;
                         }
-                        .img-show{
-                            align-self: center;
-                            text-align: center;
+                        hr{
+                            border-color: #ffffff5e;
                         }
                     }
                 }
+            }
+            .img-show{
+                align-self: center;
+                text-align: center;
+                position: absolute;
+                top: 100%;
             }
         }
     }
