@@ -1,3 +1,10 @@
+.image-side{
+    div{
+        .overlay{
+            background-color: #0000005e;
+        }
+    }
+}
 .res{
     .hovereffect {
         width: 100%;
@@ -26,13 +33,13 @@
             color: #fff;
             text-align: center;
             position: relative;
-            top: 55%;
+            top: 86%;
             font-size: 15px;
             padding: 10px;
             background: rgba(0, 0, 0, 0.6);
-            -webkit-transform: translateY(100px);
-            -ms-transform: translateY(100px);
-            transform: translateY(100px);
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
             -webkit-transition: all 0.4s ease-in-out;
             transition: all 0.4s ease-in-out;
         }
@@ -47,8 +54,8 @@
             transform: scale(1.2);
         }
         h2 {
-            transform: translateY(45px);
-            top: 30%;
+            transform:none;
+            top: 45%;
         }
     }
 }
