@@ -62,4 +62,26 @@
     -webkit-transform: scale(1);
     opacity: 1;
 }
-
+.eye_services{
+    h5{
+        margin-bottom: 1rem;
+    }
+    .image_wrap {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        shape-outside: inset(1px round 50%);
+    }
+    .odd{
+        float: left;
+        margin-right: 20px;
+    }
+    .even{
+        float: right;
+        margin-left: 20px;
+    }
+    p{
+        text-align: justify;
+    }
+}

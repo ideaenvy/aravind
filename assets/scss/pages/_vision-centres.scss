@@ -1,0 +1,17 @@
+.vc-clinic{
+    padding: 50px 0;
+}
+section#counter-stats {
+    background: rgb(18, 34, 51);
+    color: white;
+    .stats{
+        text-align: center;
+        font-weight: 600;
+        padding: 20px 0;
+        .counting{
+            margin-bottom: 1rem;
+            font-size: 32px;
+            padding-top: 10px;
+        }
+    }
+}

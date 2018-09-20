@@ -419,3 +419,4 @@ const specSelector = document.querySelector('.speciality-clinic-sub1');
             e.target.classList.add('activelink');
         }
     }
+    
