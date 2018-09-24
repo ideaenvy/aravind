@@ -339,6 +339,13 @@ if(e.target.classList == 'item-list'){
      }
 
 }
+if (window.location.href === '/vision-centers.html') {
+const d_items = document.querySelectorAll('.item-list');
+    for(i=0; i< d_items.length; i++){
+        d_items.addEventListener(click, showeles);
+    }
+}
+
 
 const d_item = document.querySelectorAll('.item-list');
   for( i = 0; i < d_item.length; i++){
