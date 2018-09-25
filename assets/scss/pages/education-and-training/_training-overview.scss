@@ -1,0 +1,85 @@
+
+.education-training{
+  
+  .sub-widgets{
+    #eduSubMenu{
+      cursor: pointer;
+    }
+    .activelink{
+      color: white;
+    }
+    li{
+      &:last-child{
+        border-bottom: 1px solid rgba(0,0,0,.1);
+      }
+    }
+    .sub-widgets-sub{
+      li{
+       &:last-child{
+         border-bottom: none;
+       }
+      }
+    }
+  }
+  #overview{
+    .slider{
+    
+      .owl-item{
+        img{
+          width: 100%;
+        }
+      }
+    }
+    h1{
+      font-family: "poppins";
+    }
+
+    .content-overview{
+      padding: 30px;
+
+      p{
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+      .event-slider-sec{
+        margin-top: 40px;
+
+        ul{
+          border: 1px solid #364d75;
+          border-radius: 5px;
+          padding: 20px;
+          li{
+            line-height: 30px;
+            list-style: none;
+            padding: 10px 5px;
+            cursor: pointer;
+
+            img{
+              float: left;
+              width: 150px;
+              padding: 10px;
+            }
+            .event-list-content{
+              padding: 10px;
+            }
+            h3{
+              color: #364d75;
+            }
+            span{
+             
+              color: #f00;
+            }
+            p{
+              margin-bottom: 0px;
+              line-height: 30px;
+            }
+          }
+        }
+       
+
+      }
+    }
+ 
+  }
+}
+
