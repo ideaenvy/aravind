@@ -1,0 +1,94 @@
+#fellowships{
+  .fellowships-btns{
+    position: relative;
+
+    .long-term-fellowship{
+      .btn-fellowship-t{
+        @extend .btn-fellowship;
+      }
+
+      margin-bottom: 20px;
+
+      strong{
+        color: red;
+      }
+      span{
+        font-weight: 600;
+      }
+      .small-note{
+        color: red;
+      }
+      .btn-apply-online{
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: table;
+        color: $color-white;
+        font-weight: 600;
+        background-color: darkcyan;
+        cursor: pointer;
+      }
+
+      
+    }
+    .short-term-fellowship{
+      .btn-fellowship-s{
+        @extend .btn-fellowship;
+      }
+    }
+
+    .fellow-ship-list{
+      margin: 20px 40px;
+      
+      .accordion{
+        .card{
+          .card-header{
+            background-color: #705f44;
+            padding: 0.1rem;
+            
+            h5{
+              font-weight: 400;
+              font-size: 14px;
+            }
+          }
+
+          .card-body{
+            .course-details{
+              padding-top: 20px;
+    
+              h5{
+                text-transform: uppercase;
+                text-decoration: underline;
+              }
+            }
+            .eandt-button{
+              padding: 8px 15px;
+              margin-left: 40px;
+              background-color: aqua;
+              cursor: pointer;
+              
+            }
+            .offerd-locations{
+              padding-top: 20px;
+              
+              h5{
+                text-transform: uppercase;
+                text-decoration: underline;
+              }
+
+              li{
+                list-style: none;
+                display: inline-block;
+                
+                a{
+                  font-size: 15px;
+                  color: red;
+                  padding: 10px 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
