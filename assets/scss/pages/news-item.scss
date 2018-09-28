@@ -1,0 +1,39 @@
+#blog_section{
+    .post{
+        &-title{
+
+        }
+        &-meta{
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    margin-inline-end: 10px;
+                    .post-author{
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        &-data{
+            margin-block-start: 35px;
+        }
+        &-link{
+            a{
+                color: #e24d43;
+                svg{
+                    vertical-align: middle;
+                    animation: mymove 1s ease-in-out infinite;
+                    animation-direction: alternate;
+                }
+            } 
+        }
+    }
+}
+@keyframes mymove {
+    from {margin-left: 0px;}
+    to {margin-left: 10px;}
+}

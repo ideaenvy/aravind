@@ -339,28 +339,22 @@ if(e.target.classList == 'item-list'){
      }
 
 }
-if (window.location.href === '/vision-centers.html') {
-const d_items = document.querySelectorAll('.item-list');
-    for(i=0; i< d_items.length; i++){
-        d_items.addEventListener(click, showeles);
-    }
-}
 
 
 const d_item = document.querySelectorAll('.item-list');
   for( i = 0; i < d_item.length; i++){
      d_item[i].addEventListener("click", showele);
   }
-
 function showele(e){
-let curList_item = document.querySelector('.activated-listcon');
+e.preventDefault();
+let curList_item = document.querySelector('.activated-list');
 let itemId = curList_item.getAttribute('data-target');
 console.log(itemId);
 if (itemId != null){
 hideit(itemId);}
-curList_item.classList.remove('activated-listcon');
+curList_item.classList.remove('activated-list');
 let showItemid = this.getAttribute('data-target');
-this.classList.add('activated-listcon');
+this.classList.add('activated-list');
 if (showItemid != null){
 showit(showItemid);}
 }
