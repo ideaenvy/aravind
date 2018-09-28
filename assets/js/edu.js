@@ -1,5 +1,5 @@
 window.onload = function(){
-
+ 
   const subMenuEdu = document.querySelector('#eduSubMenu');
 
   subMenuEdu.addEventListener('click', function() {
@@ -37,4 +37,6 @@ window.onload = function(){
       longTermFellowshipContent.style.display = 'none';
     }
   });
+
+  
 }

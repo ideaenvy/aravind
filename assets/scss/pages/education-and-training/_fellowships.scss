@@ -1,3 +1,5 @@
+
+
 #fellowships{
   .fellowships-btns{
     position: relative;
@@ -7,6 +9,10 @@
         @extend .btn-fellowship;
       }
 
+      .long-term-fellowship-content{
+        display: none;
+      }
+      
       margin-bottom: 20px;
 
       strong{
@@ -34,6 +40,10 @@
       .btn-fellowship-s{
         @extend .btn-fellowship;
       }
+      .short-term-fellowship-content{
+        display: none;
+      }
+
     }
 
     .fellow-ship-list{

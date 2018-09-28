@@ -167,19 +167,18 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="border-radius-0 margin-bottom-45 stickybar">
-                  <ul class="sub-widgets">
+                  <ul class="sub-widgets" id="courseLinks">
                     <li class="item-list activelink"><a href="#course-details">Course Details</a></li>
-                    <li class="item-list"><a href="#">Fee Structure</a></li>
-                    <li class="item-list"><a href="#">Faculty</a></li>
-                    <li class="item-list"><a href="#">Application Form & Brochure</a></li>
-                    <li class="item-list"><a href="#">Photo Gallery</a></li>
-                    <li class="item-list"><a href="#">Contact Us</a></li>
+                    <li class="item-list"><a href="#fee-structure">Fee Structure</a></li>
+                    <li class="item-list"><a href="#faculty">Faculty</a></li>
+                    <li class="item-list"><a href="#application-format">Application Form & Brochure</a></li>
+                    <li class="item-list"><a href="#contact-us">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-9">
                 <section id="course-details">
-                  <h2>PROFILE - CERTIFICATE COURSE ON VISION TECHNICIANS</h2>
+                  <h3>Profile - Certificate course On Vision Technicians</h3>
                   <h6>EDUCATION CENTERS</h6>
                   <div class="accordion" id="accordionExample">
                       <div class="card">
@@ -238,15 +237,16 @@
                   </div>
                 </section>
                 <section id="fee-structure">
-                    <h2>FEE STRUCTURE - CERTIFICATE COURSE ON VISION TECHNICIANS</h2>
+                    <h3>Fee Structure - Certificate Course On Vision Technicians</h3>
                     <table>
-                      <thead>
-                        <th>Fee Details</th>
-                        <th>Amount</th>
-                      </thead>
                       <tbody>
                         <tr>
-                          <td>Rupee</td>
+                          <th>Fee Details</th>
+                          <th>Amount</th>
+                        </tr>
+                        <tr>
+                          <td><strong>Rupee</strong></td>
+                          <td></td>
                         </tr>
                         <tr>
                           <td>Course Fee</td>
@@ -261,11 +261,12 @@
                           <td>1,800</td>
                         </tr>
                         <tr>
-                          <td><strong>Total</strong></td>
+                          <td><strong class="text-center">Total</strong></td>
                           <td>23,600</td>
                         </tr>
                         <tr>
                           <td><strong>US Dollar</strong></td>
+                          <td></td>
                         </tr>
                         <tr>
                           <td>Course Fee</td>
@@ -280,18 +281,80 @@
                           <td>68</td>
                         </tr>
                         <tr>
-                          <td><strong>Total</strong></td>
+                          <td><strong class="text-center">Total</strong></td>
                           <td>886</td>
                         </tr>
                       </tbody>
                     </table>
                 </section>
+                
+                <section id="faculty">
+                  <h3>Faculty Certificate Course On Vision Technicians</h3>
+                  <div class="faculty">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="faculty-member">
+                          <h4>ARAVIND EYE HOSPITAL, MADURAI</h4>
+                          <img src="../assets/img/usha.jpg" alt="">
+                          <h3>Dr. Usha Kim</h3>
+                          <ul>
+                            <li>Director - Mid Level Ophthalmic Personnel</li>
+                            <li>Aravind Eye Hospital, Madurai, India</li>
+                            <li><strong>usha@aravind.org</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section id="application-format">
+                    <h3>Downloadable Forms - Certificate Course On Vision Technicians</h3>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="text-uppercase">Downloads</th>
+                          <th class="text-uppercase">Document Format</th>
+                        </tr>
+                        <tr>
+                          <td><a href="../assets/doc/A00000090.docx">Application</a></td>
+                          <td>Word Document</td>
+                        </tr>
+                        <tr>
+                          <td><a href="../assets/doc/A00000091.pdf">Brochure</a></td>
+                          <td>PDF Document</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <section id="contact-us">
+                    <h3>Contact Us - Certificate Course On Vision Technicians</h3>
+                    <div class="contact-center">
+                      <div class="contact-center-location">
+                        <div class="row">
+                          <div class="col-md-4">
+                              <Address>
+                                  <h6>Aravind Eye Hospital, Madurai</h6>
+                                <ul>
+                                  <li>Address: 1, Anna Nagar, Madurai</li>
+                                  <li>Phone: 091-452-4356100</li>
+                                  <li>Fax: 091-452-2530984</li>
+                                  <li>Email: education@aravind.org</li>
+                                </ul>
+                              </Address>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- Footer Section Starts -->
 
@@ -365,10 +428,9 @@
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/imagesloaded.min.js"></script>
     <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/edu.js"></script>
+    <script src="../assets/js/course.js"></script>
     <script>
         $('.carousel').carousel({
             interval: 10000
