@@ -1,0 +1,24 @@
+#course-details{
+  padding: 10px 0px;
+
+  h2{
+    color: #ed200b;
+  }
+  h6{
+    color: $theme-blue;
+  }
+  .accordion{
+    padding: 10px 10px;
+
+    table{
+      td{
+        padding-left: 10px;
+
+        &:first-child{
+          border-right: .2px solid #eeeded;
+        }
+      }
+      
+    }
+  }
+}

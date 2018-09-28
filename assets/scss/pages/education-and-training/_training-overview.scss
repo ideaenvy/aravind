@@ -14,6 +14,7 @@
       }
     }
     .sub-widgets-sub{
+      display: none;
       li{
        &:last-child{
          border-bottom: none;
