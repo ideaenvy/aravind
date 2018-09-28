@@ -1,0 +1,102 @@
+.Postgraduate{
+  
+    .sub-widgets{
+      #eduSubMenu{
+        cursor: pointer;
+      }
+      .activelink{
+        color: white; 
+      }
+      li{
+        &:last-child{
+          border-bottom: 1px solid rgba(0,0,0,.1);
+        }
+      }
+      .sub-widgets-sub{
+        display: none;
+        li{
+         &:last-child{
+           border-bottom: none;
+         }
+        }
+      }
+    }
+    #course-details{
+        h2{
+            font-weight: 600;
+            color: #333333;
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+    .pg_courses{
+        margin-block-start: 20px;
+        h2{
+            color: black !important;
+            font-weight: 600;
+            text-indent: 3rem;
+            margin-block-end: 20px;
+            span{
+                font-weight: 400;
+            }
+        }
+        .course_item{
+            .course_pic{
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                img{
+                    transform-style: preserve-3d;
+                    transition: .3s all ease-in; 
+                }
+                .course_deatils_btn {
+                    position: absolute;
+                    right: 5px;
+                    top: 25px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .3s all ease-in-out;
+                    a{
+                        color: #ffffff;
+                        font-weight: 500;
+                        svg{
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            .course_item_text{
+                .course_title{
+                    padding-block-end: 30px;
+                    position: relative;
+                    margin-top: 10px;
+                    h3{
+                        color: #333333;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        text-transform: uppercase;
+                        text-indent: 0.2rem;
+                        transition: .3s all ease-in-out;
+                        a{
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+        }
+        .course_item:hover{
+            img{
+                transform: scale(1.05);
+            }
+            .course_deatils_btn{
+                opacity: 1;
+                visibility: visible;
+                right: 20px;
+            }
+        }
+        
+    }
+}
