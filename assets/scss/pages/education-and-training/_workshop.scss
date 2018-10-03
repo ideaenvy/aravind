@@ -1,0 +1,153 @@
+#workshop-header{
+  position: absolute;
+  width: 100%;
+  padding: 30px 0px;
+  
+  .workshop-brand{
+    color: $color-white;
+  }
+  #workshop-menu{
+    display: flex;
+    .menu-item{
+      flex: auto;
+      list-style: none;
+      display: inline-block;
+      a{
+        color: $color-white;
+        font-weight: 400;
+        
+        &:hover{
+          color: $theme-blue;
+          padding: 10px 15px;
+          background-color: $color-white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+#main-banner{
+  position: relative;
+  background-image: url(/assets/img/workshop-banner.jpg);
+  background-size: cover;
+  height: 100vh;
+
+
+  .workshop-details{
+    background-color: $color-black;
+    padding: 20px;
+    opacity: .7;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    h4{
+      color: $color-white;
+    }
+    p{
+      color: $color-white;
+      line-height: 30px;
+    }
+  }
+}
+
+#overview{
+  .text-heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px;
+  }
+}
+
+#cfaculty{
+  .text-heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px;
+  }
+
+  .faculty-list{
+    position: relative;
+  background-image: url(/assets/img/faculty.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0px;
+
+  .faculty-details{
+    background-color: #044d4c;
+    opacity: .9;
+    padding: 10px;
+
+    p{
+      padding-top: 5px;
+      margin: 0;
+      padding-bottom: 0px;
+      color: $color-white;
+    }
+  }
+  }
+
+
+}
+
+#application{
+  height: 50vh;
+  .text-heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px;
+  }
+}
+
+#brochure{
+  height: 50vh;
+  .text-heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px;
+  }
+  .downlode-bro{
+    padding: 10px;
+    background-color: #055051;
+    color: $color-white;
+  }
+}
+
+#contact{
+  .text-heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px;
+  }
+  button{
+    cursor: pointer;
+    background-color: #055051;
+    color: $color-white;
+    border-radius: none;
+    padding: 10px 20px;
+  }
+}
+
+footer{
+  margin-top: 30px;
+  background-color: #1b1b1b;
+  h6{
+    text-align: center;
+    padding: 50px 0px;
+    color: $color-white;
+  }
+  .scrolltop{
+    padding: 15px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    display: block;
+    
+    .fa-arrow-up{
+      color: $color-white;
+      font-size: 20px;
+    }
+  }
+}
