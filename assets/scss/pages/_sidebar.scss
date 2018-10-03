@@ -1,0 +1,179 @@
+@mixin triangle ($size, $color, $direction) {
+    height: 0;
+    width: 0;
+  
+    $width: nth($size, 1);
+    $height: nth($size, length($size));
+  
+    $foreground-color: nth($color, 1);
+    $background-color: transparent !default;
+    @if (length($color) == 2) {
+      $background-color: nth($color, 2);
+    }
+  
+    @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+  
+      $width: $width / 2;
+  
+      @if $direction == up {
+        border-left: $width solid $background-color;
+        border-right: $width solid $background-color;
+        border-bottom: $height solid $foreground-color;
+  
+      } @else if $direction == right {
+        border-top: $width solid $background-color;
+        border-bottom: $width solid $background-color;
+        border-left: $height solid $foreground-color;
+  
+      } @else if $direction == down {
+        border-left: $width solid $background-color;
+        border-right: $width solid $background-color;
+        border-top: $height solid $foreground-color;
+  
+      } @else if $direction == left {
+        border-top: $width solid $background-color;
+        border-bottom: $width solid $background-color;
+        border-right: $height solid $foreground-color;
+      }
+    }
+  
+    @else if ($direction == up-right) or ($direction == up-left) {
+      border-top: $height solid $foreground-color;
+  
+      @if $direction == up-right {
+        border-left:  $width solid $background-color;
+  
+      } @else if $direction == up-left {
+        border-right: $width solid $background-color;
+      }
+    }
+  
+    @else if ($direction == down-right) or ($direction == down-left) {
+      border-bottom: $height solid $foreground-color;
+  
+      @if $direction == down-right {
+        border-left:  $width solid $background-color;
+  
+      } @else if $direction == down-left {
+        border-right: $width solid $background-color;
+      }
+    }
+  
+    @else if ($direction == inset-up) {
+      border-width: $height $width;
+      border-style: solid;
+      border-color: $background-color $background-color $foreground-color;
+    }
+  
+    @else if ($direction == inset-down) {
+      border-width: $height $width;
+      border-style: solid;
+      border-color: $foreground-color $background-color $background-color;
+    }
+  
+    @else if ($direction == inset-right) {
+      border-width: $width $height;
+      border-style: solid;
+      border-color: $background-color $background-color $background-color $foreground-color;
+    }
+  
+    @else if ($direction == inset-left) {
+      border-width: $width $height;
+      border-style: solid;
+      border-color: $background-color $foreground-color $background-color $background-color;
+    }
+  }
+  .box {
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px 0 20px 0;
+  }
+
+  [class^="activated-listed-ribbon-"] {
+    position: relative;
+    span{
+        font-size: 1.2rem;
+        font-weight: 500;
+        left: 10%;
+        position: relative;
+        top: 25%;
+        color: #fff;
+    }
+    &:before, &:after {
+      content: "";
+      position: absolute;
+    }
+  }
+  @for $i from 1 through 8 {
+    $top: percentage($i/100);
+
+    .activated-listed-ribbon-#{$i} {
+        top: $top;
+    }
+    .activated-listed-ribbon-#{$i} {
+        width: 90%;
+        height: 50px;
+        background: #21749a;
+        left: -8px;
+        margin-top: 8px;
+        transition: .3s all ease-in-out;
+        cursor: pointer;
+        &:before {
+          @include triangle(8px, darken(#21749a, 15%), down-right);
+          top: -8px;
+        }
+        &:after {
+          @include triangle(50px 15px, #21749a, right);
+          right: -15px;
+        }
+    }
+    .activated-listed-ribbon-#{$i}:hover{
+        width: 102%;
+    }
+    .activated-listed-ribbon-#{$i}.active-rib{
+        width: 102%;
+        background: #364d75;
+        &:before {
+            @include triangle(8px, darken(#364d75, 15%), down-right);
+            top: -8px;
+          }
+          &:after {
+            @include triangle(50px 15px, #364d75, right);
+            right: -15px;
+          }
+    }
+}
+.sub-widgets_new{
+    list-style: none;
+    margin: 0;
+    .sub-list{
+        padding: 10px 0;
+        font-size: 15px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: .5s all ease-in-out;
+    }
+    .sub-list:hover{
+        font-weight: 600;
+    }
+    .active_menu{
+        color: #364d75;
+        font-weight: 600;
+    }
+}
+h3.margin-bottom-0px{
+    padding-left: 30px;
+}
+h3.margin-bottom-0px::before {
+    content: "";
+    padding: 0 20px 0 20px;
+    width: 30px;
+    height: 30px;
+    background: url(/assets/img/1.jpg);
+    border-radius: 50%;
+    position: relative;
+    left: -10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 7px 0px #333;
+}
