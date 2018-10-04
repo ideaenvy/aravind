@@ -1,0 +1,100 @@
+#research-about-us{
+
+  .research-head-img{
+    background: url('../img/resource.jpg');
+    height: 400px;
+    position: relative;
+
+    .research-title{
+      color: $color-white;
+      font-size: 30px;
+      position: absolute;
+      bottom: 20%;
+      left: 5%;
+      background-color: $color-black;
+      opacity: .5;
+      padding: 10px 55px;
+      border-bottom: 2px solid $color-white; 
+    }
+  }
+
+  .research-main{
+    .res-title{
+      padding: 30px 0px;
+      text-align: center;
+    }
+    .recog-data{
+      .recog-list{
+        padding: 0;
+        h6{
+          font-size: 16px;
+          padding: 10px 0px;
+        }
+        &>li{
+          list-style: none;
+        }
+        
+      }
+    }
+  }
+
+  .institutional-review{
+    
+    .ini-title{
+      padding: 30px 0px;
+      text-align: center;
+    }
+
+    .board-members{
+      padding: 15px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      .col-md-3{
+        display: flex;
+        margin-bottom: 25px;
+      }
+    }
+    .board-member{
+      
+      border: 1px solid $color-black;
+      padding: 15px;
+      width: 100%;
+      p{
+        margin:  0px;
+      }
+      .name{
+        font-weight: 500;
+      }
+    }
+  }
+
+  .research-committee{
+    
+    .ini-title{
+      padding: 30px 0px;
+      text-align: center;
+    }
+
+    .board-members{
+      padding: 15px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      .col-md-3{
+        display: flex;
+        margin-bottom: 25px;
+      }
+    }
+    .board-member{
+      
+      border: 1px solid $color-black;
+      padding: 15px;
+      width: 100%;
+      p{
+        margin:  0px;
+      }
+      .name{
+        font-weight: 500;
+      }
+    }
+  }
+}
