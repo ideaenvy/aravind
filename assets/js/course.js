@@ -1,5 +1,6 @@
 window.onload = function(){
 
+  
   courseStructure = document.querySelector('#courseLinks');
   const courseLinks = courseStructure.querySelectorAll('li a');
 
