@@ -1,0 +1,41 @@
+.u_event_list{
+    margin-bottom: 20px;
+    background: #eeeded;
+    .col-lg-4{
+        padding: 0;
+    }
+    .img_container{
+        position: relative;
+        .bg_overlay{
+            height: 100%;
+            background: #000;
+            position: absolute;
+            width: 40%;
+            top: 0;
+            opacity: 0.8;
+        }
+        .event_date{
+            position: relative;
+            top: 25%;
+            color: #fff;
+            text-align: center;
+            h3 {
+                font-size: 40px;
+                line-height: 1em;
+                margin-bottom: 20px;
+            }
+            .body_text{
+                font-size: 1.8rem;
+            }
+            .body_text-1{
+                font-size: 1.2rem;
+                line-height: 22px;
+                letter-spacing: .54px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.u_event_list:last-child{
+    margin-bottom: 0;
+}
