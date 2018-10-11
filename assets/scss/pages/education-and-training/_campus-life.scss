@@ -58,3 +58,33 @@
         }
     }
 }
+.campus_life-1{
+    padding: 30px 0;
+    .campus-txt {
+        width: calc(100% - 30px);;
+        height: 60px;
+        background: #333333e0;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        transition: .5s all ease-in-out;
+        div{
+            padding: 20px 30px;
+            color: white;
+            hr{
+                border-color: #fff;
+            }
+            a{
+                color: #fff;
+                font-weight: 500;
+                font-weight: 1.2rem;
+            }
+        }
+    }
+    .half-height{
+        height: 50%;
+    }
+    .campus-txt:hover{
+        height: 100%;
+    }
+}
