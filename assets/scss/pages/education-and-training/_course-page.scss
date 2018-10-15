@@ -1,0 +1,134 @@
+#course-details{
+  padding: 10px 0px;
+
+  h3{
+    color: #ed200b;
+    text-transform: capitalize;
+  }
+  h6{
+    color: $theme-blue;
+  }
+  .accordion{
+    padding: 10px 10px;
+
+    table{
+      td{
+        padding-left: 10px;
+
+        &:first-child{
+          border-right: .2px solid #eeeded;
+        }
+      }
+      
+    }
+  }
+}
+
+#fee-structure{
+  display: none;
+  padding: 10px 0px;
+
+  h3{
+    color: #ed200b;
+    text-transform: capitalize;
+  }
+  table{
+    margin: 0 20px;
+    border: 1px solid  #765b5b;
+
+    th{
+      padding-left: 10px;
+    }
+    tr{
+      padding-left: 10px;
+    }
+    td{
+      padding-left: 10px;
+      border-top: 1px solid #765b5b;
+    }
+  }
+}
+
+#faculty{
+  display: none;
+  padding: 10px 0px;
+  
+  h3{
+    color: #ed200b;
+    text-transform: capitalize;
+  }
+  .faculty{
+    .faculty-member{
+      border: 2px solid #eeeded;
+      padding: 10px;
+      text-align: center;
+      img{
+        width: 50%;
+      }
+      h3{
+        padding: 5px 0px;
+      }
+      p{
+        margin: 1px 0px;
+      }
+
+      ul{
+        padding: 0;
+        li{
+          list-style: none;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+}
+
+#application-format{
+  display: none;
+  padding: 10px 0px;
+  
+  h3{
+    color: #ed200b;
+    text-transform: capitalize;
+  }
+
+  table{
+    margin: 0 20px;
+    border: 1px solid  #765b5b;
+
+    th{
+      padding-left: 10px;
+    }
+    tr{
+      padding-left: 10px;
+    }
+    td{
+      padding-left: 10px;
+      border-top: 1px solid #765b5b;
+    }
+  }
+}
+
+#contact-us{
+  display: none;
+  h3{
+    color: #ed200b;
+    text-transform: capitalize;
+  }
+
+  .contact-center{
+
+    address{
+      border: 1px solid #765b5b;
+      padding: 15px;
+      ul{
+        margin-bottom: 0px;
+        li{
+          list-style: none;
+        }
+      }
+    }
+  }
+
+}

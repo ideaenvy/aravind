@@ -2,8 +2,8 @@
   background-color: ($active-blue);
   
   a{
-    color: ($color-white);
-    font-weight: 600;
+    color: #b0ff00;
+    font-weight: bold;
   }
 }
 
@@ -22,5 +22,16 @@
   cursor: pointer;
   transition: 0.3s;
   border: 0;
-  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.btn-fellowship{
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #495057;
+  color: $color-white;
+}
+
+.text-center{
+  text-align: center;
+  display: block;
 }

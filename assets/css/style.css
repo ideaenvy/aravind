@@ -40,7 +40,7 @@ a#logo {
 }
 header {
   position: relative;
-  z-index: 9;
+  z-index: 100;
   min-height: 10vh;
   display:flex;
   align-items:center;
@@ -36945,7 +36945,7 @@ header ul.nav-menu > li ul.sub-menu {
 }
 
 .top-bar{
-    background: #364d75;
+    background: #1b61c4;
 }
 
 .side-head {
