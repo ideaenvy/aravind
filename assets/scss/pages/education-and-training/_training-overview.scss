@@ -1,6 +1,13 @@
 
 .education-training{
-  
+  .slider{
+    
+    .owl-item{
+      img{
+        width: 100% !important;
+      }
+    }
+  }
   .sub-widgets{
     #eduSubMenu{
       cursor: pointer;
@@ -21,16 +28,11 @@
        }
       }
     }
+    
   }
   #overview{
-    .slider{
     
-      .owl-item{
-        img{
-          width: 100%;
-        }
-      }
-    }
+    
     h1{
       font-family: "poppins";
     }
