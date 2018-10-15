@@ -86,3 +86,71 @@
   }
 }
 
+.col-lg-6{
+
+  h2{
+    font-weight: 700;
+    margin-bottom: 6%;
+  }
+  .greentext {
+    color: #8ad014;
+  }
+  .greytext{
+    color: #555555;
+  }
+  p {
+    
+    font-size: 14px;
+  }
+}
+
+.single_events {
+  position: relative;
+  box-shadow: 0 1px 2px #ccc;
+  background: #ececec;
+  margin-bottom: 10px;
+  height: 100px;
+  padding: 4%;
+      .dateof_events {
+        position: absolute;
+        float: left;
+        width: 10%;
+        
+          .dates {
+            list-style: none;
+            padding: 8px;
+            color: #fff;
+            background: #8ad014;
+            margin: 0;
+            text-align: center;
+            .dt {
+              border-bottom: 1px solid;
+              width: 25px;
+              }
+          
+
+
+        }
+        
+  
+  }
+  .contentof_events {
+    right: 0;
+    position: absolute;
+    width: 80%;
+    h2{
+      font-size: 16px;
+    }
+
+    span{
+      margin-right: 10px;
+      
+    }
+  }
+
+
+
+
+
+
+}
