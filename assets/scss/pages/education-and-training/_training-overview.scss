@@ -88,12 +88,22 @@
 
 .col-lg-6{
 
-  h2{
+  .sectitle{
     font-weight: 700;
-    margin-bottom: 6%;
+    margin-bottom: 30px;
   }
   .greentext {
     color: #8ad014;
+    
+  }
+  .greentext:after {
+    content: '';
+    position: absolute;
+    width: 52px;
+    height: 3px;
+    left: 16px;
+    bottom: 90%;
+    border-bottom: 4px solid;
   }
   .greytext{
     color: #555555;
@@ -114,9 +124,10 @@
       .dateof_events {
         position: absolute;
         float: left;
-        width: 10%;
+        
         
           .dates {
+            position: absolute;
             list-style: none;
             padding: 8px;
             color: #fff;
@@ -125,7 +136,7 @@
             text-align: center;
             .dt {
               border-bottom: 1px solid;
-              width: 25px;
+              width: 28px;
               }
           
 
@@ -138,12 +149,17 @@
     right: 0;
     position: absolute;
     width: 80%;
+    
     h2{
       font-size: 16px;
     }
 
     span{
       margin-right: 10px;
+
+      .greenicon{
+        color: #8ad014;
+      }
       
     }
   }
