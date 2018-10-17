@@ -356,13 +356,41 @@ function showele(e){
 e.preventDefault();
 let curList_item = document.querySelector('.activated-list');
 let itemId = curList_item.getAttribute('data-target');
-console.log(itemId);
-if (itemId != null){
+if(itemId === null){
+    return false;
+}else{
 hideit(itemId);}
 curList_item.classList.remove('activated-list');
 let showItemid = this.getAttribute('data-target');
+console.log(showItemid);
 this.classList.add('activated-list');
-if (showItemid != null){
+if (showItemid === null){
+    return false;
+}else if(showItemid === 'impact'){
+    $('.counting').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        
+        $({ countNum: $this.text()}).animate({
+          countNum: countTo
+        },
+      
+        {
+      
+          duration: 3000,
+          easing:'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+      
+        });
+      });
+      showit(showItemid);
+}else{
 showit(showItemid);}
 }
 
