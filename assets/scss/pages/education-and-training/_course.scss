@@ -87,6 +87,16 @@
                     }
                 }
             }
+            &__locations{
+                margin-top: 40px;
+                .location_details{
+                    .heading_title{
+                        font-size: 22px;
+                        font-weight: 600;
+                        margin: 0 0 10px;
+                    }
+                }
+            }
         }
     }
 }
