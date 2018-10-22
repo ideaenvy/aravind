@@ -663,11 +663,10 @@
         <script src="../assets/js/bootstrap.min.js"></script>
         <script src="../assets/js/edu.js"></script>
         <script>
-                $(window).scroll(function () {
-                    $(this).scrollTop() >= 100 ? $("#stickybar").removeClass("right-col__content").addClass('right-col__scroll').fadeIn(300) : $("#stickybar").removeClass("right-col__scroll").addClass('right-col__content')
-                    $(this).scrollTop() >= 1000 ? $("#stickybar").removeClass("right-col__scroll").addClass('right-col__content').fadeIn(300) : $("#stickybar").removeClass("right-col__content").addClass('right-col__scroll')
-                });
-    
-            </script>
+            $(window).scroll(function () {
+                $(this).scrollTop() >= 100 ? $("#stickybar").removeClass("right-col__content").addClass('right-col__scroll').fadeIn(300) : $("#stickybar").removeClass("right-col__scroll").addClass('right-col__content')
+                $(this).scrollTop() >= 1000 ? $("#stickybar").removeClass("right-col__scroll").addClass('right-col__content').fadeIn(300) : $("#stickybar").removeClass("right-col__content").addClass('right-col__scroll')
+            });
+        </script>
     </body>
 </html>
