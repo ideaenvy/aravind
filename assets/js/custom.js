@@ -352,6 +352,11 @@ for( i = 0; i < d_item.length; i++){
     d_item[i].addEventListener("click", showele);
 }
 
+const nav_item = document.querySelectorAll('.nav-link');
+for( i = 0; i < nav_item.length; i++){
+    nav_item[i].addEventListener("click", showele);
+}
+
 function showele(e){
     e.preventDefault();
     let curList_item = document.querySelector('.activated-list');

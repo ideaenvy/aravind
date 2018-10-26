@@ -1,0 +1,41 @@
+#treatment{
+    #treatment-menu{
+        padding-left: 30px;
+        .nav{
+            padding: 0;
+            .nav-item{
+                margin-left: .9rem;
+                .nav-link{
+                    font-size: 16px;
+                    color: #888;
+                    border-bottom: 3px solid transparent;
+                    padding-bottom: 7px;
+                    transition: 0.2s all ease-in-out;
+                }
+                .activated-list, .nav-link:hover{
+                    color: #363636;
+                    border-bottom-color:#0078bf;
+                }
+                .activated-list{
+                    &:hover{
+                        background: transparent;
+                    }
+                }
+            }
+            .nav-item:first-child{
+                margin: 0;
+            }
+        }
+    }
+    .image-container {
+        margin-bottom: 10px;
+        float: right;
+        img{
+            padding-left: 10px;
+        }
+    }
+    ul{
+        padding-left: 1rem;
+        margin: 0;
+    }
+}
