@@ -116,15 +116,17 @@
             }
         }
         .item-body{
-            padding: 10px 20px 0 20px;
+            padding: 20px 15px 0 15px;
             .item-title a{
-                color: #262626;
-                font-size: 17px;
-                margin: 0 0 15px 0;
-                font-weight: 500;
-                line-height: 25px;
-                transition: all 0.5s ease;
-                padding-top: 15px;
+                    h3{
+                    color: #262626 !important;
+                    font-size: 17px;
+                    margin: 0 0 15px 0;
+                    font-weight: 500;
+                    line-height: 25px;
+                    transition: all 0.5s ease;
+                    padding-top: 15px;
+                }
             }
             .item-duration{
                 padding-bottom: 15px;
@@ -144,8 +146,8 @@
                 opacity: .2;
             }
         }
-        .item-title a{
-            color: rgb(83, 195, 240);
+        .item-title >a>h3{
+            color: rgb(83, 195, 240) !important;
         }
     }
 }
