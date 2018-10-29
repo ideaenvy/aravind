@@ -29,11 +29,11 @@
                     padding-bottom: 7px;
                     transition: 0.2s all ease-in-out;
                 }
-                .activated-list, .nav-link:hover{
+                .active-list, .nav-link:hover{
                     color: #363636;
                     border-bottom-color:#0078bf;
                 }
-                .activated-list{
+                .active-list{
                     &:hover{
                         background: transparent;
                     }

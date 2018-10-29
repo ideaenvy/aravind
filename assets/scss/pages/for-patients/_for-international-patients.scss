@@ -1,24 +1,70 @@
-.side_nav {
-    margin-bottom: 15px;
-    min-height: 150px;
-    border-radius: 5px;
-    font-size: 3rem;
-    display: flex;
-    padding: 15px;
-    div{
-        display: flex;
-        align-items: center;
-        .svg-inline--fa{
-            color: #374d75;
-        }
-        p{
-            margin-left: 15px;
-            margin-bottom: 0;
-            font-size: 20px;
-            font-weight: 600;
-            a:hover{
-                color: #374d76;
+#inter_patients{
+    .navigation{
+        margin-top: 7px;
+        .nav{
+            padding: 0;
+            .nav-item{
+                margin-left: .9rem;
+                .nav-link{
+                    font-size: 16px;
+                    color: #888;
+                    border-bottom: 3px solid transparent;
+                    padding-bottom: 7px;
+                    transition: 0.2s all ease-in-out;
+                }
+                .active-list, .nav-link:hover{
+                    color: #363636;
+                    border-bottom-color:#0078bf;
+                }
+                .active-list{
+                    &:hover{
+                        background: transparent;
+                    }
+                }
             }
+        }
+    }
+    &_faq{
+        .patient__faq{
+            margin-bottom: 40px;
+            .heading_title{
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0 0 10px;
+            }
+            .accordion{
+                .card{
+                    border-radius: 0;
+                    margin-top: 3px;
+                    background: #f9f9f9;
+                    border: 1px solid #e8e9eb;
+                    &-header{
+                        color: #505763;
+                        background: 0 0;
+                        .acc_icon{
+                            color: #007791;
+                            margin-right: 10px;
+                        }
+                    }
+                    .card-body{
+                        &_item{
+                            display: flex;
+                            padding: 12px 30px 12px 43px;
+                            background-color: #fff;
+                            border: 1px solid #e8e9eb;
+                            border-top: none;
+                            color: #686f7a;
+                            letter-spacing: .3px;
+                            line-height: 1.33;
+                        }
+                    }
+                }
+                
+
+            }
+        }
+        .patient__faq:last-child{
+            margin: 0;
         }
     }
 }

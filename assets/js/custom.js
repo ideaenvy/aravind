@@ -354,8 +354,28 @@ for( i = 0; i < d_item.length; i++){
 
 const nav_item = document.querySelectorAll('.nav-link');
 for( i = 0; i < nav_item.length; i++){
-    nav_item[i].addEventListener("click", showele);
+    nav_item[i].addEventListener("click", showelements);
 }
+
+function showelements(e){
+    e.preventDefault();
+    let curList_item = document.querySelector('.active-list');
+    let itemId = curList_item.getAttribute('data-target');
+    if(itemId === null){
+        return false;
+    }else{
+    hideit(itemId);}
+    curList_item.classList.remove('active-list');
+    let showItemid = this.getAttribute('data-target');
+    console.log(showItemid);
+    this.classList.add('active-list');
+    if (showItemid === null){
+        return false;
+    }else{
+        showit(showItemid);
+    }
+}
+
 
 function showele(e){
     e.preventDefault();
