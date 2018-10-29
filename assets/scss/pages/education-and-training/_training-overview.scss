@@ -1,4 +1,3 @@
-
 .education-training{
   .slider{
     
@@ -86,7 +85,6 @@
   }
 }
 
-.col-lg-6{
 
   .sectitle{
     font-weight: 700;
@@ -102,7 +100,7 @@
     width: 52px;
     height: 3px;
     left: 16px;
-    bottom: 90%;
+    top: 30px;
     border-bottom: 4px solid;
   }
   .greytext{
@@ -112,32 +110,27 @@
     
     font-size: 14px;
   }
-}
 
 .single_events {
   position: relative;
   box-shadow: 0 1px 2px #ccc;
   background: #ececec;
   margin-bottom: 10px;
-  height: 100px;
-  padding: 4%;
-      .dateof_events {
-        position: absolute;
-        float: left;
-        
-        
-          .dates {
-            position: absolute;
-            list-style: none;
-            padding: 8px;
-            color: #fff;
-            background: #8ad014;
-            margin: 0;
-            text-align: center;
-            .dt {
-              border-bottom: 1px solid;
-              width: 28px;
-              }
+  padding: 20px;
+  display: flex;
+  .dateof_events {
+    display: flex;
+    .dates {
+      list-style: none;
+      padding: 8px;
+      color: #fff;
+      background: #8ad014;
+      margin: 0;
+      text-align: center;
+      .dt {
+        border-bottom: 1px solid;
+        width: 28px;
+        }
           
 
 
@@ -146,9 +139,9 @@
   
   }
   .contentof_events {
-    right: 0;
-    position: absolute;
-    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
     
     h2{
       font-size: 16px;

@@ -1,8 +1,12 @@
 .u_event_list{
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     background: #eeeded;
     .col-lg-4{
         padding: 0;
+    }
+    .date{
+        margin: 1rem;
+        text-align: right;
     }
     .img_container{
         position: relative;
