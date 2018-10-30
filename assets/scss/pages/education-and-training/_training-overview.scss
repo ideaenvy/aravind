@@ -89,25 +89,9 @@
   .sectitle{
     font-weight: 700;
     margin-bottom: 30px;
-  }
-  .greentext {
-    color: #8ad014;
-    
-  }
-  .greentext:after {
-    content: '';
-    position: absolute;
-    width: 52px;
-    height: 3px;
-    left: 16px;
-    top: 30px;
-    border-bottom: 4px solid;
-  }
-  .greytext{
     color: #555555;
   }
   p {
-    
     font-size: 14px;
   }
 
@@ -116,7 +100,7 @@
   box-shadow: 0 1px 2px #ccc;
   background: #ececec;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 12px;
   display: flex;
   .dateof_events {
     display: flex;
