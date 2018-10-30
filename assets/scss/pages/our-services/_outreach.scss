@@ -36,6 +36,13 @@
     }
     .side-head{
         font-family: $monserat_font;
+        text-transform: uppercase;
+    }
+    .item-list{
+        font-family: $monserat_font;
+    }
+    .activated-list{
+        font-weight: 800;
     }
 }
 .res{
