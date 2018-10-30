@@ -1,3 +1,43 @@
+#header{
+    ul.nav-menu{
+        li{
+            a{
+                font-family: $monserat_font;
+            }
+        }
+        .active{
+            a{
+                font-weight: 800;
+            }
+        }
+    }
+}
+#outreach{
+    .page-title{
+        font-family: $lato_font;
+        font-weight: bold;
+        line-height: 1.2em;
+        letter-spacing: .5px;
+    }
+    .main_text{
+        font-family: $osans_font;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    .side-heading{
+        font-family: $lato_font;
+        line-height: 1.2em;
+        letter-spacing: .5px;
+        margin-bottom: 1.1rem;
+    }
+    .head{
+        font-family: $oswald_font;
+        letter-spacing: .2px;
+    }
+    .side-head{
+        font-family: $monserat_font;
+    }
+}
 .res{
     .hovereffect {
         width: 100%;
@@ -52,4 +92,3 @@
         }
     }
 }
- 
