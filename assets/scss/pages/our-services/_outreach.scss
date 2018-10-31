@@ -5,8 +5,8 @@
                 font-family: $monserat_font;
             }
         }
-        .active{
-            a{
+        &> li.active{
+            & > a{
                 font-weight: 800;
             }
         }
@@ -42,12 +42,17 @@
     .side-head{
         font-family: $monserat_font;
         text-transform: uppercase;
+        font-size: 20px;
     }
     .item-list{
         font-family: $monserat_font;
+        font-size: 15px;
+        opacity: .7;
+        transition: all .5s;
     }
     .activated-list{
         font-weight: 800;
+        opacity: 1;
     }
 }
 .res{
