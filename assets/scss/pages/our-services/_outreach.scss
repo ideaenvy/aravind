@@ -4,7 +4,12 @@
             a{
                 font-family: $monserat_font;
             }
+            &:hover{
+                font-weight: 800;
+            }
         }
+        
+        
         &> li.active{
             & > a{
                 font-weight: 800;
@@ -15,7 +20,7 @@
 #outreach{
     .page-title{
         font-family: $lato_font;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2em;
         letter-spacing: .5px;
         padding: 12.4px 0;
@@ -27,11 +32,12 @@
     .main_text{
         font-family: $osans_font;
         font-size: 16px;
-        font-weight: lighter;
+        font-weight: 300;
     }
     .side-heading{
         font-family: $lato_font;
         line-height: 1.2em;
+        font-weight: 400;
         letter-spacing: .5px;
         margin-bottom: 1.1rem;
     }
@@ -48,6 +54,7 @@
         font-family: $monserat_font;
         font-size: 15px;
         opacity: .7;
+        font-weight: 500;
         transition: all .5s;
     }
     .activated-list{
