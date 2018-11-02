@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/flag-icon.min.css">
     <!-- main style -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- colors -->
     <link rel="stylesheet" href="assets/css/colors/main.css">
     <!-- elegant icon -->
@@ -38,231 +39,9 @@
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
     <link rel="shortcut icon" type="image/png" href="http://ideaenvypro.com/aravind_new/assets/img/favicon.png"/>
     <style>
-      .sidebar-speaciality {
-    margin-top: 40px;
-}
-.sidebar-speaciality-submenu{
-  display: table;
-  width: 100%;
-}
-.sidebar-speaciality-submenu li{
-  list-style: none;
-  display:table-cell;
-  table-layout:fixed;
-}
-.row-grids{
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-flow: row;
-  text-align: center;
-}
-.row-grids > div.activelink{
-  background-color:#364d75;
-  color:#fff;
-}
-.row-grids > .grid-items {
-  padding: 15px 0;
-  cursor: pointer;
-  border: 1px solid #364d75;
-}
-.dr-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.sub-widgets {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-.sub-widgets li:nth-child(odd) {
-  color: black;
-}
- 
-
-.sub-widgets li:nth-child(even) {
-  color: black;
-}
-.stickybar {
-  position: sticky;
-  top: 15%;
-}
-.activated-list {
-    border-bottom: 2px solid #fff;
-    font-size: 15px;
-    font-weight: bold;
-    color: white !important;
-    background-color: #364d75 !important;
-}
-.speciality-links ul>li{
-  list-style:none;
-  font-size: 14px;
-  background-color: #364d75;
-  color: #fff;
-  padding:5px 10px;
-  margin: 5px 0px;
-}
-.activated-listcon {
-  font-size: 15px;
-  font-weight: 600;
-  color:#364d75 !important;
-}
-.btn-pquery{
-  display:inline-block;
-  background-color:#a5b7ca;
-  padding: 15px 10px;
-  border-radius: 0px;
-  cursor: pointer;
-}
-
-.speciality-clinic .sub-widgets li {
-    padding: 8px 30px;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    cursor: pointer;
-    background: transparent;
-    transition: 0.3s;
-}
-.contact-clinic .sub-widgets li:nth-child(1) {
-  border-top: 1px solid;
-}
-
-.contact-clinic-head {
-  margin:20px 10px;
-}
-
-.contact-clinic .sub-widgets li:nth-child(1) {
-  border-top: 1px solid;
-}
-
-.contact-clinic .sub-widgets li {
-  padding: 10px 30px;
-  border-bottom: 1px solid;
-  border-right: 1px solid;
-  border-left: 1px solid;
-  cursor: pointer;
-  background: transparent;
-  transition: 0.3s;
-}
-.sub-widgets li:nth-child(odd) {
-  color: black;
-}
-.con-sub-head{
-  display:block;
-  text-align: left;
-  margin-top: 10px;
-  padding: 15px;
-  background-color: #aadaff;
-  cursor: pointer;
-}
-.contact-clinic .sub-widgets{
-  display: none;
-}
-
-.rotate {
-  -moz-transition: all .5s linear;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
-}
-.rotate.down {
-  -moz-transform:rotate(90deg);
-  -webkit-transform:rotate(90deg);
-  transform:rotate(90deg);
-}
-address {
-  margin: 30px 10px;
-}
-.address-sections{
-  display:none;
-}
-.speciality-clinic .form-group {
-  padding: 0px 10px;
-}
-
-.speciality-clinic .form-group label{
-  font-weight: bold;
-}
-
-
-.speciality-clinic .form-group option {
-  font-weight: 500;
-}
-.speciality-clinic .form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #fff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-.speciality-clinic .speciality-clinic-heading {
-    padding: 10px 10px;
-    background-color: #ffffff;
-    border-color: #17a2b8;
-    font-size: 1.2rem;
-    color: #007cff;
-    border-bottom: 2px solid #364d75;
-    margin-bottom: 0px;
-}
-.speciality-clinic .speciality-clinic-sub{
-  padding: 20px 10px;
-}
-.speciality-clinic .speciality-clinic-sub1{
-  margin-top: 20px;
-}
-.speciality-clinic .speciality-clinic-sub1 .grid-items {
-  padding: 10px 0px;
-  border-bottom: 1px solid;
-  cursor: pointer;
-  font-weight: bold;
-  color: black;
-}
-.activelink {
-    color: #007cff!important;
-    border-bottom: none !important;
-    border-top: 1px solid rgba(0, 0, 0, 0.22) !important;
-    border-right: 1px solid rgba(0, 0, 0, 0.22) !important;
-    border-left: 1px solid rgba(0, 0, 0, 0.22) !important;
-    background-color: white !important;
-    font-weight: bold !important;
-}
-.speciality-clinic .row-grids .grid-items {
-    border: none;
-}
-.speciality-clinic .row-grids .grid-items {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
-    border-top: none;
-    font-weight: 500;
-}
-#oresearch ul {
-    padding: 0;
-    margin: 0;
-}
-#oresearch ul li {
-    list-style: none;
-    margin: 40px 0px;
-}
-#oresearch ul li span {
-    display: block;
-    font-style: italic;
-    margin: 10px 0px;
-    font-size: 13px;
-    font-weight: 300;
-    text-align: right;
-}
-#odoctors .doctor-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-}
-#odoctors .doctor-list h5 {
-    color: rgb(112,48,160);
-    text-decoration: underline;
-}
-#odoctors .doctor-list h6 {
-    color: red;
-}
-#odoctors .doctor-list .med-head {
-    color: red;
-    text-decoration: none;
-}
+        .row-grids {
+            grid-template-columns: repeat(5, 1fr);
+        }
     </style>
 </head>
 
@@ -375,266 +154,266 @@ address {
         </div>
     </header>
     <!-- // Header  -->
-
+    
          
      <div class="margin-top-30px">
         <div class="container-fluid">
             <div class="wrapper">
                 <div class="speciality-clinic">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="stickybar margin-bottom-15px">
-                                    <div class="background-white border-radius-0 margin-bottom-45px box-shadow">
-                                        <h5 class="side-head">SPECIALITY CLINICS</h5>
-                                        <ul class="sub-widgets">
-                                            <li class="item-list activated-list">Cataract</li>
-                                            <li class="item-list">Children Eye Care</li>
-                                            <li class="item-list">Cornea</li>
-                                            <li class="item-list">General Ophthalmology</li>
-                                            <li class="item-list">Glaucoma</li>
-                                            <li class="item-list">Low Vision & Vision Rehabilitation</li>
-                                            <li class="item-list">Neuro Ophthalmology</li>
-                                            <li class="item-list">Orbit, Oculoplasty, Oncology</li>
-                                            <li class="item-list">Retina & Vitreous</li>
-                                            <li class="item-list">Uvea</li>
-                                        </ul>
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stickybar margin-bottom-15px">
+                                <div class="border-radius-0 margin-bottom-45px">
+                                    <h3 class="side-head">SPECIALITY CLINICS</h3>
+                                    <ul class="sub-widgets">
+                                        <li class="item-list activated-list"><span>Cataract</span></li>
+                                        <li class="item-list"><span>Children Eye Care</span></li>
+                                        <li class="item-list"><span>Cornea</span></li>
+                                        <li class="item-list"><span>General Ophthalmology</span></li>
+                                        <li class="item-list"><span>Glaucoma</span></li>
+                                        <li class="item-list"><span>Low Vision & Vision Rehabilitation</span></li>
+                                        <li class="item-list"><span>Neuro Ophthalmology</span></li>
+                                        <li class="item-list"><span>Orbit, Oculoplasty, Oncology</span></li>
+                                        <li class="item-list"><span>Retina & Vitreous</span></li>
+                                        <li class="item-list"><span>Uvea</span></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-9">
-                            <div class="background-white margin-bottom-15px">
-                                <div class="row-grids" id="testNav">
-                                    <div class="grid-items my-auto activelink" data-target="overview">Overview</div>
-                                    <div class="grid-items my-auto" data-target="services">Diagnostics & Treatment</div> 
-                                    <div class="grid-items my-auto" data-target="odoctors">Our Doctors</div> 
-                                    <div class="grid-items my-auto" data-target="oresearch">Ongoing Research</div> 
-                                    <div class="grid-items my-auto" data-target="oeducation">Training</div> 
-                                </div>
-                            </div>    
-                                <section id="overview" class="speciality-clinic-section"   style="display: block;">
-                                    <div class="margin-bottom-30px padding-30px h-100 background-white box-shadow">
-                                        <div class="row">
-                                           
-                                            <div class="col-md-8">
-                                               <h4>What is the Retina?</h4>
-                                                <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
-                                                </p>
-                                            </div>
-                                            <div class="col-md-4 margin-bottom-30px">
-                                                <div class="thum">
-                                                    <a href="#">
-                                                        <img src="assets/img/madurai.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section id="services" style="display: none;">
-                                    <div class="margin-bottom-30px padding-30px h-100 background-white box-shadow">
-                                        <div class="row">
-                                            <div class="col-md-12  margin-bottom-30px">
-                                                <h4 class="speciality-clinic-head"><i class="fas fa-clipboard"></i>  Cataract - Diagnostic and Treatment</h4><hr>
-                                            </div>
-                                            <div class="col-md-8">
-                                               <h4>What is the Retina?</h4>
-                                                <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
-                                                </p>
-                                            </div>
-                                            <div class="col-md-4 margin-bottom-30px">
-                                                <div class="thum">
-                                                    <a href="#">
-                                                        <img src="assets/img/madurai.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 margin-bottom-30px">
-                                                <div class="thum">
-                                                    <a href="#">
-                                                        <img src="assets/img/madurai.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8  padding-30px">
-                                               <h4>What is the Retina?</h4>
-                                                <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
-                                                </p>
-                                            </div>
-                                            <div class="col-md-8  padding-30px">
-                                                <h4>What is the Retina?</h4>
-                                                 <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
-                                                 </p>
-                                             </div>
-                                             <div class="col-md-4 margin-bottom-30px">
-                                                 <div class="thum">
-                                                     <a href="#">
-                                                         <img src="assets/img/madurai.jpg" alt="">
-                                                     </a>
-                                                 </div>
-                                             </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section id="odoctors" style="display: none;">
-                                    <div class="padding-30px margin-bottom-30px h-100 background-white box-shadow">
-                                        <div class="row">
-                                            <div class="col-md-12  margin-bottom-30px">
-                                                <h4><i class="fas fa-user-md"></i> Cataract - Our Doctors</h4><hr>
-                                            </div>
-                                            <div class="col-md-12 margin-bottom-30px">
-                                                <div class="doctor-list">
-                                                    <div>
-                                                        <h5>ARAVIND - MADURAI</h5>
-                                                        <h6>CHIEF</h6>
-                                                        <p>Dr. R. Kim, DO,DNB</p>
-                                                        <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
-                                                        <ul>
-                                                            <li>Dr. K. Naresh Babu, MS</li>
-                                                            <li>Dr. T.P. Vignesh, MS</li>
-                                                            <li>Dr. Renu P Rajan, MS</li>
-                                                            <li>Dr. Karthik Kumar , MS</li>
-                                                            <li>Dr.Haemoglobin, MS</li>
-                                                            <li>Dr.K.C. Lavanya, DNB</li>
-                                                            <li>Dr. Sreedurga Kiran Mayi, MS</li>
-                                                            <li>Dr.Jayant Kumar, MS</li>
-                                                            <li>Dr. Girish V Baliga, MS</li>
-                                                            <li>Dr. Chitaranjan Misra, DNB</li>
-                                                            <li>Dr. Prachi Gurav, MS</li>
-                                                            <li>Dr. Aditya Maitray, MS</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div>
-                                                        <h5>ARAVIND - COIMBATORE</h5>
-                                                        <h6>CHIEF</h6>
-                                                        <p>Dr. V. Narendran, DO, DNB</p>
-                                                        <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
-                                                        <ul>
-                                                            <li>Dr. Rodney John Morris, MS</li>
-                                                            <li>Dr. V.R. Saravanan, DO, DNB</li>
-                                                            <li>Dr. Parag K Shah, DNB</li>
-                                                            <li>Dr. George Manayath, MS, FRCS</li>
-                                                            <li>Dr. Upendra Babu, MS</li>
-                                                            <li>Dr. Karan Annapurkumarasamy, MS</li>
-                                                            <li>Dr. Palmeera D Souza, DO, DNB</li>
-                                                            <li>Dr. A. Ramya, MD</li>
-                                                            <li>Dr. S. Prema, MS</li>
-                                                            <li>Dr. Ratneshranjan, MS</li>
-                                                            <li>Dr. Saveen Gupta, MS</li>
-                                                            <li>Dr. Arvind Jain, MS</li>
-                                                            <li>Dr. Suganya, MS</li>
-                                                            <li>Dr. Anant Bhosale, MS</li>
-                                                            <li>Dr. Swapnil Shivaji Vidhate, MS</li>
-                                                            <li>Dr. Vini Laxman Badlani, DNB</li>
-                                                            <li>Dr. A.S. Prashanth, MS</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div>
-                                                        <h5>ARAVIND - TIRUNELVELI</h5>
-                                                        <h6>CHIEF</h6>
-                                                        <p>Dr. V. Narendran, DO, DNB</p>
-                                                        <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
-                                                        <ul>
-                                                            <li>Dr. Syed Mohideen Abdul Khadar, MS</li>
-                                                            <li>Dr. Shah Pratik Kanaiyalal, MS</li>
-                                                            <li>Dr. Abishek Reddy, MS</li>
-                                                            <li>Dr. Aswini Patel,MS</li>
-                                                            <li>Dr. Sharan Kumar, DO, DNB</li>
-                                                            <li>Dr. Teny Kurian</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div>
-                                                        <h5>ARAVIND - PONDICHERRY</h5>
-                                                        <h6>CHIEF</h6>
-                                                        <p>Dr. Pankaja Dhoble, MS</p>
-                                                        <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
-                                                        <ul>
-                                                            <li>Dr. Manavi D. Sindal, MS</li>
-                                                            <li>Dr. D. Santhosh, MS</li>
-                                                            <li>Dr. Harshal Pradeep Gondhale, MS, DNB</li>
-                                                            <li>Dr. Ayushi Sinha, DNB</li>
-                                                            <li>Dr. Roshni Mohan, MS</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div>
-                                                        <h5>ARAVIND - SALEM</h5>
-                                                        <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
-                                                        <ul>
-                                                            <li>Dr. Hemalatha, MS</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div>
-                                                        <h5>ARAVIND - CHENNAI</h5>
-                                                        <h6>CHIEF</h6>
-                                                        <p>Dr. Anand Tajendran, DNB, FRCS</p>
-                                                        <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
-                                                        <ul>
-                                                            <li>Dr. Karthik Srinivasan, MS</li>
-                                                            <li>Dr. Prabhu, DNB</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section id="oresearch" style="display: none;">
-                                    <div class="padding-30px margin-bottom-30px h-100 background-white box-shadow">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                    <h4><i class="fa fa-file"></i>  Cataract - Ongoing Research</h4>
-                                                    <hr>
-                                                    <ul>
-                                                        <li><p class="text-black text-medium">Microperimetry biofeedback training in patients with irreversible bilateral vision deterioration  <span> - Dr. Kim, Chief Medical Officer, Retina vitreous services, Aravind Eye Hospital, Madurai</span></p></li>
-                                                        <li><p class="text-black text-medium">CLS1003-301, SAPPHIRE: A randomized, masked, controlled trial to study the safety and efficacy of suprachoroidal CLS-TA in conjunction with IntravitrealAflibercept in subjects with Retinal Vein Occlusion <span> - Dr. K. Naresh Babu, Professor, Department of Retina – Vitreous Services, AEH, Madurai</span></p></li>
-                                                        <li><p class="text-black text-medium">Structured Post-marketing surveillance to collect the safety data of intravitreal aflibercept (EYLEA) in patients of wet age related macular degeneration during real world clinical practice <span> -  Dr. A Karthik Kumar, Medical Consultant, Department of Retina and Vitreous, Aravind Eye Hospital, Madurai</span></p></li>
-                                                        <li><p class="text-black text-medium"> The UK-India Collaboration to increase research capability and capacity to tackle blindness due to Diabetic Retinopathy <span> - Dr. Kim, Chief Medical Officer, Aravind Eye Hospital Madurai</span></p></li>
-                                                        <li><p class="text-black text-medium">CLS1003-302,TOPAZ: A Randomized, Masked, Controlled Trial To Study The Safety And Efficacy Of Suprachoroidal Cls-Ta In Combination With An Intravitreal Anti-VEGF Agent In Subjects With Retinal Vein Occlusion <span> - Dr. K. Naresh Babu, Professor, Department of Retina – Vitreous Services, Aravind Eye Hospital, Madurai</span></p></li>
-                                                    </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section id="oeducation" style="display: none;">
-                                    <div class="padding-30px margin-bottom-30px h-100 background-white box-shadow">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <h4><i class="fas fa-graduation-cap"></i> Cataract - Training</h4>
-                                                <hr>
-                                                <ul>
-                                                    <h4>Location 1</h4>
-                                                    <li>Eucation and Training name 1</li>
-                                                    <li>Eucation and Training name 2</li>
-                                                    <li>Eucation and Training name 3</li>
-                                                    <li>Eucation and Training name 4</li>
-                                                    <li>Eucation and Training name 5</li>
-                                                    <li>Eucation and Training name 6</li>
-                                                    <li>Eucation and Training name 7</li>
-                                                    <li>Eucation and Training name 8</li>
-                                                    <li>Eucation and Training name 9</li>
-                                                    <li>Eucation and Training name 10</li>
-                                                    <li>Eucation and Training name 11</li>
-                                                    <li>Eucation and Training name 12</li>
-                                                    <h4 class="margin-top-15px">Location 2</h4>
-                                                    <li>Eucation and Training name 1</li>
-                                                    <li>Eucation and Training name 2</li>
-                                                    <li>Eucation and Training name 3</li>
-                                                    <li>Eucation and Training name 4</li>
-                                                    <li>Eucation and Training name 5</li>
-                                                    <li>Eucation and Training name 6</li>
-                                                    <li>Eucation and Training name 7</li>
-                                                    <li>Eucation and Training name 8</li>
-                                                    <li>Eucation and Training name 9</li>
-                                                    <li>Eucation and Training name 10</li>
-                                                    <li>Eucation and Training name 11</li>
-                                                    <li>Eucation and Training name 12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
                             </div>
                         </div>
+                        <div class="col-md-9">
+                            <div class="margin-bottom-15px">
+                                <div class="row-grids" id="testNav">
+                                    <div class="grid-items my-auto text-black text-medium activelink" data-target="overview">Overview</div>
+                                    <div class="grid-items my-auto text-black text-medium" data-target="services">Doctors &amp; Staff</div>
+                                    <div class="grid-items my-auto text-black text-medium" data-target="odoctors">Speciality Clinics</div>
+                                    <div class="grid-items my-auto text-black text-medium" data-target="oresearch">Vision Centres</div>
+                                    <div class="grid-items my-auto text-black text-medium" data-target="oeducation">Training</div>
+                                </div>
+                            </div>   
+                            <section id="overview" class="speciality-clinic-section"   style="display: block;">
+                                <div class="margin-bottom-30px padding-30px h-100">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-8">
+                                            <h4>What is the Retina?</h4>
+                                            <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 margin-bottom-30px">
+                                            <div class="thum">
+                                                <a href="#">
+                                                    <img src="assets/img/madurai.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="services" style="display: none;">
+                                <div class="margin-bottom-30px padding-30px h-100">
+                                    <div class="row">
+                                        <div class="col-md-12  margin-bottom-30px">
+                                            <h4 class="speciality-clinic-head"><i class="fas fa-clipboard"></i>  Cataract - Diagnostic and Treatment</h4><hr>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>What is the Retina?</h4>
+                                            <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 margin-bottom-30px">
+                                            <div class="thum">
+                                                <a href="#">
+                                                    <img src="assets/img/madurai.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 margin-bottom-30px">
+                                            <div class="thum">
+                                                <a href="#">
+                                                    <img src="assets/img/madurai.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8  padding-30px">
+                                            <h4>What is the Retina?</h4>
+                                            <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-8  padding-30px">
+                                            <h4>What is the Retina?</h4>
+                                                <p>loremque modi consequatur? Nihil dolor, fugit perferendis a officia omnis provident at ipsam asperiores ex, exercitationem maxime ad, soluta aut beatae quidem aperiam sequi illum.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4 margin-bottom-30px">
+                                                <div class="thum">
+                                                    <a href="#">
+                                                        <img src="assets/img/madurai.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="odoctors" style="display: none;">
+                                <div class="padding-30px margin-bottom-30px h-100">
+                                    <div class="row">
+                                        <div class="col-md-12  margin-bottom-30px">
+                                            <h4><i class="fas fa-user-md"></i> Cataract - Our Doctors</h4><hr>
+                                        </div>
+                                        <div class="col-md-12 margin-bottom-30px">
+                                            <div class="doctor-list">
+                                                <div>
+                                                    <h5>ARAVIND - MADURAI</h5>
+                                                    <h6>CHIEF</h6>
+                                                    <p>Dr. R. Kim, DO,DNB</p>
+                                                    <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
+                                                    <ul>
+                                                        <li>Dr. K. Naresh Babu, MS</li>
+                                                        <li>Dr. T.P. Vignesh, MS</li>
+                                                        <li>Dr. Renu P Rajan, MS</li>
+                                                        <li>Dr. Karthik Kumar , MS</li>
+                                                        <li>Dr.Haemoglobin, MS</li>
+                                                        <li>Dr.K.C. Lavanya, DNB</li>
+                                                        <li>Dr. Sreedurga Kiran Mayi, MS</li>
+                                                        <li>Dr.Jayant Kumar, MS</li>
+                                                        <li>Dr. Girish V Baliga, MS</li>
+                                                        <li>Dr. Chitaranjan Misra, DNB</li>
+                                                        <li>Dr. Prachi Gurav, MS</li>
+                                                        <li>Dr. Aditya Maitray, MS</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>ARAVIND - COIMBATORE</h5>
+                                                    <h6>CHIEF</h6>
+                                                    <p>Dr. V. Narendran, DO, DNB</p>
+                                                    <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
+                                                    <ul>
+                                                        <li>Dr. Rodney John Morris, MS</li>
+                                                        <li>Dr. V.R. Saravanan, DO, DNB</li>
+                                                        <li>Dr. Parag K Shah, DNB</li>
+                                                        <li>Dr. George Manayath, MS, FRCS</li>
+                                                        <li>Dr. Upendra Babu, MS</li>
+                                                        <li>Dr. Karan Annapurkumarasamy, MS</li>
+                                                        <li>Dr. Palmeera D Souza, DO, DNB</li>
+                                                        <li>Dr. A. Ramya, MD</li>
+                                                        <li>Dr. S. Prema, MS</li>
+                                                        <li>Dr. Ratneshranjan, MS</li>
+                                                        <li>Dr. Saveen Gupta, MS</li>
+                                                        <li>Dr. Arvind Jain, MS</li>
+                                                        <li>Dr. Suganya, MS</li>
+                                                        <li>Dr. Anant Bhosale, MS</li>
+                                                        <li>Dr. Swapnil Shivaji Vidhate, MS</li>
+                                                        <li>Dr. Vini Laxman Badlani, DNB</li>
+                                                        <li>Dr. A.S. Prashanth, MS</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>ARAVIND - TIRUNELVELI</h5>
+                                                    <h6>CHIEF</h6>
+                                                    <p>Dr. V. Narendran, DO, DNB</p>
+                                                    <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
+                                                    <ul>
+                                                        <li>Dr. Syed Mohideen Abdul Khadar, MS</li>
+                                                        <li>Dr. Shah Pratik Kanaiyalal, MS</li>
+                                                        <li>Dr. Abishek Reddy, MS</li>
+                                                        <li>Dr. Aswini Patel,MS</li>
+                                                        <li>Dr. Sharan Kumar, DO, DNB</li>
+                                                        <li>Dr. Teny Kurian</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>ARAVIND - PONDICHERRY</h5>
+                                                    <h6>CHIEF</h6>
+                                                    <p>Dr. Pankaja Dhoble, MS</p>
+                                                    <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
+                                                    <ul>
+                                                        <li>Dr. Manavi D. Sindal, MS</li>
+                                                        <li>Dr. D. Santhosh, MS</li>
+                                                        <li>Dr. Harshal Pradeep Gondhale, MS, DNB</li>
+                                                        <li>Dr. Ayushi Sinha, DNB</li>
+                                                        <li>Dr. Roshni Mohan, MS</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>ARAVIND - SALEM</h5>
+                                                    <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
+                                                    <ul>
+                                                        <li>Dr. Hemalatha, MS</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5>ARAVIND - CHENNAI</h5>
+                                                    <h6>CHIEF</h6>
+                                                    <p>Dr. Anand Tajendran, DNB, FRCS</p>
+                                                    <h5 class="med-head">MEDICAL CONSULTANTS:</h5>
+                                                    <ul>
+                                                        <li>Dr. Karthik Srinivasan, MS</li>
+                                                        <li>Dr. Prabhu, DNB</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="oresearch" style="display: none;">
+                                <div class="padding-30px margin-bottom-30px h-100">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                                <h4><i class="fa fa-file"></i>  Cataract - Ongoing Research</h4>
+                                                <hr>
+                                                <ul>
+                                                    <li><p class="text-black text-medium">Microperimetry biofeedback training in patients with irreversible bilateral vision deterioration  <span> - Dr. Kim, Chief Medical Officer, Retina vitreous services, Aravind Eye Hospital, Madurai</span></p></li>
+                                                    <li><p class="text-black text-medium">CLS1003-301, SAPPHIRE: A randomized, masked, controlled trial to study the safety and efficacy of suprachoroidal CLS-TA in conjunction with IntravitrealAflibercept in subjects with Retinal Vein Occlusion <span> - Dr. K. Naresh Babu, Professor, Department of Retina – Vitreous Services, AEH, Madurai</span></p></li>
+                                                    <li><p class="text-black text-medium">Structured Post-marketing surveillance to collect the safety data of intravitreal aflibercept (EYLEA) in patients of wet age related macular degeneration during real world clinical practice <span> -  Dr. A Karthik Kumar, Medical Consultant, Department of Retina and Vitreous, Aravind Eye Hospital, Madurai</span></p></li>
+                                                    <li><p class="text-black text-medium"> The UK-India Collaboration to increase research capability and capacity to tackle blindness due to Diabetic Retinopathy <span> - Dr. Kim, Chief Medical Officer, Aravind Eye Hospital Madurai</span></p></li>
+                                                    <li><p class="text-black text-medium">CLS1003-302,TOPAZ: A Randomized, Masked, Controlled Trial To Study The Safety And Efficacy Of Suprachoroidal Cls-Ta In Combination With An Intravitreal Anti-VEGF Agent In Subjects With Retinal Vein Occlusion <span> - Dr. K. Naresh Babu, Professor, Department of Retina – Vitreous Services, Aravind Eye Hospital, Madurai</span></p></li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="oeducation" style="display: none;">
+                                <div class="padding-30px margin-bottom-30px h-100">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4><i class="fas fa-graduation-cap"></i> Cataract - Training</h4>
+                                            <hr>
+                                            <ul>
+                                                <h4>Location 1</h4>
+                                                <li>Eucation and Training name 1</li>
+                                                <li>Eucation and Training name 2</li>
+                                                <li>Eucation and Training name 3</li>
+                                                <li>Eucation and Training name 4</li>
+                                                <li>Eucation and Training name 5</li>
+                                                <li>Eucation and Training name 6</li>
+                                                <li>Eucation and Training name 7</li>
+                                                <li>Eucation and Training name 8</li>
+                                                <li>Eucation and Training name 9</li>
+                                                <li>Eucation and Training name 10</li>
+                                                <li>Eucation and Training name 11</li>
+                                                <li>Eucation and Training name 12</li>
+                                                <h4 class="margin-top-15px">Location 2</h4>
+                                                <li>Eucation and Training name 1</li>
+                                                <li>Eucation and Training name 2</li>
+                                                <li>Eucation and Training name 3</li>
+                                                <li>Eucation and Training name 4</li>
+                                                <li>Eucation and Training name 5</li>
+                                                <li>Eucation and Training name 6</li>
+                                                <li>Eucation and Training name 7</li>
+                                                <li>Eucation and Training name 8</li>
+                                                <li>Eucation and Training name 9</li>
+                                                <li>Eucation and Training name 10</li>
+                                                <li>Eucation and Training name 11</li>
+                                                <li>Eucation and Training name 12</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>  
