@@ -357,6 +357,15 @@ for( i = 0; i < nav_item.length; i++){
     nav_item[i].addEventListener("click", showelements);
 }
 
+const disease = document.querySelectorAll('.persons');
+for(i=0; i < disease.length; i++){
+    disease[i].addEventListener('click', show_disease);
+}
+
+function show_disease(e){
+    alert();
+}
+
 function showelements(e){
     e.preventDefault();
     let curList_item = document.querySelector('.active-list');
