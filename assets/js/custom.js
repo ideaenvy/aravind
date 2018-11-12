@@ -371,7 +371,8 @@ function show_disease(e){
         let newitemid = this.getAttribute('data-target');
         this.classList.add('activate');
         showit(newitemid);
-        document.getElementById(newitemid).scrollIntoView();
+        var y = document.getElementById(newitemid);
+        scroll(y);
     }else{
         let itemId = curList_item.getAttribute('data-target');
         console.log(itemId);
@@ -387,9 +388,19 @@ function show_disease(e){
             return false;
         }else{
             showit(showItemid);
-            document.getElementById(showItemid).scrollIntoView();
+            var x = document.getElementById(showItemid);
+            scroll(x);
         }
     }
+}
+function scroll(el) {
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'});
+    
+    setTimeout(() => {
+    window.scrollBy(0, -120);
+    }, 500);
 }
 
 function showelements(e){
