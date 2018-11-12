@@ -92,8 +92,12 @@
 .persons{
     cursor: pointer;
 }
+#Layer_1{
+    border-bottom: 2px solid;
+    border-bottom-style: dotted;
+}
 .activate{
-    transform: translateY(-10%);
+    transform: translateY(-3%);
 }
 .disease_container{
     background: lightgray;
@@ -118,5 +122,15 @@
         a{
             font-size: unset;
         }
+    }
+}
+@media only screen and (max-width: 740px) {
+    .panel {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .panel {
+        width: 100%;
     }
 }

@@ -2,6 +2,8 @@
     .contain{
         display: flex;
         margin: 15px 0;
+        flex-wrap: wrap;
+        flex-direction: column;
         border-right: 1px solid #fff;
         .eye-bank_address{
             padding: 9px;
