@@ -55,8 +55,10 @@ gulp.task('serve', ['sass'], function(){
   });
 
   //gulp.watch(['assets/scss/*.scss'], ['sass']);
-  gulp.watch(['assets/scss/**/**/*.scss','assets/scss/**/*.scss' ,'assets/scss/*.scss','assets/css/*.css' ], ['sass']).on('change', browserSync.reload);
-gulp.watch(['*.html','**/*.html']).on('change', browserSync.reload);
+  gulp.watch(['assets/scss/**/**/*.scss'], ['sass']).on('change', browserSync.reload);
+  //gulp.watch(['assets/scss/**/**/*.scss','assets/scss/**/*.scss' ,'assets/scss/*.scss' ], ['sass']).on('change', browserSync.reload);
+//gulp.watch(['*.html','**/*.html']).on('change', browserSync.reload);
+gulp.watch(['**/*.html']).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
