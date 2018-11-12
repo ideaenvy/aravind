@@ -363,7 +363,33 @@ for(i=0; i < disease.length; i++){
 }
 
 function show_disease(e){
-    alert();
+    e.preventDefault();
+    let curList_item = document.querySelector('.activate');
+    if (curList_item === null){
+        default_item = this.getAttribute('default-target');
+        hideit(default_item);
+        let newitemid = this.getAttribute('data-target');
+        this.classList.add('activate');
+        showit(newitemid);
+        document.getElementById(newitemid).scrollIntoView();
+    }else{
+        let itemId = curList_item.getAttribute('data-target');
+        console.log(itemId);
+        if(itemId === null){
+            return false;
+        }else{
+            hideit(itemId);
+        }
+        curList_item.classList.remove('activate');
+        let showItemid = this.getAttribute('data-target');
+        this.classList.add('activate');
+        if (showItemid === null){
+            return false;
+        }else{
+            showit(showItemid);
+            document.getElementById(showItemid).scrollIntoView();
+        }
+    }
 }
 
 function showelements(e){
