@@ -104,3 +104,12 @@ p.bold-head {
     }
   }
 }
+.volunteer-btn{
+  border-radius: 20px;
+  margin: 15px 0 15px;
+  cursor: pointer;
+  &:hover{
+    color: #fff;
+    background: #0c2c75;
+  }
+}
