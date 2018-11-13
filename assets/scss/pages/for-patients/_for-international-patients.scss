@@ -1,4 +1,4 @@
-#inter_patients{
+.vertical_menu{
     .navigation{
         margin-top: 7px;
         .nav{
@@ -24,6 +24,8 @@
             }
         }
     }
+}
+#inter_patients{
     &_faq{
         .patient__faq{
             margin-bottom: 40px;
