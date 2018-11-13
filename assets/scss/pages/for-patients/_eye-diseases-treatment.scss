@@ -134,3 +134,36 @@
         width: 100%;
     }
 }
+.rm-bar{
+    color: transparent !important;
+    width: 0 !important;
+    p > a{
+        color: transparent !important;
+    }
+}
+.enquiry{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+    transition: color cubic-bezier(0.39, 0.575, 0.565, 1) ease-in-out;
+    transition: width 0.5s ease-out;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        span{
+            cursor: pointer;
+        }
+        .enquiry_text{
+            margin: 0 auto;
+            a{
+                color: #1b61c4;
+                font-weight: 500;
+            }
+        }
+    }
+}

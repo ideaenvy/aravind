@@ -362,6 +362,16 @@ for(i=0; i < disease.length; i++){
     disease[i].addEventListener('click', show_disease);
 }
 
+const enq = document.querySelector('#close-enquiry');
+enq.addEventListener('click', rmbar);
+
+function rmbar(e){
+    e.preventDefault();
+    let close_item = this.getAttribute('data-target');
+    document.getElementById(close_item).classList.add('rm-bar');
+
+}
+
 function show_disease(e){
     e.preventDefault();
     let curList_item = document.querySelector('.activate');
