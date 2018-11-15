@@ -1,0 +1,75 @@
+.top-section{
+    .titlebar{
+        background: #222;
+        font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+        padding: 60px 0;
+        &_title{
+            font-size: 36px;
+            line-height: 41px;
+            color: #fff;
+            margin-top: 21px;
+            margin-bottom: 10.5px;
+        }
+        &_headline{
+            font-size: 20px;
+            line-height: 27px;
+            color: #fff;
+        }
+    }
+}
+.vertical_menu{
+    .navigation{
+        padding-left: 30px;
+        .nav{
+            .nav-item:first-child{
+                margin: 0;
+            }
+        }
+    }
+}
+.course__type{
+    padding: 30px;
+    .accordion{
+        .card{
+            border-radius: 0;
+            margin-top: 3px;
+            background: #f9f9f9;
+            border: 1px solid #e8e9eb;
+            .card-header{
+                color: #505763;
+                background: 0;
+                border: none;
+            }
+            .card-body{
+                .card-body_item {
+                    display: flex;
+                    padding: 12px 30px 12px 43px;
+                    background-color: #fff;
+                    border: 1px solid #e8e9eb;
+                    border-top: none;
+                    color: #686f7a;
+                    letter-spacing: .3px;
+                    line-height: 1.33;
+                }
+                .branch {
+                    background: #007791;
+                    color: #fff;
+                }
+                .left-content {
+                    display: flex;
+                    align-items: flex-start;
+                    align-self: center;
+                    font-weight: 600;
+                    width: 50%;
+                }
+                .item-details{
+                    .cover_item{
+                        span{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

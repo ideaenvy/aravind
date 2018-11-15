@@ -96,8 +96,31 @@ p.bold-head {
 }
 #accordion-faq{
   .card{
+    border:unset;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    background: unset;
+    .card-header{
+      background: unset;
+      color: #333;
+      border: unset;
+      .acc-head{
+        padding: .375rem .75rem .375rem 0;
+        span{
+          svg{
+            transition: all 0.5s ease-in;
+          }
+        }
+      }
+      .flip{
+        span{
+          svg{
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
     .card-body{
-      padding: 20PX;
+      padding: 10px 4.8px;
     }
     .body_text{
       margin: 0;
@@ -109,5 +132,17 @@ p.bold-head {
   &:hover{
     color: #fff;
     background: #0c2c75;
+  }
+}
+.project-container{
+  position: relative;
+  padding: 0 30px;
+  img{
+    box-shadow: 0 0 10px 1px #00000030;
+  }
+  .btn-container{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
   }
 }

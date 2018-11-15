@@ -346,6 +346,19 @@ function collapse(e){
     }
 }
 
+const acc = document.querySelectorAll('.acc-head');
+for(i=0; i < acc.length; i++){
+    acc[i].addEventListener('click', toggle_btn);
+}
+
+function toggle_btn(e){
+    e.preventDefault();
+    const acc = document.querySelectorAll('.acc-head');
+    for(i=0; i < acc.length; i++){
+        acc[i].classList.remove('flip');
+    }
+    this.classList.add('flip');
+}
 
 const d_item = document.querySelectorAll('.item-list');
 for( i = 0; i < d_item.length; i++){
@@ -363,7 +376,10 @@ for(i=0; i < disease.length; i++){
 }
 
 const enq = document.querySelector('#close-enquiry');
-enq.addEventListener('click', rmbar);
+if(enq !== null){
+    enq.addEventListener('click', rmbar);
+}
+
 
 function rmbar(e){
     e.preventDefault();
