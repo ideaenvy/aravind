@@ -73,3 +73,22 @@
         }
     }
 }
+.project-enquiry{
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+    transition: color cubic-bezier(.39,.575,.565,1) ease-in-out;
+    transition: width .5s ease-out;
+    display: flex;
+    align-items: center;
+    .enquiry_text{
+        text-align: center;
+        margin: 0;
+        a{
+            color: #1b61c4;
+            font-weight: 500;
+        }
+    }
+}
