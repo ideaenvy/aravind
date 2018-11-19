@@ -64,7 +64,7 @@
         }
     }
     ul{
-        padding-left: 1rem;
+        padding: 0;
         margin: 0;
     }
     .disease_category{
@@ -73,17 +73,26 @@
             padding: 0;
             margin: 0;
             .item{
+                cursor: pointer;
                 font-size: 17px;
                 font-weight: 500;
                 margin-bottom: 5px;
             }
+            .current{
+                color: #135a94;
+            }
             &-child{
+                cursor: pointer;
                 list-style: none;
                 margin-bottom: 5px;
                 li{
                     font-size: 15px;
                     font-weight: 400;
                     color: #888;
+                    transition: color 500ms ease-in-out;
+                    &:hover{
+                        color: rgb(19, 15, 15);
+                    }
                 }
             }
         }
