@@ -34,7 +34,7 @@
         <script src="../assets/js/jquery-3.2.1.min.js"></script>
         <!-- fontawesome  -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png"/>
         <link rel="shortcut icon" type="image/png" href="http://ideaenvypro.com/aravind_new/../assets/img/favicon.png"/>
 
@@ -227,7 +227,7 @@
                         <div id="eye_surgery" class="padding-30px margin-bottom-15px" style="display:none;">
                             <p class="body_text">Patients who require surgery or monitoring will be asked to get admitted in the hospital. Patients can choose from the different types of rooms based on the availability. At the time of counseling, the counselors will assist you in selecting the room, surgical techniques and implants available. Based on your convenience, you can choose the package of your choice. Cashless facilities and reimbursement certificates can be availed as applicable.</p>
                             <p class="body_text">Many of the surgeries are being done as day care procedures. Patients undergoing day care procedures need not stay in the hospital after the surgery. The package charges vary based on the type of accommodation selected for procedures other than the day care. Following are the different types of accommodation facilities available:</p>
-                            <div class="gallery">
+                            <!-- <div class="gallery">
                                 <div class="img-w"><img src="https://images.unsplash.com/photo-1485766410122-1b403edb53db?dpr=1&auto=format&fit=crop&w=1500&h=846&q=80&cs=tinysrgb&crop=" alt="" /></div>
                                 <div class="img-w"><img src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" /></div>
                                 <div class="img-w"><img src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" /></div>
@@ -237,6 +237,55 @@
                                 <div class="img-w"><img src="https://images.unsplash.com/photo-1470171119584-533105644520?dpr=1&auto=format&fit=crop&w=1500&h=886&q=80&cs=tinysrgb&crop=" alt="" /></div>
                                 <div class="img-w"><img src="https://images.unsplash.com/photo-1485881787686-9314a2bc8f9b?dpr=1&auto=format&fit=crop&w=1500&h=969&q=80&cs=tinysrgb&crop=" alt="" /></div>
                                 <div class="img-w"><img src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                            </div> -->
+                            <div id="wrapper">
+                                <div id="slider-wrap">
+                                    <ul id="slider">
+                                    <li style="background:url('http://via.placeholder.com/640x360')">
+                                            <div>
+                                                <h3>Slide #1</h3>
+                                            </div>
+                                        </li>
+                                    
+                                        <li style="background:url('http://via.placeholder.com/640x360')">
+                                            <div>
+                                                <h3>Slide #2</h3>
+                                            </div>
+                                        </li>
+                                        
+                                        <li style="background:url('http://via.placeholder.com/640x360')">
+                                            <div>
+                                                <h3>Slide #3</h3>
+                                            </div>
+                                        </li>
+                                        
+                                        <li style="background:url('http://via.placeholder.com/640x360')">
+                                            <div>
+                                                <h3>Slide #4</h3>
+                                            </div>
+                                        </li>
+                                        
+                                        <li style="background:url('http://via.placeholder.com/640x360')">
+                                            <div>
+                                                <h3>Slide #5</h3>
+                                            </div>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                
+                                    <!--controls-->
+                                    <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+                                    <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+                                    <div id="counter"></div>
+                                    
+                                    <div id="pagination-wrap">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                    <!--controls-->  
+                                        
+                                </div>
                             </div>
                             <p class="body_text text-blue">Room Reservations:</p>
                             <p class="body_text">Aravind offers a facility for advance room reservations, following the doctor’s advice to get admitted for surgery or treatment at a later date. </p>
@@ -340,6 +389,112 @@
             $("#return-to-top").click(function () {
                 $("body,html").animate({scrollTop: 0}, 800)
             });
+            //current position
+var pos = 0;
+//number of slides
+var totalSlides = $('#slider-wrap ul li').length;
+//get the slide width
+var sliderWidth = $('#slider-wrap').width();
+
+
+$(document).ready(function(){
+	
+	
+	/*****************
+	 BUILD THE SLIDER
+	*****************/
+	//set width to be 'x' times the number of slides
+	$('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
+	
+    //next slide 	
+	$('#next').click(function(){
+		slideRight();
+	});
+	
+	//previous slide
+	$('#previous').click(function(){
+		slideLeft();
+	});
+	
+	
+	
+	/*************************
+	 //*> OPTIONAL SETTINGS
+	************************/
+	//automatic slider
+	var autoSlider = setInterval(slideRight, 3000);
+	
+	//for each slide 
+	$.each($('#slider-wrap ul li'), function() { 
+	   //set its color
+	   var c = $(this).attr("data-color");
+	   $(this).css("background",c);
+	   
+	   //create a pagination
+	   var li = document.createElement('li');
+	   $('#pagination-wrap ul').append(li);	   
+	});
+	
+	//counter
+	countSlides();
+	
+	//pagination
+	pagination();
+	
+	//hide/show controls/btns when hover
+	//pause automatic slide when hover
+	$('#slider-wrap').hover(
+	  function(){ $(this).addClass('active'); clearInterval(autoSlider); }, 
+	  function(){ $(this).removeClass('active'); autoSlider = setInterval(slideRight, 3000); }
+	);
+	
+	
+
+});//DOCUMENT READY
+	
+
+
+/***********
+ SLIDE LEFT
+************/
+function slideLeft(){
+	pos--;
+	if(pos==-1){ pos = totalSlides-1; }
+	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 	
+	
+	//*> optional
+	countSlides();
+	pagination();
+}
+
+
+/************
+ SLIDE RIGHT
+*************/
+function slideRight(){
+	pos++;
+	if(pos==totalSlides){ pos = 0; }
+	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
+	
+	//*> optional 
+	countSlides();
+	pagination();
+}
+
+
+
+	
+/************************
+ //*> OPTIONAL SETTINGS
+************************/
+function countSlides(){
+	$('#counter').html(pos+1 + ' / ' + totalSlides);
+}
+
+function pagination(){
+	$('#pagination-wrap ul li').removeClass('active');
+	$('#pagination-wrap ul li:eq('+pos+')').addClass('active');
+}
         </script>
     </body>
 
