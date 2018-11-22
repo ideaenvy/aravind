@@ -73,11 +73,16 @@
             padding: 0 10px 0 0 !important;
         }
     }
-    ul{
-        padding: 0;
-        margin: 0;
+    .body_text{
+        ul{
+            padding: 0 1rem;
+            margin: 0;
+        }
     }
     .disease_category{
+        ul{
+            padding: 0 !important;
+        }
         .list{
             list-style: none;
             padding: 0;
@@ -88,13 +93,11 @@
                 font-weight: 500;
                 margin-bottom: 5px;
             }
-            .current{
-                color: #135a94;
-            }
             &-child{
                 cursor: pointer;
                 list-style: none;
                 margin-bottom: 5px;
+                
                 li{
                     font-size: 15px;
                     font-weight: 400;
@@ -102,6 +105,13 @@
                     transition: color 500ms ease-in-out;
                     &:hover{
                         color: rgb(19, 15, 15);
+                    }
+                }
+                .current{
+                    color: #1d78c0;
+                    font-weight: 500;
+                    &:hover{
+                        color: #1d78c0;
                     }
                 }
             }
