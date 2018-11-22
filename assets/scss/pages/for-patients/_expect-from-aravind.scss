@@ -3,19 +3,21 @@
         display: flex;
         flex-wrap: wrap;
         .img-w {
-            flex: 1 0 24rem;
+            flex: 1 0 15rem;
             margin: 0.5rem;
-            overflow: hidden;
-            img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 400ms ease-out;
-                &:hover{
-                    transform: scale(1.15);
-                }
-            }
+			overflow: hidden;
+			a{
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					transition: transform 400ms ease-out;
+					&:hover{
+						transform: scale(1.15);
+					}
+				}
+			}
         }
     }
 }
@@ -23,7 +25,7 @@
     #eye_surgery {
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
             grid-gap: 0.5rem;
             .img-w {
                 margin: 0;
@@ -176,4 +178,84 @@
 	-o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
 	-ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
 	transition: all 0.3s cubic-bezier(1,.01,.32,1);	
+}
+#gallery{
+	.lightbox {
+		display: none;
+		position: fixed;
+		z-index: 9999;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.85);
+	}
+	
+	.lightbox a { 
+		color: #fff;
+		text-decoration: none; 
+	}
+	
+	.lightbox img {
+		max-height: 85%;
+		max-width: 85%;
+	}
+	
+	.lightbox:target {
+		display: table;
+	}
+	
+	.lightbox .image {
+		display: table-cell;
+		vertical-align: middle; 
+	}
+	
+	.lightbox .image img {
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25); 
+	}
+	
+	.next, .prev, .close { 
+		display: block;
+		position: fixed; 
+	}
+	
+	.close { 
+		width: 5000px; 
+		height: 5000px; 
+		overflow: hidden; 
+		top: 0; 
+		left: 0; 
+		z-index: 5; 
+		cursor: default; 
+	}
+	
+	.next, .prev {
+		width: 100px; 
+		height: 25px; 
+		top: 50%; 
+		z-index: 10;
+		opacity: 0.7; 
+		font-size: 2em; 
+		line-height: 25px; 
+		text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+	}
+	
+	.prev { 
+		left: 10px; 
+		text-align: left; 
+	}
+	
+	.prev::after { 
+		content: '\2039';
+	}
+		
+	.next { 
+		right: 10px;
+		text-align: right;
+	}
+	
+	.next::before {
+		content: '\203A';
+	}
 }
