@@ -125,6 +125,15 @@
     .d_title{
         text-align: center;
     }
+    .note{
+        margin: 0;
+        text-align: center;
+        font-style: italic;
+        span{
+            color: #1b61c4;
+            display: block;
+        }
+    }
 }
 .three_panels {
     display: flex;
@@ -207,4 +216,55 @@
 #A_Z ul li.disabled a {
     color: lightgray;
     background: gray;
+}
+
+.disease__category{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li{
+        .disease_cat_head{
+            margin: 15px 0 10px 0;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 23px;
+            color: #000;
+        }
+        .disease_cat_head:first-child{
+            margin: 0 0 10px 0;
+        }
+        a{
+            display: block;
+            padding: 5px 0px 5px 0px;
+            opacity: 0.7;
+            font-weight: 500;
+            &:before{
+                font-family: "Font Awesome 5 Solid";
+                content: "\f105";
+                display: none;
+            }
+            .svg-inline--fa {
+                color: #9E9E9E;
+                margin-right: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}
+.category-heading{
+    font-weight: 500;
+    margin-bottom: 1rem;
+    span{
+        border-bottom: 3px solid #1b61c4;
+    }
+}
+.notice{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    span{
+        color: #ff0000
+    }
 }
