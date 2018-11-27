@@ -1,81 +1,115 @@
-<?php /* Template Name: Sales Page */ ?>
-<?php get_header(); 
-global $post;
-$page_layout = get_post_meta( $post->ID, 'pixomi_page_layout', true );
-if($page_layout == 'default'){
-	$page_layout_class = 'col-xs-12'; }
-elseif($page_layout == 'right-sidebar'){
-	$page_layout_class = 'right-sidebar col-lg-9 col-md-9 col-sm-12'; }
-elseif($page_layout == 'left-sidebar'){
-	$page_layout_class = 'left-sidebar col-lg-9 col-md-9 col-sm-12';
-} else{ $page_layout_class = 'col-xs-12'; }
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>For International Patients</title>
+        <meta name="author" content="Nile-Theme">
+        <meta name="robots" content="index follow">
+        <meta name="googlebot" content="index follow">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="directory, doctor, doctor directory, Health directory, listing, map, medical, medical directory, professional directory, reservation, reviews">
+        <meta name="description" content="Health Care & Medical Services Directory">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7Chttps://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7CPoppins:300i,300,400,700,400i,500%7CDancing+Script:700%7CDancing+Script:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:500,800|Open+Sans:300|Oswald" rel="stylesheet">
+        <!-- animate -->
+        <link rel="stylesheet" href="../assets/css/animate.css" />
+        <!-- owl Carousel ../assets -->
+        <link href="../assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="../assets/css/owl.theme.css" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <!-- hover anmation -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css">
+        <!-- flag icon -->
+        <link rel="stylesheet" href="../assets/css/flag-icon.min.css">
+        <!-- main style -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <!-- colors -->
+        <link rel="stylesheet" href="../assets/css/colors/main.css">
+        <!-- elegant icon -->
+        <link rel="stylesheet" href="../assets/css/elegant_icon.css">
 
-// FullWidth Class
-if($page_layout == 'fullwidth'){
-	$page_fullwidth_class = 'fullwidth';
-} else{ $page_fullwidth_class = ''; }  ?> 
-<div id="service-cloud">
-    <div id="mobile-contact"class="contact-contain">
-        <div class="mobile-left-bar">
-            <h3>Salesforce Sales Cloud</h3>
-            <a class="whiteBtn" href="http://veneratesolutions.com/contact-us/#contact-section" target="_blank">contact Us</a>
-        </div>
-    </div>
-    <section class="page-sections bg-white">
-            <div class="container">
-                <div class="cloud-solution">
-                    <div class="row">
-                        <div class="contact-contain">
-                            <div class="left-bar">
-                                <h3>Salesforce Sales Cloud</h3>
-                                <a class="whiteBtn" href="http://veneratesolutions.com/contact-us/#contact-section" target="_blank">contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-md-offset-1 col-lg-11 main-body">
-                            <div class="body-top">
-                                <h1 class="header_text">Find better leads, close more deals, and grow your accounts on the world’s #1 CRM.</h1>
-                                <h2>About Salesforce Sales Cloud</h2>
-                                <p>Sell faster and smarter with a flexible, AI-powered sales platform designed to maximize rep productivity and success. Sales Cloud enables you to create a world class sales experience with a 360 degree view of your customer from lead to cash.</p>
-                                <a class="redBtn-link" href="http://veneratesolutions.com/contact-us/#contact-section" target="_blank"><button class="btn redBtn">Watch Demo</button></a>
-                                <div class="img-container">
-                                    <img src="http://www.salesforce.atworkweb.com/sw/swchannel/images/users/41221/wcs/sale-image1.png" alt="" srcset="">
+        <!-- jquery library  -->
+        <script src="../assets/js/jquery-3.2.1.min.js"></script>
+        <!-- fontawesome  -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png"/>
+        <link rel="shortcut icon" type="image/png" href="http://ideaenvypro.com/aravind_new/../assets/img/favicon.png"/>
+
+    </head>
+    <body>
+        <!-- // Header Start -->
+        <header id="header">
+            <div id="fixed-header-dark" class="header-output fixed-header">
+                <section class="top-bar">
+                    <div class="container-fluid header-in">
+                        <div class="wrapper">
+                            <div class="row">
+                                <div class="col-lg-6 my-auto">
+                                    <a id="logo" href="/aravind_new/home.html" class="d-inline-block"><img src="../assets/img/logo-new.png" alt=""></a>
                                 </div>
-                                <div class="clearfix"></div>
+                                <div class="col-lg-6 my-auto">
+                                    <form id="demo-2" class=" text-white float-right">
+                                        <input type="search" placeholder="Search">
+                                    </form>
+                                </div>
                             </div>
-                            <div class="offers-section">
-                                <h2>Turn more contacts into long-term customers with a deeper, more personal approach to sales.</h2>
-                                <div class="twoPanel">
-                                    <div class="panelContnt greyBg">
-                                        <h3>Help reps sell smarter with an AI-powered sales platform.</h3>
-                                        <p>Salesforce Einstein lets you build artificial intelligence right into the sales process. Automatically capture data and get instant insights, such as top leads, next steps, and suggested actions.</p>
-                                        <img alt="" class="img-responsive" src="http://www.salesforce.atworkweb.com/sw/swchannel/images/users/41221/wcs/sale-image2.png"></div>
-                                    <div class="panelContnt">
-                                        <ul>
-                                        <li class="greyBg">
-                                            <h3>Accelerate productivity with a flexible user experience.</h3>
-                                            <p>Sell from the field. Sell from your inbox. Sell the way you want, lightning fast, with an easy tocustomize, AI-powered CRM system.</p>
-                                        </li>
-                                        <li class="greyBg">
-                                            <h3>Close more deals anytime, anywhere.</h3>
-                                            <p>See everything from sales forecasts to team performance on any device — a laptop, a phone, you name it. Focus reps on the most important actions, giving them the right advice at the right time.</p>
-                                        </li>
+                        </div>  
+                    </div>
+                </section>
+                <div class="container-fluid background-white box-shadow header-in">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 position-inherit">
+                                <a class="mobile-toggle padding-13px background-main-color" href="#"><i class="fas fa-bars"></i></a>
+                                <ul id="menu-main" class="nav-menu mx-auto link-padding-tb-15px">
+                                    <li><a href="/aravind_new/home.html">Home</a></li>
+                                    <li class="has-dropdown"><a href="#">About</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Our Story</a></li>
+                                            <li><a href="#">Our Founder</a></li>
+                                            <li><a href="#">Our Group Profile</a></li>
+                                            <li><a href="#">Vision & Mission</a></li>
+                                            <li><a href="#">Board of Trustees</a></li>
+                                            <li><a href="#">Management Template</a></li>
+                                            <li><a href="#">Partners in service</a></li>
+                                            <li><a href="#">Awards & Recognition</a></li>
+                                            <li><a href="#">In Media</a></li>
+                                            <li><a href="#">Blog</a></li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="features">
-                                <h2>Explore the CRM software features that can help you grow sales faster.</h2>
-                                <ul class="sales">
-                                    <li class="sales-list">
-                                        <h4>CLOSE MORE DEALS</h4>
-                                        <p>ACCOUNT &amp; CONTACT MANAGEMENT</p>
-                                        <p>OPPORTUNITY MANAGEMENT</p>
-                                        <p>&nbsp;</p>
                                     </li>
-                                    <li class="sales-list">
-                                        <h4>GET MORE LEADS</h4>
-                                        <p>LEAD MANAGEMENT</p>
-                                        <p>SALES DATA</p>
+                                    <li class="has-dropdown"><a href="#">Hospitals</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Hospital Locations</a></li>
+                                            <li><a href="#">Speciality Clinics</a></li>
+                                            <li><a href="#">Vision Centers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown"><a href="#">Our Services</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Eye Hospitals</a></li>
+                                            <li><a href="#">Outreach</a></li>
+                                            <li><a href="#">Tele-opthalmology</a></li>
+                                            <li><a href="#">Education & Training</a></li>
+                                            <li><a href="#">LAICO</a></li>
+                                            <li><a href="#">Aurolab</a></li>
+                                            <li><a href="#">Research</a></li>
+                                            <li><a href="#">Eye Bank</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown"><a href="#">Resources</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Publications</a></li>
+                                            <li><a href="#">IT Products</a></li>
+                                            <li><a href="#">Online Learning</a></li>
+                                            <li><a href="#">For Eye Hospitals</a></li>
+                                            <li><a href="#">Case Studies</a></li>
+                                            <li><a href="#">Annual Report</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="has-dropdown active"><a href="#">For Patients</a>
                                         <ul class="sub-menu">
                                             <li><a href="#">About the Eye</a></li>
@@ -88,26 +122,31 @@ if($page_layout == 'fullwidth'){
                                             <li><a href="#">Magazine</a></li>
                                         </ul>
                                     </li>
-                                    <li class="sales-list">
-                                        <h4>ACCELERATE SALES</h4>
-                                        <p>GO MOBILE</p>
-                                        <p>WORKFLOW &amp; APPROVALS</p>
-                                        <p>FILE SYNC &amp; SHARE</p>
+                                    <li class="has-dropdown"><a href="#">Education & Training</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Postgraduate Institute</a></li>
+                                            <li><a href="#">Courses</a></li>
+                                            <li><a href="#">Upcoming Events</a></li>
+                                            <li><a href="#">Campus Life</a></li>
+                                        </ul>
                                     </li>
-                                    <li class="sales-list">
-                                        <h4>MAKE SMART DECISIONS</h4>
-                                        <p>REPORTS &amp; DASHBOARDS</p>
-                                        <p>SALES FORECASTING</p>
+                                    <li class="has-dropdown"><a href="#">Get Involved</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Eye Donation</a></li>
+                                            <li><a href="#">Aravind Eye Foundation</a></li>
+                                            <li><a href="#">Donate</a></li>
+                                            <li><a href="#">Volunteer</a></li>
+                                            <li><a href="#">Organise an Eye Camp</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                        </ul>
                                     </li>
+                                    <li><a href="/aravind_new/contact-us.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
-</div>
-<?php get_footer(); ?>
         </header>
         <!-- // Header End -->
 
