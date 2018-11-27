@@ -346,51 +346,151 @@ function collapse(e){
     }
 }
 
+const acc = document.querySelectorAll('.acc-head');
+for(i=0; i < acc.length; i++){
+    acc[i].addEventListener('click', toggle_btn);
+}
+
+function toggle_btn(e){
+    e.preventDefault();
+    const acc = document.querySelectorAll('.acc-head');
+    for(i=0; i < acc.length; i++){
+        acc[i].classList.remove('flip');
+    }
+    this.classList.add('flip');
+}
 
 const d_item = document.querySelectorAll('.item-list');
 for( i = 0; i < d_item.length; i++){
     d_item[i].addEventListener("click", showele);
 }
 
-function showele(e){
+const nav_item = document.querySelectorAll('.nav-link');
+for( i = 0; i < nav_item.length; i++){
+    nav_item[i].addEventListener("click", showelements);
+}
+
+const disease = document.querySelectorAll('.persons');
+for(i=0; i < disease.length; i++){
+    disease[i].addEventListener('click', show_disease);
+}
+
+const enq = document.querySelector('#close-enquiry');
+if(enq !== null){
+    enq.addEventListener('click', rmbar);
+}
+
+
+function rmbar(e){
     e.preventDefault();
-    let curList_item = document.querySelector('.activated-list');
+    let close_item = this.getAttribute('data-target');
+    document.getElementById(close_item).classList.add('rm-bar');
+
+}
+
+function show_disease(e){
+    e.preventDefault();
+    let curList_item = document.querySelector('.activate');
+    if (curList_item === null){
+        default_item = this.getAttribute('default-target');
+        hideit(default_item);
+        let newitemid = this.getAttribute('data-target');
+        this.classList.add('activate');
+        showit(newitemid);
+        var y = document.getElementById(newitemid);
+        scroll(y);
+    }else{
+        let itemId = curList_item.getAttribute('data-target');
+        console.log(itemId);
+        if(itemId === null){
+            return false;
+        }else{
+            hideit(itemId);
+        }
+        curList_item.classList.remove('activate');
+        let showItemid = this.getAttribute('data-target');
+        this.classList.add('activate');
+        if (showItemid === null){
+            return false;
+        }else{
+            showit(showItemid);
+            var x = document.getElementById(showItemid);
+            scroll(x);
+        }
+    }
+}
+function scroll(el) {
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'});
+    
+    setTimeout(() => {
+    window.scrollBy(0, -120);
+    }, 500);
+}
+
+function showelements(e){
+    e.preventDefault();
+    let curList_item = document.querySelector('.active-list');
     let itemId = curList_item.getAttribute('data-target');
     if(itemId === null){
         return false;
     }else{
     hideit(itemId);}
-    curList_item.classList.remove('activated-list');
+    curList_item.classList.remove('active-list');
     let showItemid = this.getAttribute('data-target');
     console.log(showItemid);
-    this.classList.add('activated-list');
+    this.classList.add('active-list');
     if (showItemid === null){
         return false;
-    }else if(showItemid === 'impact'){
-        $('.counting').each(function() {
-            var $this = $(this),
-                countTo = $this.attr('data-count');
-            
-            $({ countNum: $this.text()}).animate({
-            countNum: countTo
-            },
-        
-            {
-        
-            duration: 3000,
-            easing:'linear',
-            step: function() {
-                $this.text(Math.floor(this.countNum));
-            },
-            complete: function() {
-                $this.text(this.countNum);
-            }
-        
-            });
-        });
-        showit(showItemid);
     }else{
-    showit(showItemid);}
+        showit(showItemid);
+    }
+}
+
+
+function showele(e){
+    e.preventDefault();
+    let defautitem = this.getAttribute('data-target');
+    if(defautitem !== null){
+        let curList_item = document.querySelector('.activated-list');
+        let itemId = curList_item.getAttribute('data-target');
+        if(itemId === null){
+            return false;
+        }else{
+        hideit(itemId);}
+        curList_item.classList.remove('activated-list');
+        let showItemid = this.getAttribute('data-target');
+        
+        this.classList.add('activated-list');
+        if (showItemid === null){
+            return false;
+        }else if(showItemid === 'impact'){
+            $('.counting').each(function() {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                
+                $({ countNum: $this.text()}).animate({
+                countNum: countTo
+                },
+            
+                {
+            
+                duration: 3000,
+                easing:'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                }
+            
+                });
+            });
+            showit(showItemid);
+        }else{
+        showit(showItemid);}
+    }
 }
 
 const d = new Date();

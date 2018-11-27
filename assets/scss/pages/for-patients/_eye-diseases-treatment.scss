@@ -1,0 +1,280 @@
+#treatment{
+    .disease{
+        background: #222;
+        font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+        padding: 60px 0;
+        &_title{
+            font-size: 36px;
+            line-height: 41px;
+            color: #fff;
+            margin-top: 21px;
+            margin-bottom: 10.5px;
+        }
+        &_headline{
+            font-size: 20px;
+            line-height: 27px;
+            color: #fff;
+        }
+    }
+    input[type=search]{
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+    #treatment-menu{
+        padding-left: 30px;
+        .nav{
+            padding: 0;
+            .nav-item{
+                margin-left: .9rem;
+                .nav-link{
+                    font-size: 16px;
+                    color: #888;
+                    border-bottom: 3px solid transparent;
+                    padding-bottom: 7px;
+                    transition: 0.2s all ease-in-out;
+                }
+                .active-list, .nav-link:hover{
+                    color: #363636;
+                    border-bottom-color:#0078bf;
+                }
+                .active-list{
+                    &:hover{
+                        background: transparent;
+                    }
+                }
+            }
+            .nav-item:first-child{
+                margin: 0;
+            }
+        }
+    }
+    .image-container {
+        margin-bottom: 10px;
+        float: right;
+        img{
+            padding-left: 10px;
+        }
+        figcaption{
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+    .image-container:nth-child(even) {
+        float: left !important;
+        img{
+            padding: 0 10px 0 0 !important;
+        }
+    }
+    .body_text{
+        ul{
+            padding: 0 1rem;
+            margin: 0;
+        }
+    }
+    .disease_category{
+        ul{
+            padding: 0 !important;
+        }
+        .list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .item{
+                cursor: pointer;
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            &-child{
+                cursor: pointer;
+                list-style: none;
+                margin-bottom: 5px;
+                
+                li{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #888;
+                    transition: color 500ms ease-in-out;
+                    &:hover{
+                        color: rgb(19, 15, 15);
+                    }
+                }
+                .current{
+                    color: #1d78c0;
+                    font-weight: 500;
+                    &:hover{
+                        color: #1d78c0;
+                    }
+                }
+            }
+        }
+    }
+}
+.persons{
+    cursor: pointer;
+}
+#Layer_1{
+    border-bottom: 2px solid;
+    border-bottom-style: dotted;
+}
+.activate{
+    transform: translateY(-3%);
+}
+.disease_container{
+    background: lightgray;
+    padding: 30px;
+    margin-bottom: 15px;
+    .d_title{
+        text-align: center;
+    }
+    .note{
+        margin: 0;
+        text-align: center;
+        font-style: italic;
+        span{
+            color: #1b61c4;
+            display: block;
+        }
+    }
+}
+.three_panels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.panel {
+    width: 33%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    p{
+        margin: 0;
+        text-align: center;
+        a{
+            font-size: unset;
+        }
+    }
+}
+@media only screen and (max-width: 740px) {
+    .panel {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .panel {
+        width: 100%;
+    }
+}
+.rm-bar{
+    color: transparent !important;
+    width: 0 !important;
+    p > a{
+        color: transparent !important;
+    }
+}
+.enquiry{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+    transition: color cubic-bezier(0.39, 0.575, 0.565, 1) ease-in-out;
+    transition: width 0.5s ease-out;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        span{
+            cursor: pointer;
+        }
+        .enquiry_text{
+            margin: 0 auto;
+            a{
+                color: #1b61c4;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.bt-5{
+    border-top: 5px solid !important;
+}
+.bt-primary{
+    border-top-color: #005eaa !important;
+}
+.unstyled-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    li {
+        margin-bottom: 0.3rem;
+        a{
+            color: #075290;
+            text-decoration: underline;
+        }
+    }
+}
+#A_Z ul li.disabled a {
+    color: lightgray;
+    background: gray;
+}
+
+.disease__category{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li{
+        .disease_cat_head{
+            margin: 15px 0 10px 0;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 23px;
+            color: #000;
+        }
+        .disease_cat_head:first-child{
+            margin: 0 0 10px 0;
+        }
+        a{
+            display: block;
+            padding: 5px 0px 5px 0px;
+            opacity: 0.7;
+            font-weight: 500;
+            &:before{
+                font-family: "Font Awesome 5 Solid";
+                content: "\f105";
+                display: none;
+            }
+            .svg-inline--fa {
+                color: #9E9E9E;
+                margin-right: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}
+.category-heading{
+    font-weight: 500;
+    margin-bottom: 1rem;
+    span{
+        border-bottom: 3px solid #1b61c4;
+    }
+}
+.notice{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    span{
+        color: #ff0000
+    }
+}

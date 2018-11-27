@@ -27,8 +27,6 @@
     }
     .box-action{
         background-color: #ffca00;
-        border-radius: 20px;
-        margin: 0 10px;
 
         .action-head {
           transform: translate(70%,120%);
@@ -61,9 +59,6 @@
         border-left: none;
         background: transparent;
 
-        &:nth-child(1){
-          border-bottom: 1px solid rgba(0,0,0,.1);
-        }
       }
 
       .item-list{
@@ -73,8 +68,7 @@
       .activated-list {
         font-size: 15px;
         font-weight: 600;
-        color: #fff !important;
-        background-color: #364d75 !important;
+        color: #364d75 !important;
     }
     }
 

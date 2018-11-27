@@ -251,126 +251,9 @@
                             <h3>Donate</h3>
                             <hr>
                             <form>
-                                <div class="form-group">
-                                    <label for="amtSelect">Choose an amount to donate</label>
-                                    <select class="form-control" id="amtSelect" name="amtSelect" data-target="oamt">
-                                        <option value="" selected="" disabled="" hidden="">Donation Amount</option>
-                                        <option value="5000">$5000</option>
-                                        <option value="1000">$1000</option>
-                                        <option value="500">$500</option>
-                                        <option value="250">$250</option>
-                                        <option value="100">$100</option>
-                                        <option value="50">$50</option>
-                                        <option value="Other-Amt">Another Amount</option>
-                                    </select>
-                                    <div class="oamt" id="oamt" style="display: none;">
-                                        <p>I would like to donate to the Aravind Eye Care System $ <span><input type="text" name="diffamt" id=""></span> Amount</p>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="paySelect">Mode of Donation</label>
-                                    <select class="form-control" id="paySelect">
-                                        <option value="" selected="" disabled="" hidden="">Payment Mode</option>
-                                        <option value="credit card">Credit Card</option>
-                                        <option value="paypal">Paypal</option>
-                                        <option value="cheque">Cheque</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="modeSelect">TYPE OF GIFT</label>
-                                    <select class="form-control" id="modeSelect">
-                                        <option value="" selected="" disabled="" hidden="">Monthly / One time Donation</option>
-                                        <option value="once">One Time</option>
-                                        <option value="monthly">Monthly</option>
-                                    </select>
-                                    <div class="alert alert-primary" role="alert">
-                                        Note : If you choose monthly, your credit card will not be charged automatically and you will receive an email reminder monthly.
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="amtSelect">Does your company have a matching program?</label>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input tik-btn" type="radio" name="matchingOptions" id="program-y" data-target="cname" value="on" data-target="cname">
-                                        <label class="form-check-label" for="program-y">Yes</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input tik-btn" type="radio" name="matchingOptions" id="program-n" data-target="cname" value="off" checked>
-                                        <label class="form-check-label" for="program-n">No</label>
-                                    </div>
-                                    <div id="cname" style="display: none;">
-                                        <label for="company-name">Name of Company : <span><input type="text" name="cname" id=""></span></label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="dform" data-target="donate-drop" value="option1">
-                                        <label class="form-check-label" for="inlineCheckbox1">Would you like to do this donation for others</label>
-                                    </div>
-                                    <div id="donate-drop" style="display:none;">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                                            <label class="form-check-label" for="inlineRadio1">In the honor of</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">In memorial of</label>
-                                        </div>
-                                        <table class="">
-                                            <thead>
-                                                <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Email</th>
-                                                <th scope="col">Message</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                <th scope="row">1</th>
-                                                <td><input type="text" name="" id=""></td>
-                                                <td><input type="text" name="" id=""></td>
-                                                <td><input type="text" name="" id=""></td>
-                                                </tr>
-                                                <tr>
-                                                <th scope="row">2</th>
-                                                <td><input type="text" name="" id=""></td>
-                                                <td><input type="text" name="" id=""></td>
-                                                <td><input type="text" name="" id=""></td>
-                                                </tr>
-                                                <tr>
-                                                <th scope="row">3</th>
-                                                <td><input type="text" name="" id=""></td>
-                                                <td><input type="text" name="" id=""></td>
-                                                <td><input type="text" name="" id=""></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>How did you hear about us ?
-                                        <select id="enq-dropdown" name="enq-dropdown" data-target="enq">
-                                            <option value="email">Email</option>
-                                            <option value="friend">Friend</option>
-                                            <option value="patient">Patient</option>
-                                            <option value="tv/radio">TV/Radio</option>
-                                            <option value="social media">Social Media</option>
-                                            <option value="newspaper/magazine">Newspaper/Magazine</option>
-                                            <option value="others">Others</option>
-                                        </select>
-                                    </label>
-                                    <div class="oamt" id="enq"  style="display: none;">
-                                        <p>Others : <span><input type="text" name="enq" id=""></span></p>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>COMMENTS</label>
-                                    <textarea class="form-control" name="comment" rows="10"></textarea>
-                                </div>
-                                <hr class="divider">
                                 <div class="body_text">
                                 <p class="margin-0px">If you have already made a donation to Aravind Eye Foundation, please enter your e-mail address, so that we can retreive your user information
-                                    <span><input type="text" name="mailid" id=""> <button type="button" class="btn btn-primary margin-left-20px btn-sm">Proceed</button></span>
+                                    <div class="mail-container"><input type="email" name="mailid" placeholder="Your Email Address"> <button type="button" class="btn btn-primary margin-left-20px btn-sm">Proceed</button></div>
                                 </p>
                                 </div>
                                 <hr class="divider">
@@ -643,10 +526,27 @@
                                             <input type="email" name="p-email" class="form-control" placeholder="Email Address" />
                                         </div>
                                     </div>
-                                    <div class="form-group action-btn">
-                                        <button type="submit" class="btn btn-primary mx-auto">Submit</button>
-                                    </div>
-                                  </div>
+                                </div>
+                                <hr class="divider">
+                                <div class="form-group">
+                                    <label for="amtSelect">Choose an amount to donate</label>
+                                    <select class="form-control" id="amtSelect" name="amtSelect" data-target="oamt">
+                                        <option value="" selected="" disabled="" hidden="">Donation Amount</option>
+                                        <option value="1000">$1000</option>
+                                        <option value="500">$500</option>
+                                        <option value="250">$250</option>
+                                        <option value="100">$100</option>
+                                        <option value="50">$50</option>
+                                        <option value="Other-Amt">Another Amount</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>COMMENTS</label>
+                                    <textarea class="form-control" name="comment" rows="10"></textarea>
+                                </div>
+                                <div class="form-group action-btn">
+                                    <button type="submit" class="btn btn-primary mx-auto">Donate</button>
+                                </div>
                             </form>
                             <!-- <div class="down">
                                 <input type="button" name="previous" class="previous action-button" value="Previous" />
