@@ -34,8 +34,11 @@
         <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />   
         <!-- jquery library  -->
         <script src="../assets/js/jquery-3.2.1.min.js"></script>
+        <!--Chart js-->
+        <script src="../assets/js/Chart.min.js"></script>
         <!-- fontawesome  -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 
         <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png"/>
         <link rel="shortcut icon" type="image/png" href="http://ideaenvypro.com/aravind_new/../assets/img/favicon.png"/>
@@ -210,7 +213,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <!-- <div class="fork-me_container"  data-toggle="modal" data-target=".form-modal-lg">
+                    <!-- <div class="fork-me_container"  data-toggle="modal" data-target=".form-modal-lg">
                             <div class="fork-me__header">
                                 <span class="fork-me__text">
                                 Pledge your Eyes
@@ -222,7 +225,11 @@
                             <hr>
                             <p class="body_text">An integral part of AECS is its community outreach programmes which take eye care service to the doorstep of the community. In the year ending March 2017, more than 2,500 camps were conducted through which 577,350 patients were screened and 92,022 patients underwent surgery. These camps also serve to educate the local community on eye care. Towards this end, several comprehensive eye care programmes are organised.</p>
                             <p class="body_text">An integral part of AECS is its community outreach programmes which take eye care service to the doorstep of the community. In the year ending March 2017, more than 2,500 camps were conducted through which 577,350 patients were screened and 92,022 patients underwent surgery. These camps also serve to educate the local community on eye care. Towards this end, several comprehensive eye care programmes are organised.</p>
-                            <div id="chartContainer" class="margin-bottom-10px" style="height: 370px; width: 100%;"></div>
+                            
+                            <div class="chart-contain">
+                                <canvas id="line-chart" width="100%" height="100%"></canvas>
+                            </div>
+
                             <div class=" padding-10px margin-bottom-10px">
                                 <div class="row eye-banks-container">
                                     <div class="col-lg-6 contain">
@@ -682,6 +689,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Footer Start  -->
         <footer class="padding-top-100px padding-bottom-10px background-grey wow fadeInUp">
             <div class="container">
@@ -757,39 +765,47 @@
         <script src="../assets/js/bootstrap.min.js"></script>
         <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
         <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+        
+      
+        <!--Chart js script-->
         <script>
-            window.onload = function () {
-            
-            var options = {
-                animationEnabled: true,
-                title: {
-                    text: "Eye Bank Growth Rate - 2018"
-                },
-                axisY: {
-                    title: "Growth Rate (in %)",
-                    suffix: "%",
-                    includeZero: false
-                },
-                axisX: {
-                    title: "Eye Banks"
-                },
-                data: [{
-                    type: "column",
-                    yValueFormatString: "#,##0.0#"%"",
-                    dataPoints: [
-                        { label: "Madurai", y: 10.09 },	
-                        { label: "Coimbatore", y: 9.40 },	
-                        { label: "Tirunelveli", y: 8.50 },
-                        { label: "Pondicherry", y: 7.96 }
-                        
-                    ]
-                }]
-            };
-            $("#chartContainer").CanvasJSChart(options);
-            
+            new Chart(document.getElementById("line-chart"), {
+          type: 'line',
+          data: {
+            labels: [1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],
+            datasets: [{ 
+                data: [0,0,253,781,851,859,1471,1420,1515,1610,1752,1759,1961,2238,2088,1855,1376,1549,1606,2019,2430,2127],
+                label: "MADURAI Eye Recovered",
+                borderColor: "#3e95cd",
+                fill: false
+              }, { 
+                data: [0,38,174,185,202,283,404,415,367,438,730,792,1068,1185,1410,1204,1287,1601,1877,1760,1794,1458],
+                label: "COIMBATORE Eye Recovered",
+                borderColor: "#8e5ea2",
+                fill: false
+              }, { 
+                data: [0,0,0,0,0,0,0,0,22,44,62,36,82,69,137,169,373,420,575,660,489,502],
+                label: "TIRUNELVELI Eye Recovered",
+                borderColor: "#3cba9f",
+                fill: false
+              }, { 
+                data: [0,0,0,0,0,0,0,0,98,128,126,198,248,446,862,932,922,757,921,1004,1139,1269],
+                label: "PONDICHERRY Eye Recovered",
+                borderColor: "#e8c3b9",
+                fill: false
+              }
+            ]
+          },
+          options: {
+           title: {
+              display: true,
+              text: 'PERFORMANCE OF THE EYE BANK'
             }
-        </script>
+          }
+        });
+            
+            
+            </script>
         <script>
             $(window).scroll(function () {
                 $(this).scrollTop() >= 500 ? $("#return-to-top").fadeIn(300) : $("#return-to-top").fadeOut(300)

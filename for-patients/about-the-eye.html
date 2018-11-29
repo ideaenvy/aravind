@@ -114,6 +114,7 @@
                                             <li><a href="#">About the Eye</a></li>
                                             <li><a href="#">Eye Diseases & Treatment</a></li>
                                             <li><a href="#">What to Expect from Aravind</a></li>
+                                            <li><a href="#">Insurance</a></li>
                                             <li><a href="#">Hospital Locations</a></li>
                                             <li><a href="#">Give Us Feedback</a></li>
                                             <li><a href="#">For International Patients</a></li>
@@ -174,12 +175,13 @@
                             <hr>
                             <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%; height: auto;">
                                 <img src="https://genially.blob.core.windows.net/genially/version3.0/loader.gif" class="loader-genially" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; z-index: 1;width: 80px; height: 80px;"/>
-                                <div id="5bd061e067bb76488cca1826" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div>
+                                <div id="5bfcf7ce3cc3e81abcd9617e" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div>
                             </div>
                             <script>
                                 (function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));
                             </script>
                         </div>
+
                         <div class="padding-30px margin-bottom-15px">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -276,12 +278,17 @@
         <script src="../assets/js/custom.js"></script>
         <script src="../assets/js/popper.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/imageMapResizer.min.js"></script>
         <script>
             $(window).scroll(function () {
                 $(this).scrollTop() >= 500 ? $("#return-to-top").fadeIn(300) : $("#return-to-top").fadeOut(300)
             }),
             $("#return-to-top").click(function () {
                 $("body,html").animate({scrollTop: 0}, 800)
+            });
+
+            $(document).ready(function() {
+                $('map').imageMapResize();
             });
         </script>
     </body>

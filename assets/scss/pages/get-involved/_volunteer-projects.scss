@@ -124,3 +124,23 @@
         }
     }
 }
+.project__details{
+    h6{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+    }
+    p{
+        color: #686f7a;
+    }
+    .cover_item{
+        margin-bottom: 0.2rem;
+        span{
+            font-weight: 500;
+        }
+    }
+}
+.project__apply{
+    margin: 0 auto;
+    text-align: center;
+}
