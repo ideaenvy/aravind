@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: baseline;
     background: #fff;
-    height: 500px;
+    height: 500px !important;
     outline: 0 !important;
     color: #ccc;
     font-size: 40px;
