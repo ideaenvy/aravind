@@ -1,0 +1,63 @@
+.slide-head{
+  position: relative;
+  img{
+    width: 100%;
+    height: 90%;
+  }
+  .slide-head-title{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 50px;
+    color: $color-white;
+    mix-blend-mode: soft-light;
+    text-transform: uppercase;
+  }
+}
+
+.campus-life-new{
+  .campus-sec{
+    padding: 0;
+   // height: 550px;
+    
+    img{
+      opacity: 1;
+      &:hover{
+        background-color: $color-white;
+        opacity: .9;
+      }
+    }
+  }
+  .campus-sec-bg{
+    background-size: cover;
+    background-color: #3b2f2f;
+
+    .campus-head-title{
+      color: $color-white;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 35px;
+    }
+  }
+  .campus-places{ 
+    border: 1px solid $color-white;
+    margin:  20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    .campus-palce-img{
+      display: inline-block;
+    }
+    .campus-place-title{
+      color: $color-white;
+      font-size: 25px;
+      margin: 20px 0px;
+      display: inline-block;
+      border-bottom: 1px solid $color-white;
+    }
+    .campus-place-desc{
+      color: $color-white;
+    }
+  }
+}

@@ -55,3 +55,87 @@
     transform: translateX(100px);
   }
 }
+
+@-webkit-keyframes color-fade {
+  0% {
+    background: #9a5342;
+  }
+  25% {
+    background: #81b441;
+  }
+  50% {
+    background: #e46d00;
+  }
+  75% {
+    background: #ff3506;
+  }
+  100% {
+    background: #9a5342;
+  }
+  }
+  @-moz-keyframes color-fade {
+  0% {
+    background: #9a5342;
+  }
+  25% {
+    background: #81b441;
+  }
+  50% {
+    background: #e46d00;
+  }
+  75% {
+    background: #ff3506;
+  }
+  100% {
+    background: #9a5342;
+  }
+  }
+  @keyframes color-fade {
+  0% {
+    background: #9a5342;
+  }
+  25% {
+    background: #81b441;
+  }
+  50% {
+    background: #e46d00;
+  }
+  75% {
+    background: #ff3506;
+  }
+  100% {
+    background: #9a5342;
+  }
+  }
+  @-webkit-keyframes YouTubePopUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    }
+    @keyframes YouTubePopUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    }
+    @-webkit-keyframes YouTubePopUpHide {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+      }
+      @keyframes YouTubePopUpHide {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+      }
