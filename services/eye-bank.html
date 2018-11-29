@@ -225,10 +225,37 @@
                             <hr>
                             <p class="body_text">An integral part of AECS is its community outreach programmes which take eye care service to the doorstep of the community. In the year ending March 2017, more than 2,500 camps were conducted through which 577,350 patients were screened and 92,022 patients underwent surgery. These camps also serve to educate the local community on eye care. Towards this end, several comprehensive eye care programmes are organised.</p>
                             <p class="body_text">An integral part of AECS is its community outreach programmes which take eye care service to the doorstep of the community. In the year ending March 2017, more than 2,500 camps were conducted through which 577,350 patients were screened and 92,022 patients underwent surgery. These camps also serve to educate the local community on eye care. Towards this end, several comprehensive eye care programmes are organised.</p>
-                            
-                            <div class="chart-contain">
-                                <canvas id="line-chart" width="100%" height="100%"></canvas>
+                            <p style="text-align:center;" class="h2 padding-10px">EYE BANK GROWTH - 2018</p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="padding-50px margin-top-20px">
+                                        <div class="eye-bank_address">
+                                            <h4 class="text-black font-weight-600" style="margin-bottom: .5rem;">Madurai</h4>
+                                            <p class="text-black font-weight-500 margin-bottom-10px"><span>Phone</span> : 0452-435 6100</p>
+                                        </div>
+                                        <div class="eye-bank_address">
+                                            <h4 class="text-black font-weight-600" style="margin-bottom: .5rem;">Coimbatore</h4>
+                                            <p class="text-black font-weight-500 margin-bottom-10px"><span>Phone</span> : 0422-436 0400</p>
+                                        </div>
+                                        <div class="eye-bank_address">
+                                            <h4 class="text-black font-weight-600" style="margin-bottom: .5rem;">Tirunelveli</h4>
+                                            <p class="text-black font-weight-500 margin-bottom-10px"><span>Phone</span> : 0462-337103</p>
+                                        </div>
+                                        <div class="eye-bank_address">
+                                            <h4 class="text-black font-weight-600" style="margin-bottom: .5rem;">Pondicherry</h4>
+                                            <p class="text-black font-weight-500 margin-bottom-10px"><span>Phone</span> : 1-413-2619100 - 04 (5 lines)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="chart-contain">
+                                        <canvas id="line-chart" width="100%" height="100%"></canvas>
+                                    </div>
+                                </div>
                             </div>
+
+
+                            
 
                             <div class=" padding-10px margin-bottom-10px">
                                 <div class="row eye-banks-container">
@@ -800,7 +827,17 @@
            title: {
               display: true,
               text: 'PERFORMANCE OF THE EYE BANK'
-            }
+            },
+            scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 300,
+                    min: 0,
+                    
+                }
+            }]
+            }  
           }
         });
             
