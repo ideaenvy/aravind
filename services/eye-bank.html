@@ -225,10 +225,17 @@
                             <hr>
                             <p class="body_text">An integral part of AECS is its community outreach programmes which take eye care service to the doorstep of the community. In the year ending March 2017, more than 2,500 camps were conducted through which 577,350 patients were screened and 92,022 patients underwent surgery. These camps also serve to educate the local community on eye care. Towards this end, several comprehensive eye care programmes are organised.</p>
                             <p class="body_text">An integral part of AECS is its community outreach programmes which take eye care service to the doorstep of the community. In the year ending March 2017, more than 2,500 camps were conducted through which 577,350 patients were screened and 92,022 patients underwent surgery. These camps also serve to educate the local community on eye care. Towards this end, several comprehensive eye care programmes are organised.</p>
+                            <p style="text-align:center;" class="h2 padding-10px">EYE BANK GROWTH - 2018</p>
                             
-                            <div class="chart-contain">
-                                <canvas id="line-chart" width="100%" height="100%"></canvas>
+                            <div class="row">
+                                <div class="col-lg-12"> 
+                                        <canvas id="bar-chart" width="100%" height="60%"></canvas>
+                                </div>
+                                
                             </div>
+
+
+                            
 
                             <div class=" padding-10px margin-bottom-10px">
                                 <div class="row eye-banks-container">
@@ -777,6 +784,7 @@
                 data: [0,0,253,781,851,859,1471,1420,1515,1610,1752,1759,1961,2238,2088,1855,1376,1549,1606,2019,2430,2127],
                 label: "MADURAI Eye Recovered",
                 borderColor: "#3e95cd",
+                
                 fill: false
               }, { 
                 data: [0,38,174,185,202,283,404,415,367,438,730,792,1068,1185,1410,1204,1287,1601,1877,1760,1794,1458],
@@ -800,12 +808,67 @@
            title: {
               display: true,
               text: 'PERFORMANCE OF THE EYE BANK'
-            }
+            },
+            scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 300,
+                    min: 0,
+                    
+                }
+            }]
+            }  
           }
         });
             
             
-            </script>
+        </script>
+        <!--Second Bar chart-->
+        <script>
+            new Chart(document.getElementById("bar-chart"), {
+          type: 'bar',
+          data: {
+            labels: [1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],
+            datasets: [{ 
+                data: [0,0,253,781,851,859,1471,1420,1515,1610,1752,1759,1961,2238,2088,1855,1376,1549,1606,2019,2430,2127],
+                label: "MADURAI ",
+                backgroundColor: "#189104",
+                fill: false
+              }, { 
+                data: [0,38,174,185,202,283,404,415,367,438,730,792,1068,1185,1410,1204,1287,1601,1877,1760,1794,1458],
+                label: "COIMBATOR ",
+                backgroundColor: "#17deee",
+                fill: false
+              }, { 
+                data: [0,0,0,0,0,0,0,0,22,44,62,36,82,69,137,169,373,420,575,660,489,502],
+                label: "TIRUNELVELI ",
+                backgroundColor: "#fe1a1a",
+                fill: false
+              }, { 
+                data: [0,0,0,0,0,0,0,0,98,128,126,198,248,446,862,932,922,757,921,1004,1139,1269],
+                label: "PONDICHERRY ",
+                backgroundColor: "#fbe600",
+                fill: false
+              }
+            ]
+          },
+          options: {
+            scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 300,
+                    min: 0,
+                    
+                }
+            }]
+            }  
+          }
+        });
+            
+            
+        </script>
         <script>
             $(window).scroll(function () {
                 $(this).scrollTop() >= 500 ? $("#return-to-top").fadeIn(300) : $("#return-to-top").fadeOut(300)
