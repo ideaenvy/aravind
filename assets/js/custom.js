@@ -415,19 +415,19 @@ function show_disease(e){
         }else{
             showit(showItemid);
             var x = document.getElementById(showItemid);
-            scroll(x);
+            // scroll(x);
         }
     }
 }
-function scroll(el) {
-    el.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'});
+// function scroll(el) {
+//     el.scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'});
     
-    setTimeout(() => {
-    window.scrollBy(0, -120);
-    }, 500);
-}
+//     setTimeout(() => {
+//     window.scrollBy(0, -120);
+//     }, 500);
+// }
 
 function showelements(e){
     e.preventDefault();
