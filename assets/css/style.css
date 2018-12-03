@@ -36762,13 +36762,6 @@ ul li.page-item {
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
-.activated-list {
-    background: #364d75 !important;
-    color:#fff !important;
-    font-size: 15px;
-    font-weight: 600;
-}
-
 .sub-widgets li:hover{
     font-weight: 600;
 }
