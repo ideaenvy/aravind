@@ -59,6 +59,7 @@ gulp.task('serve', ['sass'], function(){
   //gulp.watch(['assets/scss/**/**/*.scss','assets/scss/**/*.scss' ,'assets/scss/*.scss' ], ['sass']).on('change', browserSync.reload);
 //gulp.watch(['*.html','**/*.html']).on('change', browserSync.reload);
 gulp.watch(['**/*.html']).on('change', browserSync.reload);
+gulp.watch(['**/*.php']).on('change', browserSync.reload);
 });
 
 
