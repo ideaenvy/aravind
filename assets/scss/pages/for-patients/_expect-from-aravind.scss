@@ -5,7 +5,7 @@
 		margin-bottom: 1rem;
         .img-w {
 			position: relative;
-            flex: 1 0 15rem;
+            flex: 1 0 16rem;
             margin: 0.5rem;
 			overflow: hidden;
 			a{
@@ -44,7 +44,7 @@
     #eye_surgery {
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 			grid-gap: 0.5rem;
 			margin-bottom: 1rem;
             .img-w {
