@@ -6,12 +6,21 @@
 .archive-magazines{
     padding: 15px 0;
 }
-.box-overlay {
-    right: 0;
-    position: absolute;
-    background: rgba(0,0,0,0.5);
-    z-index: 1000;
-    top: 0;
-    bottom: 0;
-    left: 0;
+.subscribe-modal{
+    .modal-content{
+        border: none !important;
+        overflow: hidden;
+        .modal-body{
+            padding: 0 !important;
+            .two-section {
+                display: grid;
+                grid-template-columns: 25% auto;
+            }
+            .icon-container{
+                background: #0098ec;
+                align-items: center;
+
+            }
+        }
+    }
 }
