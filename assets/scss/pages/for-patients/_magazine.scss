@@ -9,17 +9,43 @@
 .subscribe-modal{
     .modal-content{
         border: none !important;
+        border-radius: 15px;
         overflow: hidden;
         .modal-body{
             padding: 0 !important;
             .two-section {
                 display: grid;
-                grid-template-columns: 25% auto;
+                grid-template-columns: 33% auto;
             }
             .icon-container{
-                background: #0098ec;
+                display: grid;
                 align-items: center;
-
+                justify-content: center;
+                background: #0098ec;
+                min-height: 200px;
+                height: 100%;
+                img{
+                    width: 120px;
+                }
+            }
+            .sub-content-box{
+                padding: 0 30px;
+                margin:  40px 0;
+                text-align: center;
+                form{
+                    .form-group{
+                        margin-bottom: .5rem;
+                        .form-control{
+                            margin-bottom: .5rem;
+                        }
+                        &:nth-child(even){
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .btn{
+                        border-radius: 20px;
+                    }
+                }
             }
         }
     }
