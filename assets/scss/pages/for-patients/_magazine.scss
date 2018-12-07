@@ -3,42 +3,15 @@
     font-size: 16px;
     font-weight: 500;
 }
-#A_Z{
-    ul{
-        padding: 0;
-        display: inline-block;
-        list-style: none;
-        list-style-type: disc;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 40px;
-        li{
-            display: list-item;
-            list-style: none;
-            padding: 0;
-            margin: 6px;
-            float: left;
-            line-height: 185%;
-            a{
-                display: flex;
-                align-items: center;
-                padding: 15px;
-                color: #588527;
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 30px;
-                border-radius: 3px;
-                width: 50px;
-                height: 50px;
-                text-align: center;
-                background: #f5f5f5;
-                transition: all 250ms;
-            }
-        }
-    }
-}
 .archive-magazines{
     padding: 15px 0;
+}
+.box-overlay {
+    right: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }

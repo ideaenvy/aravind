@@ -431,19 +431,17 @@ function show_disease(e){
 
 function showelements(e){
     e.preventDefault();
-    let curList_item = document.querySelector('.active-list');
-    let itemId = curList_item.getAttribute('data-target');
-    if(itemId === null){
-        return false;
-    }else{
-    hideit(itemId);}
-    curList_item.classList.remove('active-list');
-    let showItemid = this.getAttribute('data-target');
-    console.log(showItemid);
-    this.classList.add('active-list');
-    if (showItemid === null){
-        return false;
-    }else{
+    if(this.getAttribute('data-target') !== null){
+        let curList_item = document.querySelector('.active-list');
+        let itemId = curList_item.getAttribute('data-target');
+        if(itemId === null){
+            return false;
+        }else{
+        hideit(itemId);}
+        curList_item.classList.remove('active-list');
+        let showItemid = this.getAttribute('data-target');
+        console.log(showItemid);
+        this.classList.add('active-list');
         showit(showItemid);
     }
 }

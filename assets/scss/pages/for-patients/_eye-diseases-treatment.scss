@@ -278,3 +278,12 @@
         color: #ff0000
     }
 }
+a.nav-links {
+    font-size: 16px;
+    color: #888;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 7px;
+    transition: .2s all ease-in-out;
+    display: block;
+    padding: .5rem 1rem;
+}
