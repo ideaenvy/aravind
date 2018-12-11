@@ -589,8 +589,10 @@
                         </div>
                         <div class="form-group">
                             <label for="upload">Upload your resume as PDF here (optional)</label>
-                            <div class='input-group date' id='datetimepicker2'>
-                                <input type='file' class="form-control" /><span class="input-group-addon">Upload</span>
+                            <div class='input-group date'>
+                                <span id="file-selected" class="form-control">No file selected</span>
+                                <label for="uplabel" class="input-group-addon up-btn">Upload</label>
+                                <input type='file' id="uplabel" class="hidden" name="fileUpload"/>
                             </div>
                         </div>
                         <div class="form-group action-btn">
@@ -672,5 +674,11 @@
         <script src="../assets/js/custom.js"></script>
         <script src="../assets/js/popper.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
+        <script>
+            document.querySelector('#uplabel').addEventListener('change', function(e){
+                var filename = e.value.replace(/^.*\\/, "");
+                console.log(filename);
+            });
+        </script>
     </body>
 </html>
