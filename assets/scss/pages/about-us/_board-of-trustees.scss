@@ -5,6 +5,9 @@
   &-block{
     padding: 15px 0 0 0;
     border-bottom: 2px solid #ddd;
+    .row{
+      padding: 30px 0 0 0;
+    }
     .board__cat{
       list-style-type: none;
       padding: 0;
