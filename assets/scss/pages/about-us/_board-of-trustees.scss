@@ -1,29 +1,40 @@
-.main-about-us{
-  #board-trust{
-    padding: 30px;
-    background: $color-white;
-    .govel-trust{
-      color: $color-red;
-    }
-    .board-of-trustees-sub{
-      margin-top: 50px;
-      &:first-child{
-        margin-top: 0px;
+.trust{
+  &-title{
+    color: #3396ff;
+  }
+  &-block{
+    padding: 15px 0 0 0;
+    border-bottom: 2px solid #ddd;
+    .board__cat{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      &_head{
+        margin: 20px 0 10px 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 23px;
+        color: #000000;
+        &:first-child{
+          margin: 0 0 10px 0;
+        }
       }
-      .board-of-mem{
-        .box-shadow{
-          padding: 20px 10px;
-          margin: 10px auto;
-          vertical-align: middle;
-  
-          p{
-            padding: 0;
-            margin: 0;
-          }
+      a{
+        display: table;
+        padding: 5px 0 5px 0;
+        opacity: .7;
+        font-size: 15px;
+        font-weight: 500;
+        color: #000000;
+        transition: all 50ms ease-out;
+        &:hover {
+          opacity: 0.9;
         }
       }
     }
+    &:last-child{
+      border: none;
+      padding: 15px 0 15px 0;
+    }
   }
 }
-  
-
