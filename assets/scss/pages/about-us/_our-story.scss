@@ -28,5 +28,42 @@
     }
   }
 }
-  
 
+.featured{
+  &-container{
+    border: 2px solid #3396ff;
+    &:last-child{
+      margin-top: 2rem;
+    }
+  }
+  &-video{
+    transform: translate(calc(-1.5rem - 2px), calc(-1.5rem - 2px));
+    margin-right: -1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  &-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    .date{
+      font-weight: 500;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .text{
+      font-size: 15px;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}
+
+.story-element{
+  margin-top: 1.5rem;
+  .icon-image{
+    text-align: center;
+  }
+}
