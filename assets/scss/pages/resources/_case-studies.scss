@@ -5,3 +5,30 @@
   }
 }
 
+.case-study{
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li{
+      margin-bottom: 1rem;
+      p {
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0;
+        span {
+          display: block;
+          color: sandybrown;
+          font-style: italic;
+        }
+      }
+      &:last-child(){
+        margin-bottom: 0;
+      }
+    }
+  }
+} 
+  
