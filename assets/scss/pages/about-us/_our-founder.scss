@@ -52,3 +52,35 @@
     }
   }
 }
+.founder-slider{
+  .carousel-item{
+    height: unset;
+  }
+  .carousel-caption{
+    top: 5%;
+    left: unset;
+    right: 6%;
+    width: 40%;
+    text-align: left;
+    color: #000;
+    p{
+      color: #000000 !important;
+    }
+  }
+}
+.video-sect{
+  h2{
+    color: #fff;
+  }
+  .video-wrapper{
+    position: relative;
+    padding-top: 33.2857%;
+    #seva-home-video{
+      position: absolute;
+      width: 60%;
+      height: 100%;
+      top: 0;
+      margin: 0 15%;
+    }
+  }
+}
