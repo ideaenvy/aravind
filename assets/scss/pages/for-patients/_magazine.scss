@@ -111,3 +111,25 @@
     }
 
 }
+
+@media screen and (max-width: 568px){
+    .magazinetwo{
+        .chq{
+            p{
+                margin: 0px;
+                font-size: 14px;
+                line-height: 2em;
+                font-weight: 500;
+            }
+        }
+        .chqright{
+            p{
+                font-size: 14px;
+                line-height: 1.5rem;
+                padding: 0px;
+            }
+            
+        }
+    }
+    
+}
