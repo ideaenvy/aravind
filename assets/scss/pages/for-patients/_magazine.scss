@@ -53,7 +53,7 @@
         }
     }
 }
-
+//for magazine-1 and magazine-2.html pages
 .chq{
     p{
         margin: 50px 30px 0px 30px;
@@ -69,4 +69,26 @@
         padding: 0px 30px;
     }
     
+}
+
+.magazinetwo{
+    .chq{
+        p{
+            margin: 30px 30px 0px 30px;
+            font-size: 24px;
+            line-height: 2em;
+            font-weight: 500;
+        }
+    }
+    .chqright{
+        p{
+            font-size: 20px;
+            line-height: 2.5rem;
+            padding: 0px 30px;
+        }
+        
+    }
+}
+.magazinetwosub{
+    margin-top: 30px;
 }
