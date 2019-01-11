@@ -179,15 +179,25 @@
     .firstof, .secondof, .flexy{
         align-items: baseline !important;
         flex-direction: column;
-        margin: 0px !important;
+        margin: 0px;
     }
-    
+
+    .secondof{
+        margin-left: -35px !important;
+    }
+
+    .ourfhead{
+        margin: auto !important;
+
+    }
+
     .our-founder{
         .op{
             .firstpara, .rightp{
                 width: 100% !important;
                 margin: 0px !important;
             }
+            
         }
     }
 }
