@@ -96,3 +96,32 @@
     }
   }
 }
+
+
+.founder1{
+  background: url(../img/bg-image.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.top-content{
+  h3{
+    color: #f6c202;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: .2px;
+    font-size: 28px;
+  }
+  p{
+    color: #fff;
+  }
+}
+.video-sect{
+  h3{
+    color: #f6c202;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    margin-bottom: 2rem;
+    font-size: 28px;
+  }
+}
