@@ -24,11 +24,12 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  margin-top: 10px;
   .prod-pic{
     text-align: center;
   }
   .prod-meta{
-    padding: 15px 5px;
+    padding: 15px 5px 0;
     .prod-title{
       font-size: 18px;
       font-weight: 600;
@@ -87,4 +88,9 @@
   padding: 10px;
   margin: 0 20px;
   font-family: sans-serif;
+}
+@media only screen and (max-width: 920px) {
+  .sm-mb{
+    margin-bottom: 15px;
+  }
 }
