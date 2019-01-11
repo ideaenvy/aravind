@@ -176,9 +176,19 @@
   }
 
 @media only screen and (max-width: 568px){
-    .firstof{
+    .firstof, .secondof, .flexy{
         align-items: baseline !important;
         flex-direction: column;
+        margin: 0px !important;
+    }
+    
+    .our-founder{
+        .op{
+            .firstpara, .rightp{
+                width: 100% !important;
+                margin: 0px !important;
+            }
+        }
     }
 }
   
