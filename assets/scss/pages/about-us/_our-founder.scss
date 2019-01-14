@@ -115,6 +115,13 @@
   p{
     color: #fff;
   }
+  .carousel{
+    background: #fef5f6;
+    img {
+      width: 40%;
+      clip-path: polygon(0 0, 95% 0%, 70% 100%, 0% 100%);
+    }
+  }
 }
 .video-sect{
   h3{
