@@ -128,7 +128,16 @@
   
   
   
-  
+  @media only screen and (max-width: 568px){
+ 
+      #slider-sect .slider .slides .slide{
+        height: auto;
+      }
+
+      #slider-sect .slider .controls .captions{
+          margin-top: 0px;
+      }
+  }
   
   
   
