@@ -32155,16 +32155,19 @@ form.dark-form ::-ms-input-placeholder {
   }
 
   header a.mobile-toggle {
-    margin: 5px;
+    margin: 0;
     font-size: 20px;
     text-align: center;
     float: right;
-    color: #fff;
+    color: #364d75;
     text-decoration: none;
     display: inline-block;
     position: relative;
+    cursor: pointer;
+    background: transparent;
     top: 0;
     right: 0;
+    padding: 13px 0;
   }
 
   header #menu-main {
