@@ -16,7 +16,7 @@
                 position: relative;
                 display: block;
                 min-height: 100%;
-                max-width: 100%;
+                width: 100%;
                 opacity: 0.8;
                 backface-visibility: hidden;
             }
@@ -100,6 +100,9 @@
                 padding: 10px;
                 font-size: 19px;
                 margin-top: 2px;
+                @include respond-below(xs) {
+                    margin-top: 0px;
+                  }
                 color: #ffffff;
                 background: darkgrey;
                 text-align: center;
@@ -118,6 +121,9 @@
                 align-items: baseline;
                 background: #fff;
                 height: 500px;
+                @include respond-below(xs) {
+                    height: auto;
+                  }
                 outline: 0 !important;
                 color: #ccc;
                 font-size: 40px;
@@ -128,7 +134,16 @@
   
   
   
-  
+/*   @media only screen and (max-width: 568px){
+ 
+      #slider-sect .slider .slides .slide{
+        height: auto;
+      }
+
+      #slider-sect .slider .controls .captions{
+          margin-top: 0px;
+      }
+  } */
   
   
   
