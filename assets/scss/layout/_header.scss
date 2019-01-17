@@ -1,6 +1,12 @@
 .wrapper {
   width: 95%;
   margin: 0 auto;
+  .tc{
+    text-align: left;
+    @include respond-below(xs) {
+      text-align: center;
+    }
+  }
 }
 a#logo {
   margin-top: 2px;
@@ -2604,14 +2610,16 @@ header ul.nav-menu {
 }
 
 header a.mobile-toggle {
-  margin: 5px;
+  margin: 0;
   font-size: 20px;
   text-align: center;
-  //float: right;
-  color: #fff;
+  float: right;
+  color: #364d75;
   text-decoration: none;
   display: inline-block;
   position: relative;
+  cursor: pointer;
+  background: transparent;
   top: 0;
   right: 0;
 }
@@ -3309,13 +3317,27 @@ input {
           transition: all .5s;
       }
       /* Demo 2 */
+      @media only screen and (max-width: 576px){
+ 
+        #demo-2{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        }
+
       #demo-2 input[type=search] {
           width: 0px;
           cursor: pointer;
+          @include respond-below(xs) {
+            float: right;
+          }
       }
       
       #demo-2 input[type=search]:focus {
           width: 230px;
+          @include respond-below(xs) {
+            width: calc(100% - 3em) !important;
+          }
           padding-left: 32px;
           color: #000;
           background-color: #fff;

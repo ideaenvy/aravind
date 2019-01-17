@@ -47,9 +47,17 @@
         $sticky_content = $('.sticky-content'),
         $sticky_sidebar = $('.sticky-sidebar');
 
-    $menu_show.on("click", function (e) {
+    /* $menu_show.on("click", function (e) {
         $menu.slideToggle();
+    }); */
+
+    $menu_show.on("click", function (e) {
+        var $this = $('.mobile-toggle svg');
+        var toggled = $this.hasClass("fa-bars");
+        $menu.slideToggle();
+        $this.toggleClass("fa-times fa-bars");
     });
+
     $list.on("click", function (e) {
         var submenu = this.parentNode.getElementsByTagName("ul").item(0);
         if (submenu != null) {
