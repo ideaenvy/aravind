@@ -242,8 +242,14 @@
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
     padding: 40px;
     margin: auto;
+    
+    @include respond-below(xs) {
+        box-shadow: none;
+        padding: 0;
+      }
     button{
         float: right;
+        
     }
     .left-text {
         p {
@@ -273,6 +279,9 @@
             font-size: 20px;
             vertical-align: middle;
             text-align: center;
+            @include respond-below(xs) {
+                display: none; 
+              }
         }
     }
 }
@@ -356,6 +365,9 @@
     
         :-ms-input-placeholder {  
                 color: #737373 !important;
+        }
+        .lbltext{
+            display: none;
         }
     }
 }
