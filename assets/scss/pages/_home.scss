@@ -16,7 +16,7 @@
                 position: relative;
                 display: block;
                 min-height: 100%;
-                width: 100%;
+                width: 100% !important;
                 opacity: 0.8;
                 backface-visibility: hidden;
             }
@@ -101,7 +101,7 @@
                 font-size: 19px;
                 margin-top: 2px;
                 @include respond-below(xs) {
-                    margin-top: 0px;
+                    margin-top: 0px !important;
                   }
                 color: #ffffff;
                 background: darkgrey;
@@ -122,7 +122,7 @@
                 background: #fff;
                 height: 500px;
                 @include respond-below(xs) {
-                    height: auto;
+                    height: 100% !important;
                   }
                 outline: 0 !important;
                 color: #ccc;
