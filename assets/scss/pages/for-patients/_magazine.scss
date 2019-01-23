@@ -240,10 +240,49 @@
 
 .aravind-form{
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
-    padding: 80px auto;
+    padding: 40px;
     margin: auto;
-    input{
-        border: solid 1px #aba5a5;
+    
+    @include respond-below(xs) {
+        box-shadow: none;
+        padding: 0;
+      }
+    button{
+        float: right;
+        
+    }
+    .left-text {
+        p {
+            font-weight: bold;
+            font-size: 16px;
+            span{
+                color: red;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        }
+
+
+    }
+    
+    .form-group{
+        input{
+            border: solid 1px #aba5a5;
+        }
+        textarea{
+            width: 100%;
+        }
+        .phone-separate {
+            position: absolute;
+            top: 8px;
+            right: -6px;
+            font-size: 20px;
+            vertical-align: middle;
+            text-align: center;
+            @include respond-below(xs) {
+                display: none; 
+              }
+        }
     }
 }
 
@@ -312,4 +351,46 @@
             }
         }
     }
+    .aravind-form{
+        ::-webkit-input-placeholder {
+            color: #737373 !important;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+                color: #737373 !important;
+        }
+    
+        ::-moz-placeholder {  /* Firefox 19+ */
+                color: #737373 !important;
+        }
+    
+        :-ms-input-placeholder {  
+                color: #737373 !important;
+        }
+        .lbltext{
+            display: none;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 569px){
+    .aravind-form{
+        ::-webkit-input-placeholder {
+            color: transparent !important;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+                color: transparent !important;
+        }
+    
+        ::-moz-placeholder {  /* Firefox 19+ */
+                color: transparent !important;
+        }
+    
+        :-ms-input-placeholder {  
+                color: transparent !important;
+        }
+    }
+
+    
 }
