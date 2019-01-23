@@ -89,6 +89,165 @@
 
 }
 
+/* magazine-form */
+
+.aravindform-form {
+    padding: 60px 0;
+    margin: auto;
+
+    .form-all {
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+        width: 690px;
+        margin: 0px auto;
+        padding-top: 0px;
+        color: #555 !important;
+        font-size: 14px;
+        list-style: none;
+        list-style-position: outside;
+
+        .form-section {
+            list-style: none;
+            list-style-position: outside;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            zoom: 1;
+            clear: both;
+
+            .form-header-group {
+                margin: 12px 36px 12px 36px;
+                padding: 24px 0px 24px 0px;
+                text-align: left;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #e3e3e3;
+                clear: both;
+
+                .htvam {
+                    vertical-align: middle;
+                }
+                .httal {
+                    text-align: left;
+                }
+                .form-header {
+                    color: #555;
+                    font-size: 2.143em;
+                    margin: 0px;
+                }
+            }
+
+            .form-line {
+                padding: 12px 36px;
+                margin: 12px 0;
+                width: 100%;
+                box-sizing: border-box;
+                position: relative;
+                clear: both;
+                .form-label-auto {
+                    display: inline-block;
+                    float: left;
+                    text-align: left;
+                    width: 150px;
+                    color: #555;
+                    font-weight: bold;
+                    .form-required {
+                        margin-left: 5px;
+                        color: red;
+                    }
+                }
+                
+                .form-label-top {
+                    white-space: normal;
+                    margin-bottom: 9px;
+                    
+                }
+                .form-input-wide {
+                    input{
+                        border: 1px solid #d6d4d4;
+                    }
+                    .form-sub-label-container {
+                        display: inline-block;
+                        margin-right: 5px;
+                        .form-textbox, .form-textarea {
+                            padding: 4px 3px 2px 3px;
+                            margin-left: 0;
+                            border: 1px solid #d6d4d4;
+                            font-size: 1em;
+                            line-height: 1.071em;
+                            box-shadow: 0 1px 2px #eee inset;
+                        }
+                        .form-textarea {
+                            white-space: pre-wrap;
+                        }
+                        .form-sub-label {
+                            color: #6f6f6f;
+                            font-size: 0.786em;
+                            margin-top: 3px;
+                            display: block;
+                            margin-bottom: 3px;
+                            word-wrap: break-word;
+                        }
+
+
+                    }
+
+                    .form-address-table {
+                        width: 330px;
+                        border: none;
+                        td {
+                            border: none;
+                            padding-bottom: 10px;
+                            .form-sub-label-container {
+                                display: inline-block;
+                                margin-right: 5px;
+                                .form-address-line {
+                                    width: 310px;
+                                }
+                                .form-address-city, .form-address-state {
+                                    width: 144px;
+                                }
+                                .form-textbox, .form-textarea {
+                                    padding: 4px 3px 2px 3px;
+                                    margin-left: 0;
+                                    border: 1px solid #d6d4d4;
+                                    font-size: 1em;
+                                    line-height: 1.071em;
+                                    box-shadow: 0 1px 2px #eee inset;
+                                }
+                                .form-sub-label {
+                                    color: #6f6f6f;
+                                    font-size: 0.786em;
+                                    margin-top: 3px;
+                                    display: block;
+                                    margin-bottom: 3px;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+
+/* magazine-for-2  */
+
+.aravind-form{
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+    padding: 80px auto;
+    margin: auto;
+    input{
+        border: solid 1px #aba5a5;
+    }
+}
+
+
 @media screen and (max-width: 568px){
     .magazinetwo{
         .chq{
