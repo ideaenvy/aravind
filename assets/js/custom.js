@@ -15,6 +15,8 @@
 (function($) {
     "use strict";
 
+    
+
 	/* ------------------  1. wow animation ------------------ */
     $(window).imagesLoaded(function () {
         wow.init();
