@@ -3,9 +3,12 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   
   .top-content{
-
+    h2 {
+    color: #f6c202 !important;
+    }
     .firstof{
         list-style: none;
         display: flex;
@@ -109,8 +112,9 @@
       h2, p{
         color: #f6c202 !important;
       }
-      .carousel-control-next {
-          color: #f6c202 !important;
+      p{
+        font-size: 18px;
+        line-height: 1.5;
       }
       
     }
