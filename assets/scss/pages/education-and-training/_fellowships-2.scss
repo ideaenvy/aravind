@@ -29,13 +29,14 @@
     padding: 20px;
     .whole{
         h4{
-            margin-bottom: 20px;
+            margin-top: 10px;
         }
         
         .holder{
             box-shadow: 0px 0px 5px #bfbfbf;
             padding: 6px;
             height: 230px;
+            margin: 10px 0;
             
             .paraholder {
                 position: absolute;
@@ -52,5 +53,17 @@
             }
             
         }
+    }
+}
+
+@media only screen and (min-width: 1281px){
+    .holder{
+        height: 250px !important;
+    }
+}
+
+@media only screen and (min-width: 1441px){
+    .holder{
+        height: 320px !important;
     }
 }
