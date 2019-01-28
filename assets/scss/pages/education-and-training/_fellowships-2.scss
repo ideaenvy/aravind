@@ -1,0 +1,26 @@
+.card-body{
+    .group-programme{
+        background-color: #ebf1f3;
+        border-radius: 10px;
+        margin: 20px 30px;
+        overflow: hidden;
+        .gp{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .per-prog{
+                padding: 20px 50px;
+                &:hover{
+                    background-color: #dce1e2;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+            .hrt{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
