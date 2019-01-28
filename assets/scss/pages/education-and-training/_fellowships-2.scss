@@ -24,3 +24,33 @@
         }
     }
 }
+
+.card-bode{
+    padding: 20px;
+    .whole{
+        h4{
+            margin-bottom: 20px;
+        }
+        
+        .holder{
+            box-shadow: 0px 0px 5px #bfbfbf;
+            padding: 6px;
+            height: 230px;
+            
+            .paraholder {
+                position: absolute;
+                bottom: 4%;
+                width: 85%;
+
+                p{
+                    margin: 0;
+                }
+                hr{
+                    margin: 6px;
+                }
+                
+            }
+            
+        }
+    }
+}
