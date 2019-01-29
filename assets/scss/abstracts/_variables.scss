@@ -3,9 +3,21 @@ $color-black: #000;
 $color-red: red;
 $color-grey: #808080;
 $color-grey-1: #E0E0E0;
+$color-lightgrey: #ccc;
 $active-blue: #364d75;
 $theme-blue: #644e81;
 $monserat_font: 'Montserrat', sans-serif;
 $lato_font: 'Lato', sans-serif;
 $osans_font: 'Open Sans', sans-serif;
 $oswald_font: 'Oswald', sans-serif;
+.page-title{
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: .5px;
+    padding: 12.4px 0;
+    margin: 0;
+}
+.header-division{
+    margin-top: 0;
+}

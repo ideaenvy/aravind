@@ -60,6 +60,17 @@
   }
 }
 
+.credits{
+  p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.42857143;
+    color: #333;
+  }
+}
+  
+
 #cfaculty{
   .text-heading{
     text-align: center;
@@ -412,5 +423,124 @@
   h6{
     margin: 0;
     padding: 0;
+  }
+}
+
+// CSS for Single workshop page
+.nav-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.work-banner{
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5rem 0;
+  // margin-bottom: 1.5rem;
+}
+.bg-cover{
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .8;
+}
+.banner-head{
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-white;
+  text-transform: capitalize;
+  span{
+    font-size: 2rem;
+    text-transform: none;
+  }
+}
+.banner-sub{
+  margin-bottom: 1.5rem;
+  color: $color-white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  span{
+    display: block;
+    text-transform: capitalize;
+  }
+}
+.block-spacing{
+  padding: 50px 0;
+  background: $color-lightgrey;
+  &:nth-child(odd){
+    background: $color-white;
+  }
+}
+.greetings p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.feature-image-contain{
+  img{
+    padding: .5rem;
+    background-color: #f8f9fa;
+    border: 0 solid #dee2e6;
+    border-radius: .375rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  }
+}
+
+.facult-container{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  .faulty-list{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .faculty-pic{
+      flex: 0 0 150px;
+      max-width: 15%;
+      padding: 0 15px;
+    }
+    .faculty-info{
+      flex: 0 0 85%;
+      max-width: 85%;
+      padding: 0 15px;
+      p{
+        font-size: 14px;
+        color: #000;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        margin: 0;
+        &.name{
+          color: #03998e;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  .footer-credit{
+    background: #333;
+    padding: 20px 0;
+    text-align: center;
+    color:$color-white;
+    p{
+      margin: 0;
+    }
   }
 }
