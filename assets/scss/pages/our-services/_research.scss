@@ -1,9 +1,16 @@
+.research-topics{
+    margin-top: 30px;
+}
 .research{
+    margin-bottom: 1rem;
     .card-plain{
         background: transparent;
         box-shadow: none;
         border: none;
         text-align: center;
+        .card-body{
+            padding: 0;
+        }
     }
 }
 .card .card-header.card-header-image {
