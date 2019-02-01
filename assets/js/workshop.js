@@ -27,3 +27,22 @@ $('.n-menu a').click(function() {
         }
     
 });
+
+
+
+$(window).resize(function() {
+    $selector = $('#facultyy .larged');
+
+    if ($(window).width() < 1025) {
+        $selector.removeClass('col');
+        $selector.addClass('col-md-6');
+        $selector.css('margin-bottom','15px');
+        $('#facultyy .larged .imgtext').css('width','70%');
+
+    } else {
+        $selector.removeClass('col-md-6');
+        $selector.addClass('col');
+        $selector.css('margin','0px');
+        $('#facultyy .larged .imgtext').css('width','unset');
+    }
+}).resize();

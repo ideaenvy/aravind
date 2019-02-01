@@ -288,18 +288,23 @@
     overflow: hidden;
     box-shadow: 0px 1px 4px #b5b5b5;
     
-    &:hover .imgtext{
+    
+    /* &:hover .imgtext{
       width: 75%;
       padding: 10px 0px 10px 60px;
 
+    } */
+
+    img{
+      width: 100%;
     }
+    
     .imgtext {
       position: absolute;
       bottom: 4%;
       background: rgba(20,30,27,0.5);
       color: white;
-      padding: 10px 0px 10px 40px;
-      width: 70%;
+      padding: 10px 25px;
       transform: skew(10deg);
       transform-origin: 50% 100%;
       transition: all 0.5s linear;
@@ -315,7 +320,7 @@
         margin-left: -4px;
         color: #e0e0e0;
       }
-  }
+    }
   }
 }
 
