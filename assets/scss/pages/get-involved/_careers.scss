@@ -117,22 +117,3 @@
         }
     }
 }
-.jobd {
-    display: grid;
-    grid-template-columns: 115px 1fr;
-    p{
-        margin-bottom: 0;
-    }
-    &:last-child{
-        margin-bottom: 1rem;
-    }
-}
-.job {
-    background: #fff;
-    padding: 30px;
-    border-bottom: 1px solid #f8f8f8;
-    margin-bottom: 10px;
-}
-.job-action{
-    text-align: center;
-}
