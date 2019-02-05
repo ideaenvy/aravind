@@ -180,6 +180,9 @@
         height: 2px;
         background-color: #f80;
         margin-top: 13px;
+        @include respond-below(xs) {
+          width: 18%;
+        }
       }
       &:after{
         content: "";
@@ -189,6 +192,9 @@
         height: 2px;
         background-color: #f80;
         margin-top: 13px;
+        @include respond-below(xs) {
+          width: 18%;
+        }
       }
   
   
@@ -325,6 +331,9 @@
       height: 2px;
       background-color: #f80;
       margin-top: 13px;
+      @include respond-below(xs) {
+        width: 18%;
+      }
     }
     &:after{
       content: "";
@@ -334,6 +343,9 @@
       height: 2px;
       background-color: #f80;
       margin-top: 13px;
+      @include respond-below(xs) {
+        width: 18%;
+      }
     }
 
 
