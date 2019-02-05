@@ -167,44 +167,43 @@
 
 /* workshop new starts from here*/
 
-.work-head{
-  position: fixed;
-  width: 100%;
-  
-  padding: 30px 0 20px 0;
+.workshop-new{
   .container-fluid{
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  ul{
-    list-style: none;
-    display: flex;
-    float: right;
-    
-    .n-brand {
-      position: absolute;
-      left: 5%;
-      text-transform: uppercase;
-      color: $color-white;
-    }
-    .n-menu {
-      position: relative;
-      right: 10%;
-      margin: 0 20px;
-      margin-bottom: -6px;
-      a{
-        color: $color-white;
-        &:hover{
-          cursor: pointer;
-          color: #f80;
-          
+    h2{
+      text-align: center;
+      margin: 20px 0 40px;
+      &:before{
+        content: "";
+        position: absolute;
+        left: 14%;
+        width: 30%;
+        height: 2px;
+        background-color: #f80;
+        margin-top: 13px;
+        @include respond-below(xs) {
+          width: 18%;
         }
       }
+      &:after{
+        content: "";
+        position: absolute;
+        right: 14%;
+        width: 30%;
+        height: 2px;
+        background-color: #f80;
+        margin-top: 13px;
+        @include respond-below(xs) {
+          width: 18%;
+        }
+      }
+  
+  
     }
   }
+  nav{
+    padding: 22px;
+  }
   
-}
 .darkHeader{
   background-color: black;
   transition: all 1s linear;
@@ -212,6 +211,7 @@
 .lighthead{
   background-color: rgba(0, 0, 0, 0.1);
   transition: all 1s linear;
+  
 }
 
 .mainslid{
@@ -221,22 +221,16 @@
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;
+ 
   .overlayy {
-    height: 100vh;
+    
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    .bann-text {
-      position: relative;
-      top: 50%;
-      text-align: center;
-      margin: auto;
-      h2{
-        font-size: 50px;
-        color: white;
-        line-height: 1em;
-      }
+    padding: 6rem 0;
+    .container{
+      margin-top: 3rem;
     }
+    
   }
   
 }
@@ -244,20 +238,8 @@
 #ovrvw {
   width: 90%;
   margin: 60px auto;
-  .txtleftpart{
-    h2{
-      margin-bottom: 4%;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 8%;
-        left: 2%;
-        height: 4px;
-        width: 40px;
-        background-color: #f80;
-    }
-    }
-  }
+  
+ 
 
   .imgrightpart{
     img{
@@ -272,33 +254,11 @@
 #facultyy{
   width: 90%;
   margin: 60px auto;
-  h2{
-    text-align: center;
-    margin: 20px 0 40px;
-    &:before{
-      content: "";
-      position: absolute;
-      left: 15%;
-      width: 30%;
-      height: 2px;
-      background-color: #f80;
-      margin-top: 13px;
-    }
-    &:after{
-      content: "";
-      position: absolute;
-      right: 15%;
-      width: 30%;
-      height: 2px;
-      background-color: #f80;
-      margin-top: 13px;
-    }
-  }
+ 
   .imgholder{
     position: relative;
     overflow: hidden;
     box-shadow: 0px 1px 4px #b5b5b5;
-    
     
     /* &:hover .imgtext{
       width: 75%;
@@ -333,9 +293,31 @@
       }
     }
   }
+
+  .withoutpic{
+    margin: 20px 0 0 0;
+    padding: 1rem;
+    height: 200px;
+    .name{
+      color: #8e4c01;
+    }
+    hr{
+      margin: 0 0 1rem 0;
+    }
+  }
 }
 
-#applic{
+#session{
+  width: 90%;
+  margin: 60px auto;
+}
+
+#shedule{
+  width: 90%;
+  margin: 60px auto;
+}
+
+#register{
   width: 90%;
   margin: 60px auto;
   h2{
@@ -344,72 +326,36 @@
     &:before{
       content: "";
       position: absolute;
-      left: 15%;
-      width: 27%;
+      left: 13%;
+      width: 30%;
       height: 2px;
       background-color: #f80;
       margin-top: 13px;
+      @include respond-below(xs) {
+        width: 18%;
+      }
     }
     &:after{
       content: "";
       position: absolute;
-      right: 16%;
-      width: 26%;
+      right: 13%;
+      width: 30%;
       height: 2px;
       background-color: #f80;
       margin-top: 13px;
+      @include respond-below(xs) {
+        width: 18%;
+      }
     }
+
+
   }
 }
-
-#brc{
-  width: 90%;
-  margin: 60px auto;
-  .brochureback{
-    background-image: url("../img/writehand.jpg");
-    height: 350px;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    text-align: center;
-    button {
-      font-size: 30px !important;
-      position: relative;
-      top: 40%;
-    }
-  }
-}
-
 #contc{
   width: 90%;
   margin: 60px auto;
-  h2{
-    text-align: center;
-    margin: 20px 0 40px;
-    &:before{
-      content: "";
-      position: absolute;
-      left: 15%;
-      width: 27%;
-      height: 2px;
-      background-color: #f80;
-      margin-top: 13px;
-    }
-    &:after{
-      content: "";
-      position: absolute;
-      right: 16%;
-      width: 26%;
-      height: 2px;
-      background-color: #f80;
-      margin-top: 13px;
-    }
-  }
+ 
 
-  form{
-    width: 60%;
-    margin: auto;
-  }
 }
 
 .work-footer{
@@ -419,7 +365,7 @@
   text-align: center;
   .scrolltop {
     padding: 10px;
-    background-color: #17a2b8;
+    background-color: #b7d0e0;
     position: fixed;
     right: 1%;
     bottom: 1%;
@@ -430,6 +376,9 @@
     padding: 0;
   }
 }
+}
+
+
 
 // CSS for Single workshop page
 .nav-fixed{
