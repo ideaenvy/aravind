@@ -314,6 +314,30 @@
 #register{
   width: 90%;
   margin: 60px auto;
+  h2{
+    text-align: center;
+    margin: 20px 0 40px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 13%;
+      width: 30%;
+      height: 2px;
+      background-color: #f80;
+      margin-top: 13px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      right: 13%;
+      width: 30%;
+      height: 2px;
+      background-color: #f80;
+      margin-top: 13px;
+    }
+
+
+  }
 }
 #contc{
   width: 90%;
