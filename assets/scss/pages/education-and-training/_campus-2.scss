@@ -11,6 +11,7 @@
     background: #f8f8f8;
     .campus-info{
         padding: 40px 15px;
+        z-index: 1;
         .row{
             align-items: center;
         }
@@ -26,13 +27,24 @@
 }
 .campus-banner {
     width: 100%;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/campus.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
+    color: #ffffff;
     background-color: #000000;
     position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        position: absolute;
+        z-index: 0;
+        opacity: .3;
+        mix-blend-mode: soft-light;
+    }
     &:after{
         content: "";
         width: 150%;
@@ -58,6 +70,7 @@
         text-align: center;
         width: 100%;
         p{
+            color: #ffffff !important;
             max-width: 60%;
         }
     }
