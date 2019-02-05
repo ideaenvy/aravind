@@ -1,9 +1,9 @@
 $(function() {
-    var header = $(".work-head");
+    var header = $(".navbar");
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
-        if (scroll >= 600) {
+        if (scroll >= 300) {
             header.removeClass('lighthead').addClass("darkHeader");
             $(".scrolltop").css("display","block");
         } else {
@@ -15,7 +15,7 @@ $(function() {
     });
 });
 
-$('.n-menu a').click(function() {
+$('.nav-item a').click(function() {
     
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

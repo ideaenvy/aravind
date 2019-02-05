@@ -167,44 +167,11 @@
 
 /* workshop new starts from here*/
 
-.work-head{
-  position: fixed;
-  width: 100%;
-  
-  padding: 30px 0 20px 0;
-  .container-fluid{
-    margin: 0 !important;
-    padding: 0 !important;
+.workshop-new{
+  nav{
+    padding: 20px;
   }
   
-  ul{
-    list-style: none;
-    display: flex;
-    float: right;
-    
-    .n-brand {
-      position: absolute;
-      left: 5%;
-      text-transform: uppercase;
-      color: $color-white;
-    }
-    .n-menu {
-      position: relative;
-      right: 10%;
-      margin: 0 20px;
-      margin-bottom: -6px;
-      a{
-        color: $color-white;
-        &:hover{
-          cursor: pointer;
-          color: #f80;
-          
-        }
-      }
-    }
-  }
-  
-}
 .darkHeader{
   background-color: black;
   transition: all 1s linear;
@@ -212,6 +179,7 @@
 .lighthead{
   background-color: rgba(0, 0, 0, 0.1);
   transition: all 1s linear;
+  
 }
 
 .mainslid{
@@ -221,22 +189,16 @@
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;
+ 
   .overlayy {
-    height: 100vh;
+    
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    .bann-text {
-      position: relative;
-      top: 50%;
-      text-align: center;
-      margin: auto;
-      h2{
-        font-size: 50px;
-        color: white;
-        line-height: 1em;
-      }
+    padding: 5rem 0;
+    .container{
+      margin-top: 3rem;
     }
+    
   }
   
 }
@@ -430,6 +392,9 @@
     padding: 0;
   }
 }
+}
+
+
 
 // CSS for Single workshop page
 .nav-fixed{
