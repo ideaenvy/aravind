@@ -1,0 +1,115 @@
+#campus{
+    p{
+        line-height: 1.625rem;
+        color: #505050;
+        margin: 0 0 1.25rem;
+        font-size: 1rem;
+    }
+}
+.banner-section{
+    overflow: hidden;
+    background: #f8f8f8;
+    .campus-info{
+        padding: 40px 15px;
+        .row{
+            align-items: center;
+        }
+    }
+}
+.sub-headline{
+    color: #505050;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    max-width: 100%;
+}
+.campus-banner {
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    background-color: #000000;
+    position: relative;
+    &:after{
+        content: "";
+        width: 150%;
+        height: 100%;
+        position: absolute;
+        background: #f8f8f8;
+        bottom: -100%;
+        transform: rotate(5.4deg);
+        left: -50%;
+        transform-origin: top right;
+    }
+    .container{
+        height: inherit;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-info{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        p{
+            max-width: 60%;
+        }
+    }
+}
+.circle-container{
+    border-radius: 50%;
+    background-color: #fff;
+    display: block;
+    width: 13.75rem;
+    height: 13.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.campus-highlights{
+    padding: 50px 0 0;
+    background: #ffffff;
+}
+
+.instructions{
+    padding: 50px 0 0;
+}
+.flex-blocks {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.flex-blocks__block {
+    width: 50%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.flex-blocks__block:nth-child(odd) {
+    .flex-blockd__inner {
+        margin-left: 0;
+    }
+}
+.flex-blockd__inner {
+    margin: 0 1rem;
+
+    img {
+        width: 100%;
+        margin-bottom: 1.2rem;
+    }
+    p{
+        text-align: justify;
+    }
+}
+.international-info{
+    padding: 1rem 0 0;
+
+}
