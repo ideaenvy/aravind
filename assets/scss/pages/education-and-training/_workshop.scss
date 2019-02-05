@@ -206,20 +206,29 @@
 #ovrvw {
   width: 90%;
   margin: 60px auto;
-  .txtleftpart{
-    h2{
-      margin-bottom: 4%;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 8%;
-        left: 2%;
-        height: 4px;
-        width: 40px;
-        background-color: #f80;
+  h2{
+    text-align: center;
+    margin: 20px 0 40px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 15%;
+      width: 30%;
+      height: 2px;
+      background-color: #f80;
+      margin-top: 13px;
     }
+    &:after{
+      content: "";
+      position: absolute;
+      right: 15%;
+      width: 30%;
+      height: 2px;
+      background-color: #f80;
+      margin-top: 13px;
     }
   }
+ 
 
   .imgrightpart{
     img{
