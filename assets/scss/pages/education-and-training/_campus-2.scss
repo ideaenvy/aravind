@@ -111,6 +111,11 @@
         margin-left: 0;
     }
 }
+.flex-blocks__block:nth-child(even) {
+    .flex-blockd__inner {
+        margin-right: 0;
+    }
+}
 .flex-blockd__inner {
     margin: 0 1rem;
 
