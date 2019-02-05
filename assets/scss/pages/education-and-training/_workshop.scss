@@ -312,6 +312,25 @@
   margin: 60px auto;
 }
 
+#accom{
+  width: 90%;
+  margin: 60px auto;
+  table{
+    tr{
+      border-top: 2px solid #e5e5e5;
+      th{
+        line-height: 2 !important;
+        border: 2px solid #e9ecef;
+      }
+      td{
+        border: 2px solid #e9ecef;
+        line-height: 2 !important;
+        padding: 0 0 0 20px !important;
+      }
+    }
+  }
+}
+
 #shedule{
   width: 90%;
   margin: 60px auto;
