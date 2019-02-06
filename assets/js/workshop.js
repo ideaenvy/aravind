@@ -31,7 +31,7 @@ $('.nav-item a').click(function() {
 
 
 $(window).resize(function() {
-    $selector = $('#facultyy .larged');
+    $selector = $('#facultyy .larged, #orgcom .larged');
 
     if ($(window).width() < 1025) {
         $selector.removeClass('col');
