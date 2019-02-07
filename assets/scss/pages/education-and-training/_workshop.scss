@@ -311,7 +311,6 @@
   }
 }
 
-
 #orgcom{
   h2{
     text-align: center;
@@ -320,91 +319,95 @@
       content: "";
       position: absolute;
       left: 14%;
-      width: 24%;
+      width: 25%;
       height: 2px;
       background-color: #f80;
       margin-top: 13px;
       @include respond-below(xs) {
-        width: 10%;
+        width: 18%;
       }
     }
     &:after{
       content: "";
       position: absolute;
       right: 14%;
-      width: 24%;
+      width: 25%;
       height: 2px;
       background-color: #f80;
       margin-top: 13px;
       @include respond-below(xs) {
-        width: 10%;
+        width: 18%;
       }
     }
 
 
   }
- 
-  .imgholder{
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 1px 4px #b5b5b5;
-    
-    /* &:hover .imgtext{
-      width: 75%;
-      padding: 10px 0px 10px 60px;
+  .carousel{
+    background-color: #3e3e3e;
+    .carousel-inner{
+      .carousel-item{
+        .card {
+          max-width: 650px;
+          margin: 60px auto;
+          border: none;
+          text-align: center;
+          background-color: #3e3e3e;
+          .card-avatar {
+            max-width: 200px;
+            max-height: 200px;
+            margin: -50px auto 0;
+            border-radius: 41%;
+            margin-top: 0;
+            overflow: hidden;
+            padding: 0;
+            box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+            a{
+              img{
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+          .card-body{
+            color: white;
+            .card-description{
 
-    } */
-
-    img{
-      width: 100%;
-    }
-    
-    
+            }
+            .card-title {
+              color: white;
+              text-decoration: none;
+              margin-top: .625rem;
+            }
+          }
+        }
+       
+      } 
+    } 
   }
 
-  .imgtext {
-    position: relative;
-    background-color: #585858;
-    color: white;
-    padding: 10px 25px;
-    transition: all 0.5s linear;
-    &:before{
-      content: "";
-      position: absolute;
-      top: -35%;
-      left: 5%;
-      width: 0px;
-      height: 0px;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-      border-bottom: 30px solid #585858;
-    }
-    h3{
-      letter-spacing: 0.05em;
-    }
-    p{
-      margin: 0;
-    }
-    
-  }
-
-  .withoutpic{
-    margin: 20px 0 0 0;
-    padding: 1rem;
-    height: 200px;
-    background: #585858;
-    color: white;
-    .name{
-      color: #ffbc6f;
-    }
-    hr{
-      margin: 0 0 1rem 0;
-      background-color: #ffbc6f;
+  .anotherdiv{
+    .withoutpic{
+      margin: 20px 0 0 0;
+      padding: 1rem;
+      height: 120px;
+      font-size: 14px;
+      background-color: #3e3e3e;
+      color: white;
     }
   }
 }
 
 #session{
+  .sub_title{
+    color: #03998e;
+  }
+
+  .forpdf{
+    text-align: center;
+    .btn{
+      cursor: pointer;
+    }
+  }
 }
 
 #accom{
