@@ -168,6 +168,11 @@
 /* workshop new starts from here*/
 
 .workshop-new{
+
+  .wraper{
+    width: 90%;
+    margin: 60px auto;
+  }
   .container-fluid{
     h2{
       text-align: center;
@@ -202,6 +207,11 @@
   }
   nav{
     padding: 22px;
+    .navbar-brand{
+      .workshop-logo{
+        width: 100px;
+      }
+    }
   }
   
 .darkHeader{
@@ -236,8 +246,7 @@
 }
 
 #ovrvw {
-  width: 90%;
-  margin: 60px auto;
+  
   
  
 
@@ -252,8 +261,6 @@
 }
 
 #facultyy{
-  width: 90%;
-  margin: 60px auto;
  
   .imgholder{
     position: relative;
@@ -297,20 +304,15 @@
   .withoutpic{
     margin: 20px 0 0 0;
     padding: 1rem;
-    height: 200px;
-    .name{
-      color: #8e4c01;
-    }
-    hr{
-      margin: 0 0 1rem 0;
-    }
+    height: 120px;
+    font-size: 14px;
+
+    
   }
 }
 
 
 #orgcom{
-  width: 90%;
-  margin: 60px auto;
   h2{
     text-align: center;
     margin: 20px 0 40px;
@@ -403,13 +405,9 @@
 }
 
 #session{
-  width: 90%;
-  margin: 60px auto;
 }
 
 #accom{
-  width: 90%;
-  margin: 60px auto;
   table{
     tr{
       border-top: 2px solid #e5e5e5;
@@ -427,13 +425,9 @@
 }
 
 #shedule{
-  width: 90%;
-  margin: 60px auto;
 }
 
 #register{
-  width: 90%;
-  margin: 60px auto;
   h2{
     text-align: center;
     margin: 20px 0 40px;
@@ -501,8 +495,6 @@
   }
 }
 #contc{
-  width: 90%;
-  margin: 60px auto;
  
 
 }
