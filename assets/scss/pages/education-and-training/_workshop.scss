@@ -239,6 +239,11 @@
     padding: 6rem 0;
     .container{
       margin-top: 3rem;
+      .btn-light{
+        &:focus{
+          box-shadow: none !important;
+        }
+      }
     }
     
   }
