@@ -13,6 +13,8 @@ $(function() {
         
         
     });
+
+    
 });
 
 $('.nav-item a').click(function() {
@@ -37,12 +39,42 @@ $(window).resize(function() {
         $selector.removeClass('col');
         $selector.addClass('col-md-6');
         $selector.css('margin-bottom','15px');
-        $('#facultyy .larged .imgtext').css('width','70%');
 
     } else {
         $selector.removeClass('col-md-6');
         $selector.addClass('col');
         $selector.css('margin','0px');
-        $('#facultyy .larged .imgtext').css('width','unset');
     }
 }).resize();
+
+
+$(document).ready(function() {
+    var workshop = $(".workshop-carousel");
+    workshop.owlCarousel({
+      items: 3,
+      loop: true,
+      autoPlay: true,
+      autoPlayTimeout: 1000,
+      responsiveClass:true,
+        responsive:{
+        0:{
+            items:1,
+           
+        },
+        600:{
+            items:2,
+            
+        },
+        1000:{
+            items:3,
+            
+            
+        }
+    }
+
+    });
+    
+  });
+
+	
+

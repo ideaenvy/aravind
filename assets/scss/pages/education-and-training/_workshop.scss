@@ -282,27 +282,24 @@
       width: 100%;
     }
     
-    .imgtext {
-      position: absolute;
-      bottom: 4%;
-      background: rgba(20,30,27,0.5);
-      color: white;
-      padding: 10px 25px;
-      transform: skew(10deg);
-      transform-origin: 50% 100%;
-      transition: all 0.5s linear;
+    
+  }
+  .imgtext {
+    
+    background: rgba(20,30,27,0.5);
+    color: white;
+    padding: 10px 25px;
+    
+    
+    h3{
       
-      h3{
-        transform: skew(-10deg);
-        margin: 0;
-        letter-spacing: 0.05em;
-      }
-      p{
-        transform: skew(-10deg);
-        margin: 0;
-        margin-left: -4px;
-        color: #e0e0e0;
-      }
+      margin: 0;
+      letter-spacing: 0.05em;
+    }
+    p{
+      
+      margin: 0;
+      color: #e0e0e0;
     }
   }
 
@@ -389,6 +386,19 @@
       } 
     } 
   }
+  .workshop-carousel{
+    background-color: #383838;
+    text-align: center;
+    color: white;
+    .item{
+      margin: 30px 30px 0px;
+      .img-container{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
 
   .anotherdiv{
     .withoutpic{
@@ -396,8 +406,6 @@
       padding: 1rem;
       height: 120px;
       font-size: 14px;
-      background-color: #3e3e3e;
-      color: white;
     }
   }
 }
